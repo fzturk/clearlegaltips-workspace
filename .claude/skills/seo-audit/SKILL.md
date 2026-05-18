@@ -40,14 +40,15 @@ foreach($posts as $p) {
 }' --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 
-### 3. ThirstyAffiliates Broken Link Kontrolü
+### 3. ThirstyAffiliates Placeholder Link Kontrolü
 
 ```powershell
 C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp eval '
-global $wpdb;
-$links = $wpdb->get_results("SELECT ID, post_title, post_content FROM ta_links WHERE post_status = \"publish\"");
+$links = get_posts(["post_type"=>"thirstylink","posts_per_page"=>-1,"post_status"=>"publish"]);
 foreach($links as $l) {
-    if(strpos($l->post_content, "destination") === false || strpos($l->post_content, "#") !== false) {
+    $info = get_post_meta($l->ID, "_ta_link_info", true);
+    $dest = is_array($info) ? ($info["destination"] ?? "") : (string)$info;
+    if(empty($dest) || $dest === "#" || $dest === "") {
         echo $l->ID . " | " . $l->post_title . " | PLACEHOLDER\n";
     }
 }' --path="C:\Users\fatih\Studio\clearlegaltips"

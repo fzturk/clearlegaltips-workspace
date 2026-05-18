@@ -24,12 +24,11 @@ http://localhost:8881 erişilebilir olmalı.
 
 Makaleden şunları tespit et:
 - **Başlık** (H1 veya dosya adından)
-- **Kategori** — şu 5 kategoriden birini seç:
-  - Legal Document Templates (ID: tespit et)
-  - Business & LLC (ID: tespit et)
-  - Cost Guides & Calculators (ID: tespit et)
-  - How-to Guides (ID: tespit et)
-  - State-Specific Guides (ID: tespit et)
+- **Kategori** — şu 5 kategoriden birini seç (ID'leri bulmak için):
+  ```powershell
+  C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp term list category --fields=term_id,name --path="C:\Users\fatih\Studio\clearlegaltips"
+  ```
+  Kategoriler: Legal Document Templates | Business & LLC | Cost Guides & Calculators | How-to Guides | State-Specific Guides
 - **Etiketler** — içerikten uygun etiketleri seç
 - **Focus keyword** — H1'den çıkar
 - **Meta description** — 150-155 karakter

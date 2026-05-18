@@ -34,7 +34,7 @@ ComfyUI çalışmıyorsa dur ve kullanıcıya bildir.
 ```bash
 python3 -c "
 import urllib.request, json
-r = urllib.request.urlopen('http://127.0.0.1:8188/object_info/CheckpointLoaderSimple', timeout=5)
+r = urllib.request.urlopen('http://127.0.0.1:8000/object_info/CheckpointLoaderSimple', timeout=5)
 data = json.loads(r.read())
 models = data['CheckpointLoaderSimple']['input']['required']['ckpt_name'][0]
 print('Mevcut modeller:')

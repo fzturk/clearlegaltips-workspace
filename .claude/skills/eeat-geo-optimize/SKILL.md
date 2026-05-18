@@ -100,7 +100,7 @@ AI'lar bölgesel sorulara bölgesel içerik döndürür:
 # Makale içeriğini al
 $WPCLI = "C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat"
 $WP_PATH = "C:\Users\fatih\Studio\clearlegaltips"
-& $WPCLI wp post get POST_ID --fields=post_content --path="$WP_PATH"
+& $WPCLI wp post get $ARGUMENTS --fields=post_content --path="$WP_PATH"
 ```
 
 Şunları tespit et:
