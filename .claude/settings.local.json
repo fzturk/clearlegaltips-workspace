@@ -46,7 +46,17 @@
       "WebFetch(domain:registry.modelcontextprotocol.io)",
       "Bash(Get-Content *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(powershell.exe -NonInteractive -Command \"Get-Content .claude/settings.json -Raw | ConvertFrom-Json | Out-Null; Write-Output 'settings.json is valid JSON'\")",
+      "Bash(\"C:/Users/fatih/AppData/Local/studio_app/bin/studio.bat\" wp *)",
+      "Bash(awk '{ printf \"%s|%d KB\\\\n\", $NF, $5/1024 }')",
+      "Bash(python3 \"C:/Users/fatih/Studio/clearlegaltips/wp-content/pdf-extract.py\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import pypdf\")",
+      "Bash(python3 -c \"import pdfplumber\")",
+      "Bash(python3 -c \"import PyPDF2\")",
+      "Bash(pip3 list *)",
+      "Bash(pip3 install *)"
     ]
   }
 }
