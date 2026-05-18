@@ -52,10 +52,10 @@ Her makale tipi için uygun schema:
 C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp post meta update [POST_ID] rank_math_focus_keyword "[KEYWORD]" --path="C:\Users\fatih\Studio\clearlegaltips"
 
 # Meta description güncelle
-C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp post meta update [POST_ID] rank_math_description "[META DESC — 155 karakter max]" --path="C:\Users\fatih\Studio\clearlegaltips"
+C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp post meta update [POST_ID] rank_math_description "[META DESC — 155 chars max]" --path="C:\Users\fatih\Studio\clearlegaltips"
 
 # SEO title güncelle
-C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp post meta update [POST_ID] rank_math_title "[TITLE — 60 karakter max]" --path="C:\Users\fatih\Studio\clearlegaltips"
+C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp post meta update [POST_ID] rank_math_title "[TITLE — 60 chars max]" --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 
 ## Çıktı Formatı

@@ -60,17 +60,17 @@ $php | Out-File -Encoding utf8 "$env:TEMP\wp_create_post.php"
 
 ```powershell
 # Meta verileri ayarla
-$POST_ID = "YUKARIDAKI_ID"
+$POST_ID = "ID_FROM_ABOVE"
 & $WPCLI wp post meta update $POST_ID rank_math_focus_keyword "KEYWORD" --path="$WP_PATH"
 & $WPCLI wp post meta update $POST_ID rank_math_description "META DESC" --path="$WP_PATH"
-& $WPCLI wp post term add $POST_ID category KATEGORİ_ID --path="$WP_PATH"
+& $WPCLI wp post term add $POST_ID category CATEGORY_ID --path="$WP_PATH"
 ```
 
 ### 4. Featured Image Yükle (varsa)
 
 ```powershell
 # Görsel media library'e import et ve featured image yap
-& $WPCLI wp media import "GORSEL_YOLU" --post_id=$POST_ID --featured_image --path="$WP_PATH"
+& $WPCLI wp media import "IMAGE_PATH" --post_id=$POST_ID --featured_image --path="$WP_PATH"
 ```
 
 ### 5. Cache Temizle
@@ -99,16 +99,16 @@ WordPress MCP üzerinden:
 ## Çıktı
 
 ```
-POST OLUŞTURULDU:
+POST CREATED:
 ID: [post_id]
-Başlık: [title]
+Title: [title]
 URL: http://localhost:8881/?p=[post_id]
-Durum: draft
-Kategori: [category]
+Status: draft
+Category: [category]
 Rank Math keyword: [keyword]
-Featured image: [atandı/atanmadı]
+Featured image: [assigned/not assigned]
 
-Yayınlamak için:
+To publish:
   wp post update [ID] --post_status=publish --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 

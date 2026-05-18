@@ -58,9 +58,9 @@ Arama: `"[PROGRAM ADI] affiliate program" commission cookie`
 Şu bilgileri içerecek şekilde:
 
 ```
-Konu: Affiliate Partnership Inquiry — ClearLegalTips.com
+Subject: Affiliate Partnership Inquiry — ClearLegalTips.com
 
-Merhaba [Program Adı] Affiliate Team,
+Hello [Program Name] Affiliate Team,
 
 My name is [Ad], and I run ClearLegalTips.com, a legal education 
 website helping US consumers navigate DIY legal processes.
@@ -109,7 +109,7 @@ Kontrol et:
 === AFİLİATE ARAŞTIRMA RAPORU ===
 Tarih: [tarih]
 
-PROGRAM: [Program Adı]
+PROGRAM: [Program Name]
 URL: [affiliate program URL]
 Platform: [Impact / ShareASale / CJ / Direct]
 Komisyon: [oran]

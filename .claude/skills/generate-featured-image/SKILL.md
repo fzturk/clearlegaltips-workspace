@@ -49,7 +49,7 @@ Makale başlığı ve konusuna göre İngilizce image prompt yaz:
 
 **Prompt şablonu (legal content için):**
 ```
-professional legal document illustration, [KONU İLE İLGİLİ ELEMENT], 
+professional legal document illustration, [TOPIC-RELATED ELEMENT], 
 clean minimalist design, navy blue #1C2B4A and white color scheme, 
 law office aesthetic, modern flat design, no text, 
 high quality 4K, sharp edges, professional photography style,
@@ -67,9 +67,9 @@ cluttered, busy background
 
 ```bash
 python3 "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/tools/comfyui_generate.py" \
-  --prompt "PROMPT_BURAYA" \
+  --prompt "PROMPT_HERE" \
   --negative "NEGATIVE_PROMPT" \
-  --output "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/generated-images/DOSYAADI.jpg"
+  --output "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/generated-images/FILENAME.jpg"
 ```
 Not: Script dahili olarak 1216×640 üretir, PIL ile 1200×630'a yeniden boyutlandırır.
 
@@ -86,14 +86,14 @@ POSITIVE PROMPT:
 NEGATIVE PROMPT:
 [negative prompt]
 
-AYARLAR:
+SETTINGS:
 - Width: 1200
 - Height: 630
 - Steps: 25
 - CFG Scale: 7
 - Sampler: DPM++ 2M Karras
 
-Kayıt yeri: workspace/generated-images/[dosya-adı].jpg
+Save location: workspace/generated-images/[filename].jpg
 ```
 
 ## Çıktı
@@ -104,7 +104,7 @@ Görsel oluşturulunca:
 
 ```powershell
 # WordPress Media Library'e yükle (WP Studio)
-C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp media import "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/generated-images/DOSYA.jpg" --post_id=POST_ID --featured_image --path="C:\Users\fatih\Studio\clearlegaltips"
+C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp media import "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/generated-images/FILENAME.jpg" --post_id=POST_ID --featured_image --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 
 ## Adlandırma Kuralı

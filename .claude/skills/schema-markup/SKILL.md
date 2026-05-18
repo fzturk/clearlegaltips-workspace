@@ -139,9 +139,9 @@ if (strpos($p->post_content, 'application/ld+json') === false) {
     $updated = $script_tag . "\n" . $p->post_content;
     wp_update_post(['ID' => $pid, 'post_content' => $updated]);
     clean_post_cache($pid);
-    echo "Schema eklendi: $pid\n";
+    echo "Schema added: $pid\n";
 } else {
-    echo "Schema zaten var: $pid\n";
+    echo "Schema already exists: $pid\n";
 }
 '@
 $script | Out-File -Encoding utf8 "$env:TEMP\add_schema.php"

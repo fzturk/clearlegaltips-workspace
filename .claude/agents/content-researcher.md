@@ -64,7 +64,7 @@ Verilen konu için kapsamlı bir content brief oluştur. Her zaman gerçek, doğ
 [Informational / Transactional / Commercial]
 
 ## Önerilen Başlık
-[H1 başlığı — 60 karakter max]
+[H1 title — 60 chars max]
 
 ## Meta Description Taslağı
 [150-155 karakter]

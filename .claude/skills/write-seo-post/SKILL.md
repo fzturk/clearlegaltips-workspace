@@ -80,9 +80,9 @@ H2: Bottom Line
 ### 5. Rank Math SEO Alanları (makale sonunda belirt)
 
 ```
-Focus Keyword: [birincil keyword]
-Meta Title: [60 karakter max — keyword başta]
-Meta Description: [150-155 karakter — keyword + value prop + CTA]
+Focus Keyword: [primary keyword]
+Meta Title: [60 chars max — keyword first]
+Meta Description: [150-155 chars — keyword + value prop + CTA]
 ```
 
 ### 6. Featured Image Önerisi
