@@ -1,7 +1,7 @@
 ---
 name: content-researcher
 description: Legal konular için derin içerik araştırması yapar ve yapılandırılmış content brief üretir. Makale yazılmadan önce araştırma gerektiğinde kullan.
-model: claude-haiku-4-5
+model: claude-haiku-4-5-20251001
 tools: WebSearch WebFetch Read
 memory: user
 ---

@@ -69,10 +69,9 @@ cluttered, busy background
 python3 "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/tools/comfyui_generate.py" \
   --prompt "PROMPT_BURAYA" \
   --negative "NEGATIVE_PROMPT" \
-  --width 1200 \
-  --height 630 \
   --output "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/generated-images/DOSYAADI.jpg"
 ```
+Not: Script dahili olarak 1216×640 üretir, PIL ile 1200×630'a yeniden boyutlandırır.
 
 ## Adım 5 — Manuel Mod (ComfyUI kapalıysa)
 

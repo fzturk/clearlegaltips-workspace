@@ -47,9 +47,13 @@ ClearLegalTips makalelerine JSON-LD schema markup ekle.
   "estimatedCost": {
     "@type": "MonetaryAmount",
     "currency": "USD",
-    "value": "0"
+    "value": "GERÇEK_MALİYET_VEYA_0"
   }
 }
+```
+Not: Template articles (131-150) için `value: "0"` uygundur (şablon ücretsiz).
+Cost guide makalelerde (151-165) gerçek maliyet aralığını gir (örn. "50-500") veya bu alanı tamamen kaldır.
+```json
 ```
 
 ### FAQPage Schema

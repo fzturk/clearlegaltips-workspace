@@ -97,7 +97,8 @@ def build_pdf_reportlab(input_path, output_path, title):
         style_disclaimer,
     ))
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    out_dir = os.path.dirname(os.path.abspath(output_path))
+    os.makedirs(out_dir, exist_ok=True)
     doc.build(story)
     print(f"PDF oluşturuldu: {output_path}")
 
@@ -121,14 +122,14 @@ footer{{color:#999;font-size:11px;border-top:1px solid #ccc;margin-top:24px;padd
 {html_body}
 <footer>© 2026 ClearLegalTips.com — For informational purposes only. Not legal advice.</footer>
 </body></html>"""
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
         weasyprint.HTML(string=html).write_pdf(output_path)
         print(f"PDF oluşturuldu (weasyprint): {output_path}")
     except ImportError:
         txt_path = output_path.replace(".pdf", ".txt")
         with open(input_path, encoding="utf-8") as f:
             content = f.read()
-        os.makedirs(os.path.dirname(txt_path), exist_ok=True)
+        os.makedirs(os.path.dirname(os.path.abspath(txt_path)), exist_ok=True)
         with open(txt_path, "w", encoding="utf-8") as f:
             f.write(f"{title}\nClearLegalTips.com\n{'='*60}\n\n{content}")
         print(f"UYARI: PDF kütüphanesi bulunamadı. Metin olarak kaydedildi: {txt_path}")

@@ -6,6 +6,7 @@ import argparse
 import json
 import random
 import time
+import urllib.parse
 import urllib.request
 import urllib.error
 import os
@@ -130,8 +131,6 @@ def resize_to_1200x630(img_bytes: bytes, output_path: str):
 
 
 def main():
-    import urllib.parse
-
     parser = argparse.ArgumentParser(description="ClearLegalTips ComfyUI Image Generator")
     parser.add_argument("--prompt", required=True, help="Pozitif prompt")
     parser.add_argument("--negative", default=DEFAULT_NEGATIVE, help="Negatif prompt")

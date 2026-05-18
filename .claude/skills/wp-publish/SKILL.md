@@ -35,19 +35,27 @@ Makaleden şunları tespit et:
 
 ### 3. WP-CLI Post Oluştur
 
+Çok satırlı HTML içerik için doğrudan `--post_content` yerine `eval-file` kullan:
+
 ```powershell
-# Yeni post oluştur (draft olarak)
 $WPCLI = "C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat"
 $WP_PATH = "C:\Users\fatih\Studio\clearlegaltips"
 
-& $WPCLI wp post create `
-  --post_title="BAŞLIK" `
-  --post_content="İÇERİK" `
-  --post_status="draft" `
-  --post_author="291" `
-  --post_date="2026-04-26 10:00:00" `
-  --porcelain `
-  --path="$WP_PATH"
+# PHP script ile post oluştur (içerik escape sorununu önler)
+$php = @'
+<?php
+$pid = wp_insert_post([
+    'post_title'   => 'BAŞLIK',
+    'post_content' => 'MAKALE_HTML_İÇERİĞİ',
+    'post_status'  => 'draft',
+    'post_author'  => 291,
+    'post_date'    => '2026-04-26 10:00:00',
+    'post_type'    => 'post',
+]);
+if (is_wp_error($pid)) { echo "HATA: " . $pid->get_error_message(); } else { echo "POST_ID: $pid"; }
+'@
+$php | Out-File -Encoding utf8 "$env:TEMP\wp_create_post.php"
+& $WPCLI wp eval-file "$env:TEMP\wp_create_post.php" --path="$WP_PATH"
 ```
 
 ```powershell

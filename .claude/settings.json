@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "FILE=$(python3 -c \"import sys,json; d=json.load(sys.stdin); print(d.get('tool_input',{}).get('file_path',''))\" 2>/dev/null); if [[ \"$FILE\" == *.php ]]; then php -l \"$FILE\" 2>&1 || true; fi",
+            "command": "powershell.exe -Command \"$input_json = $env:CLAUDE_TOOL_INPUT; if ($input_json) { $fp = ($input_json | ConvertFrom-Json).file_path; if ($fp -and $fp.EndsWith('.php') -and (Test-Path $fp)) { php -l $fp 2>&1 } }\"",
             "timeout": 10000,
             "async": true
           }
@@ -31,7 +31,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo \"$(date '+%Y-%m-%d %H:%M'): Session ended\" >> \"C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/session-log.txt\"",
+            "command": "powershell.exe -Command \"Add-Content -Path 'C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/session-log.txt' -Value ((Get-Date -Format 'yyyy-MM-dd HH:mm') + ': Session ended')\"",
             "async": true
           }
         ]
@@ -43,7 +43,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo \"$(date '+%Y-%m-%d %H:%M'): Subagent completed\" >> \"C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/agent-log.txt\"",
+            "command": "powershell.exe -Command \"Add-Content -Path 'C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/agent-log.txt' -Value ((Get-Date -Format 'yyyy-MM-dd HH:mm') + ': Subagent completed')\"",
             "async": true
           }
         ]
