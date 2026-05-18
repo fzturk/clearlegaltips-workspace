@@ -8,7 +8,6 @@ import random
 import time
 import urllib.parse
 import urllib.request
-import urllib.error
 import os
 import sys
 

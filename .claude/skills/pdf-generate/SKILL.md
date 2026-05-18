@@ -47,11 +47,11 @@ date: "2026"
 
 ## Adım 3A — Python ile PDF Oluştur (ReportLab)
 
-```python
-# workspace/tools/generate_pdf.py kullan
-python3 "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/tools/generate_pdf.py" \
-  --input "workspace/templates/NDA_Template_2026.md" \
-  --output "workspace/pdfs/NDA_Template_ClearLegalTips.pdf" \
+```powershell
+# workspace/tools/generate_pdf.py kullan (tam yollar kullan)
+python "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/tools/generate_pdf.py" `
+  --input "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/templates/NDA_Template_2026.md" `
+  --output "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/pdfs/NDA_Template_ClearLegalTips.pdf" `
   --title "Free NDA Template 2026"
 ```
 

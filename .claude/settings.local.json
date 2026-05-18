@@ -43,7 +43,10 @@
       "PowerShell(& \"C:\\\\Users\\\\fatih\\\\AppData\\\\Local\\\\studio_app\\\\bin\\\\studio.bat\" wp eval-file wp-content/expand-post167.php --path=\"C:\\\\Users\\\\fatih\\\\Studio\\\\clearlegaltips\" 2>&1)",
       "PowerShell(& \"C:\\\\Users\\\\fatih\\\\AppData\\\\Local\\\\studio_app\\\\bin\\\\studio.bat\" wp eval-file wp-content/final-check.php --path=\"C:\\\\Users\\\\fatih\\\\Studio\\\\clearlegaltips\" 2>&1)",
       "PowerShell(& \"C:\\\\Users\\\\fatih\\\\AppData\\\\Local\\\\studio_app\\\\bin\\\\studio.bat\" wp eval-file wp-content/expand-guides-batch1.php --path=\"C:\\\\Users\\\\fatih\\\\Studio\\\\clearlegaltips\" 2>&1)",
-      "WebFetch(domain:registry.modelcontextprotocol.io)"
+      "WebFetch(domain:registry.modelcontextprotocol.io)",
+      "Bash(Get-Content *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }

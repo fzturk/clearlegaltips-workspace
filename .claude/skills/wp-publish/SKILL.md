@@ -116,9 +116,18 @@ Yayınlamak için:
 
 ## Mevcut Post Güncelleme
 
-Var olan bir postu güncellemek için:
+Var olan bir postu güncellemek için (HTML içerik için eval-file kullan):
 
 ```powershell
-& $WPCLI wp post update POST_ID --post_content="YENİ_İÇERİK" --path="$WP_PATH"
+$php = @'
+<?php
+$pid = POST_ID;
+$updated_content = 'YENİ_HTML_İÇERİK';
+wp_update_post(['ID' => $pid, 'post_content' => $updated_content]);
+clean_post_cache($pid);
+echo "Güncellendi: $pid\n";
+'@
+$php | Out-File -Encoding utf8 "$env:TEMP\wp_update_post.php"
+& $WPCLI wp eval-file "$env:TEMP\wp_update_post.php" --path="$WP_PATH"
 & $WPCLI wp cache flush --path="$WP_PATH"
 ```

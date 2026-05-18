@@ -20,7 +20,7 @@
     },
     "pagespeed": {
       "command": "npx",
-      "args": ["pagespeed-insights-mcp"],
+      "args": ["-y", "pagespeed-insights-mcp"],
       "env": {
         "PAGESPEED_API_KEY": "DOLDURUN"
       }
@@ -36,7 +36,7 @@
     },
     "brave-search": {
       "command": "npx",
-      "args": ["@modelcontextprotocol/server-brave-search"],
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
       "env": {
         "BRAVE_API_KEY": "DOLDURUN"
       }

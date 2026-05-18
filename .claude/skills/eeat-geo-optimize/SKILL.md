@@ -1,7 +1,7 @@
 ---
 name: eeat-geo-optimize
 description: Makaleyi E-E-A-T ve GEO (Generative Engine Optimization) standartlarına göre optimize eder. "E-E-A-T kontrol", "AI arama optimizasyonu", "güven artır", "GEO" gibi taleplerde kullan.
-allowed-tools: Read WebSearch
+allowed-tools: Read WebSearch Bash
 effort: high
 ---
 

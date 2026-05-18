@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell.exe -Command \"$input_json = $env:CLAUDE_TOOL_INPUT; if ($input_json) { $fp = ($input_json | ConvertFrom-Json).file_path; if ($fp -and $fp.EndsWith('.php') -and (Test-Path $fp)) { php -l $fp 2>&1 } }\"",
+            "command": "powershell.exe -NonInteractive -Command \"$json = [Console]::In.ReadToEnd(); if ($json) { $fp = ($json | ConvertFrom-Json).tool_input.file_path; if ($fp -and $fp.EndsWith('.php') -and (Test-Path $fp)) { php -l $fp 2>&1 } }\"",
             "timeout": 10000,
             "async": true
           }
