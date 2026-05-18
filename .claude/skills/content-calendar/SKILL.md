@@ -1,34 +1,34 @@
 ---
 name: content-calendar
-description: İçerik takvimi oluşturur, sonraki makaleleri önceliklendirir. "İçerik planı", "ne yazalım", "yeni makale konuları", "editorial calendar" gibi taleplerde kullan.
+description: Builds a content calendar and prioritizes next articles. Use for "content plan", "what should we write", "new article topics", "editorial calendar" requests.
 allowed-tools: Read WebSearch
 effort: high
 ---
 
-ClearLegalTips için içerik takvimi ve öncelik listesi oluştur.
+Create a content calendar and priority list for ClearLegalTips.
 
-## Odak: $ARGUMENTS
-(Boşsa genel plan, veya "LLC", "estate", "divorce" gibi kategori)
+## Focus: $ARGUMENTS
+(Leave blank for general plan, or specify category: "LLC", "estate", "divorce")
 
 ---
 
-## Mevcut İçerik Boşluk Analizi
+## Existing Content Gap Analysis
 
-ClearLegalTips'te YAZILMIŞ 50 makale (Post 131-180):
-- ✅ Template articles (NDA, LLC OA, Lease, Bill of Sale, Will, Trust, POA, vb.)
-- ✅ Cost guides (LLC cost, S-Corp vs LLC, Registered Agent, DBA, EIN, vb.)
-- ✅ How-to guides (Form LLC online, File EIN, RA online, Divorce online, vb.)
+ClearLegalTips PUBLISHED 50 articles (Posts 131-180):
+- ✅ Template articles (NDA, LLC OA, Lease, Bill of Sale, Will, Trust, POA, etc.)
+- ✅ Cost guides (LLC cost, S-Corp vs LLC, Registered Agent, DBA, EIN, etc.)
+- ✅ How-to guides (Form LLC online, File EIN, RA online, Divorce online, etc.)
 - ✅ State guides (Online divorce TX/CA/FL, Small claims, Landlord accounting)
 
 ---
 
-## Adımlar
+## Steps
 
-### 1. Keyword Fırsatı Bul
+### 1. Find Keyword Opportunities
 
-Şu kategorilerde henüz kapsanmayan konuları ara:
+Search for topics not yet covered in these categories:
 
-**Business & LLC (Boşluklar):**
+**Business & LLC (Gaps):**
 - Operating agreement amendments
 - LLC vs Corporation comparison
 - How to add member to LLC
@@ -38,7 +38,7 @@ ClearLegalTips'te YAZILMIŞ 50 makale (Post 131-180):
 - LLC bank account requirements
 - Piercing the corporate veil
 
-**Estate Planning (Boşluklar):**
+**Estate Planning (Gaps):**
 - Pour-over will explained
 - Special needs trust
 - Medicaid asset protection trust
@@ -47,7 +47,7 @@ ClearLegalTips'te YAZILMIŞ 50 makale (Post 131-180):
 - Beneficiary designation vs will
 - Digital estate planning
 
-**Real Estate (Boşluklar):**
+**Real Estate (Gaps):**
 - Month-to-month lease vs annual lease
 - Security deposit laws by state
 - Landlord entry notice requirements
@@ -55,74 +55,74 @@ ClearLegalTips'te YAZILMIŞ 50 makale (Post 131-180):
 - Rent increase notice template
 - Notice to vacate template
 
-**Family Law (Boşluklar):**
+**Family Law (Gaps):**
 - Legal separation vs divorce
 - Parenting plan template
 - Child support modification
 - Grandparent visitation rights
 - Name change after divorce
 
-**Business Contracts (Boşluklar):**
+**Business Contracts (Gaps):**
 - Non-compete agreement template
 - Employment agreement template
 - Letter of intent template
 - Term sheet template
 - Independent contractor vs employee
 
-### 2. Öncelik Matrisi
+### 2. Priority Matrix
 
-Her konu için değerlendir:
-- **Arama hacmi** (yüksek = öncelikli)
-- **Rekabet** (düşük KD = hızlı kazanım)
-- **Affiliate potansiyeli** (hangi TA linki kullanılabilir?)
-- **Mevcut hub'a bağlantı** (internal link fırsatı)
+Evaluate each topic by:
+- **Search volume** (high = priority)
+- **Competition** (low KD = quick win)
+- **Affiliate potential** (which TA link can be used?)
+- **Hub connection** (internal link opportunity to existing content)
 
-### 3. Takvim Oluştur
+### 3. Build Calendar
 
 **Format:**
 ```
-HAFTA 1 (Tarih aralığı):
-  - Makale 1: "[Başlık]" | KD: düşük | Volume: orta | Affiliate: ZenBusiness
-  - Makale 2: "[Başlık]" | KD: düşük | Volume: yüksek | Affiliate: LawDepot
+WEEK 1 (date range):
+  - Article 1: "[Title]" | KD: low | Volume: medium | Affiliate: ZenBusiness
+  - Article 2: "[Title]" | KD: low | Volume: high | Affiliate: LawDepot
 
-HAFTA 2:
+WEEK 2:
   ...
 ```
 
-**Yayın Tarihleri:**
-- Mevcut son makale: 25 Nisan 2026
-- Yeni makaleler: 26 Nisan 2026'dan itibaren
-- Öneri: Haftada 2-3 makale
+**Publishing Dates:**
+- Last existing article: April 25, 2026
+- New articles: from April 26, 2026
+- Recommendation: 2-3 articles per week
 
-### 4. Hub-Spoke Güncelleme Önerileri
+### 4. Hub-Spoke Update Recommendations
 
-Yeni makaleler eklenince hangi mevcut makalelere iç link eklenmeli?
-- Yeni "LLC bank account" → Mevcut "How to Form LLC Online" (Post 166)
-- Yeni "Pour-over will" → Mevcut "Living Trust vs Will" (Post 162)
+When new articles are added, which existing articles need internal links?
+- New "LLC bank account" → Existing "How to Form LLC Online" (Post 166)
+- New "Pour-over will" → Existing "Living Trust vs Will" (Post 162)
 
 ---
 
-## Çıktı Formatı
+## Output Format
 
 ```
-=== CLEARLEGALTIPS İÇERİK TAKVİMİ ===
-Oluşturulma: [tarih]
+=== CLEARLEGALTIPS CONTENT CALENDAR ===
+Created: [date]
 
-HIZLI KAZANIMLAR (KD < 20, yazılmaya hazır):
-1. "[Başlık]" — Volume: X, KD: Y, Affiliate: Z
+QUICK WINS (KD < 20, ready to write):
+1. "[Title]" — Volume: X, KD: Y, Affiliate: Z
 2. ...
 
-ORTA VADELİ HEDEFLER (1-3 ay):
+MID-TERM TARGETS (1-3 months):
 1. ...
 
-UZUN VADELİ (3+ ay, rekabetçi):
+LONG-TERM (3+ months, competitive):
 1. ...
 
-ÖNERİLEN YAYIM TAKVİMİ:
-26 Nisan: ...
-28 Nisan: ...
-30 Nisan: ...
+RECOMMENDED PUBLISHING SCHEDULE:
+April 26: ...
+April 28: ...
+April 30: ...
 
-HUB-SPOKE GÜNCELLEMELERİ GEREKİYOR:
-- Post [ID]: "[eski başlık]" → eklenecek iç link: "[yeni makale]"
+HUB-SPOKE UPDATES NEEDED:
+- Post [ID]: "[old title]" → add internal link: "[new article]"
 ```

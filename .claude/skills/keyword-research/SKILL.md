@@ -1,18 +1,18 @@
 ---
 name: keyword-research
-description: ClearLegalTips için keyword araştırması yapar. "Keyword bul", "hangi konuyu yazalım", "SEO fırsatı" gibi taleplerde kullan.
+description: Performs keyword research for ClearLegalTips. Use for "find keywords", "what topic should we write about", "SEO opportunity" requests.
 allowed-tools: WebSearch WebFetch Read
 effort: high
 ---
 
-ClearLegalTips.com için hukuki DIY keyword araştırması yap.
+Perform legal DIY keyword research for ClearLegalTips.com.
 
-## Araştırma Konusu: $ARGUMENTS
+## Research Topic: $ARGUMENTS
 
-## Adımlar
+## Steps
 
-### 1. Seed Keyword Genişletme
-Şu varyasyonları araştır:
+### 1. Seed Keyword Expansion
+Research these variations:
 - "$ARGUMENTS + free"
 - "$ARGUMENTS + online"
 - "$ARGUMENTS + template"
@@ -20,32 +20,32 @@ ClearLegalTips.com için hukuki DIY keyword araştırması yap.
 - "$ARGUMENTS + how to"
 - "$ARGUMENTS + form"
 - "how to [do $ARGUMENTS] yourself"
-- "[state] + $ARGUMENTS" (TX, CA, FL, NY, IL için)
+- "[state] + $ARGUMENTS" (for TX, CA, FL, NY, IL)
 
-### 2. Mevcut Ahrefs MCP Kullanımı
-Eğer Ahrefs MCP aktifse (`mcp__claude_ai_Ahrefs__keywords-explorer-overview`) şunları çek:
+### 2. Ahrefs MCP Usage
+If Ahrefs MCP is active (`mcp__claude_ai_Ahrefs__keywords-explorer-overview`) pull:
 - Search volume (US)
 - Keyword difficulty (KD)
 - Traffic potential
 - SERP features (featured snippet, people also ask)
 
-### 3. Rakip İçerik Analizi
-Top 3-5 sıralanan sayfaları incele:
-- Başlık yapısı
-- İçerik uzunluğu
-- Hangi konuları kapsıyor / kapsamıyor
-- Hangi affiliate servisleri öneriyorlar
-- Featured snippet var mı?
+### 3. Competitor Content Analysis
+Review top 3-5 ranking pages:
+- Title structure
+- Content length
+- Topics covered / not covered
+- Which affiliate services they recommend
+- Featured snippet present?
 
-### 4. Intent Sınıflandırması
-Her keyword için intent belirle:
-- **Informational** ("what is", "how does") → template/guide makalesi
-- **Transactional** ("best", "review", "vs") → affiliate karşılaştırma
-- **Navigational** (marka aramaları) → pas geç
+### 4. Intent Classification
+Determine intent for each keyword:
+- **Informational** ("what is", "how does") → template/guide article
+- **Transactional** ("best", "review", "vs") → affiliate comparison
+- **Navigational** (brand searches) → skip
 - **Commercial Investigation** ("cost", "price", "cheap") → calculator/cost guide
 
-### 5. Mevcut İçerikle Örtüşme Kontrolü
-ClearLegalTips'te zaten yazılmış konular (Post ID 131-180):
+### 5. Overlap Check with Existing Content
+Already written topics at ClearLegalTips (Post IDs 131-180):
 - NDA, LLC Operating Agreement, Commercial Lease, Residential Lease
 - Bill of Sale, Promissory Note, Last Will, Living Trust, POA
 - Medical POA, Prenup, Eviction Notice, Sublease, Service Agreement
@@ -58,23 +58,23 @@ ClearLegalTips'te zaten yazılmış konular (Post ID 131-180):
 - Trademark online, DBA online, Legal separation, Online divorce (state)
 - Dissolve LLC, Copyright, Small claims evictions, Landlord accounting
 
-### 6. Öncelik Matrisi
+### 6. Priority Matrix
 
-| Keyword | Volume | KD | Intent | İçerik Tipi | Öncelik |
+| Keyword | Volume | KD | Intent | Content Type | Priority |
 |---|---|---|---|---|---|
-| [keyword 1] | [vol] | [kd] | [intent] | [tip] | [P1/P2/P3] |
+| [keyword 1] | [vol] | [kd] | [intent] | [type] | [P1/P2/P3] |
 
-### 7. Sonuç Raporu
+### 7. Result Report
 
-**En Yüksek Potansiyelli 10 Keyword:**
-1. Keyword — Volume: X, KD: Y, Intent: Z, Öneri: [içerik tipi]
+**Top 10 Highest-Potential Keywords:**
+1. Keyword — Volume: X, KD: Y, Intent: Z, Recommendation: [content type]
 ...
 
-**Hızlı Kazanım Fırsatları (KD < 20, Volume > 500):**
+**Quick Win Opportunities (KD < 20, Volume > 500):**
 - ...
 
-**Uzun Vadeli Hedefler (KD 30-50, Volume > 2000):**
+**Long-Term Targets (KD 30-50, Volume > 2000):**
 - ...
 
-**Atlanacaklar (neden):**
+**Skip These (reason):**
 - ...

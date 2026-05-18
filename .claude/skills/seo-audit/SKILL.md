@@ -1,20 +1,20 @@
 ---
 name: seo-audit
-description: ClearLegalTips sitesini SEO açısından denetler. "SEO kontrol", "site audit", "hangi makaleler eksik", "performans kontrol" gibi taleplerde kullan.
+description: Audits ClearLegalTips site for SEO issues. Use for "SEO check", "site audit", "which articles are missing", "performance check" requests.
 allowed-tools: Read WebFetch Bash
 effort: high
 ---
 
-ClearLegalTips.com için kapsamlı SEO denetimi yap.
+Perform a comprehensive SEO audit for ClearLegalTips.com.
 
-## Denetim Kapsamı: $ARGUMENTS (boşsa tüm site)
+## Audit Scope: $ARGUMENTS (leave blank for full site)
 
-## Denetim Adımları
+## Audit Steps
 
-### 1. Rank Math Eksik Alanlar Kontrolü (WP-CLI)
+### 1. Rank Math Missing Fields Check (WP-CLI)
 
 ```powershell
-# WP-CLI ile Rank Math eksik alanları tespit et
+# Detect Rank Math missing fields via WP-CLI
 C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp eval '
 $posts = get_posts(["post_type"=>"post","posts_per_page"=>-1,"post_status"=>"publish"]);
 foreach($posts as $p) {
@@ -29,7 +29,7 @@ foreach($posts as $p) {
 }' --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 
-### 2. Kelime Sayısı Kontrolü
+### 2. Word Count Check
 
 ```powershell
 C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp eval '
@@ -40,7 +40,7 @@ foreach($posts as $p) {
 }' --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 
-### 3. ThirstyAffiliates Placeholder Link Kontrolü
+### 3. ThirstyAffiliates Placeholder Link Check
 
 ```powershell
 C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp eval '
@@ -54,28 +54,28 @@ foreach($links as $l) {
 }' --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 
-### 4. PageSpeed / Core Web Vitals (PageSpeed MCP aktifse)
+### 4. PageSpeed / Core Web Vitals (if PageSpeed MCP active)
 
-Şu URL'leri kontrol et:
-- Ana sayfa: http://clearlegaltips.com/
-- En çok ziyaret edilen 3 makale
-- Mobil + Desktop skorları
+Check these URLs:
+- Homepage: http://clearlegaltips.com/
+- Top 3 most-visited articles
+- Mobile + Desktop scores
 
-Hedefler:
+Targets:
 - LCP < 2.5s
 - CLS < 0.1
 - INP < 200ms
 - PSI Score > 85 (mobile), > 90 (desktop)
 
-### 5. GSC Performans Analizi (GSC MCP aktifse)
+### 5. GSC Performance Analysis (if GSC MCP active)
 
-Son 28 gün için:
-- En yüksek impression'lı ama düşük CTR'li sayfalar (CTR < %2)
-- Position 8-20 arası ranklar (hızlı kazanım fırsatı)
-- Click almayan ama impression olan sayfalar
-- Mobile vs Desktop performans farkı
+Last 28 days:
+- Pages with high impressions but low CTR (CTR < 2%)
+- Rankings between positions 8-20 (quick win opportunities)
+- Pages with impressions but zero clicks
+- Mobile vs Desktop performance gap
 
-### 6. İç Link Audit
+### 6. Internal Link Audit
 
 ```powershell
 C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp eval '
@@ -92,31 +92,31 @@ foreach($posts as $p) {
 }' --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 
-### 7. Rapor Formatı
+### 7. Report Format
 
 ```
-=== CLEARLEGALTIPS SEO AUDIT — [Tarih] ===
+=== CLEARLEGALTIPS SEO AUDIT — [Date] ===
 
-RANK MATH EKSİKLER:
-[liste]
+RANK MATH MISSING FIELDS:
+[list]
 
-KISA İÇERİKLER (< 3000 kelime):
-[liste]
+SHORT CONTENT (< 3000 words):
+[list]
 
-PLACEHOLDER AFFILIATE LİNKLER:
-[liste]
+PLACEHOLDER AFFILIATE LINKS:
+[list]
 
-YAPI EKSİKLERİ (disclosure/disclaimer/iç link):
-[liste]
+STRUCTURE ISSUES (disclosure/disclaimer/internal links):
+[list]
 
-PAGESPEED (varsa):
-[skorlar]
+PAGESPEED (if available):
+[scores]
 
-GSC FIRSATLAR (varsa):
-[pozisyon 8-20 listesi]
+GSC OPPORTUNITIES (if available):
+[positions 8-20 list]
 
-ÖNCELİKLİ AKSIYONLAR:
-1. [En kritik sorun]
-2. [İkinci sorun]
+PRIORITY ACTIONS:
+1. [Most critical issue]
+2. [Second issue]
 ...
 ```

@@ -1,29 +1,29 @@
 ---
 name: pdf-generate
-description: Makale veya şablon içeriğinden indirilebilir PDF oluşturur. "PDF yap", "indirilebilir belge oluştur", "PDF üret" gibi taleplerde kullan.
+description: Generates a downloadable PDF from article or template content. Use for "make PDF", "create downloadable document", "generate PDF" requests.
 allowed-tools: Read Write Bash
 effort: medium
 ---
 
-ClearLegalTips için indirilebilir PDF oluştur.
+Generate a downloadable PDF for ClearLegalTips.
 
-## Giriş: $ARGUMENTS
-Format: "dosya_yolu" veya "post_id" veya "şablon adı"
-
----
-
-## Adım 1 — Kaynağı Belirle
-
-Şu kaynaklardan birini seç:
-- `workspace/articles/XX_makale_adi.md` — makale içeriği
-- `workspace/templates/Sözlesme_Template_2026.md` — hukuki şablon
-- WordPress post içeriği (WP-CLI ile çek)
+## Input: $ARGUMENTS
+Format: "file_path" or "post_id" or "template name"
 
 ---
 
-## Adım 2 — PDF İçeriğini Hazırla
+## Step 1 — Identify Source
 
-Markdown dosyayı şu formatta düzenle:
+Choose one of these sources:
+- `workspace/articles/XX_article_name.md` — article content
+- `workspace/templates/Contract_Template_2026.md` — legal template
+- WordPress post content (fetch via WP-CLI)
+
+---
+
+## Step 2 — Prepare PDF Content
+
+Format the Markdown file as follows:
 
 ```markdown
 ---
@@ -45,10 +45,10 @@ date: "2026"
 
 ---
 
-## Adım 3A — Python ile PDF Oluştur (ReportLab)
+## Step 3A — Generate PDF with Python (ReportLab)
 
 ```powershell
-# workspace/tools/generate_pdf.py kullan (tam yollar kullan)
+# Use workspace/tools/generate_pdf.py (use absolute paths)
 python "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/tools/generate_pdf.py" `
   --input "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/templates/NDA_Template_2026.md" `
   --output "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/pdfs/NDA_Template_ClearLegalTips.pdf" `
@@ -57,39 +57,39 @@ python "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/tools/genera
 
 ---
 
-## Adım 3B — Markdown2PDF MCP ile Oluştur (PDF MCP kuruluysa)
+## Step 3B — Generate with Markdown2PDF MCP (if PDF MCP is installed)
 
 ```
-PDF MCP'ye gönder:
-- Input: markdown içerik
+Send to PDF MCP:
+- Input: markdown content
 - Theme: Professional
 - Header: ClearLegalTips.com
-- Footer: Sayfa numarası + URL
-- Output: workspace/pdfs/DOSYA_ADI.pdf
+- Footer: Page number + URL
+- Output: workspace/pdfs/FILENAME.pdf
 ```
 
 ---
 
-## Adım 4 — WordPress'e Yükle
+## Step 4 — Upload to WordPress
 
 ```powershell
 $WPCLI = "C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat"
 $WP_PATH = "C:\Users\fatih\Studio\clearlegaltips"
 
-# PDF'i media library'e yükle
+# Upload PDF to media library
 & $WPCLI wp media import "workspace/pdfs/NDA_Template_ClearLegalTips.pdf" `
   --title="Free NDA Template PDF" `
   --path="$WP_PATH" `
   --porcelain
-# Dönen media ID'yi kaydet
+# Save the returned media ID
 
-# İlgili makaleye download link ekle (post_id ile)
-# Örnek: post 131 = NDA makalesi
+# Add download link to relevant article (with post_id)
+# Example: post 131 = NDA article
 ```
 
 ---
 
-## Adım 5 — Download Link HTML'i Üret
+## Step 5 — Generate Download Link HTML
 
 ```html
 <div class="clt-cta-box">
@@ -103,20 +103,20 @@ $WP_PATH = "C:\Users\fatih\Studio\clearlegaltips"
 
 ---
 
-## PDF Adlandırma Kuralı
+## PDF Naming Convention
 
-`ClearLegalTips_[Belge_Tipi]_Template_2026.pdf`
+`ClearLegalTips_[Document_Type]_Template_2026.pdf`
 
-Örnekler:
+Examples:
 - `ClearLegalTips_NDA_Template_2026.pdf`
 - `ClearLegalTips_LLC_Operating_Agreement_2026.pdf`
 - `ClearLegalTips_Last_Will_Template_2026.pdf`
 
 ---
 
-## Toplu PDF Üretimi (20 Şablon İçin)
+## Bulk PDF Generation (20 Templates)
 
 ```
-Sırayla şu şablonlar için PDF üret:
-workspace/templates/ altındaki tüm *_Template_2026.md dosyaları
+Generate PDFs in order for:
+All *_Template_2026.md files under workspace/templates/
 ```

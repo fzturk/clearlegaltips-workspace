@@ -1,68 +1,68 @@
 ---
 name: affiliate-research
-description: Affiliate program araştırır, komisyon karşılaştırması yapar, başvuru emaili hazırlar. "Affiliate araştır", "program bul", "başvuru hazırla" gibi taleplerde kullan.
+description: Researches affiliate programs, compares commissions, and drafts application emails. Use for "research affiliate", "find program", "prepare application" requests.
 allowed-tools: WebSearch WebFetch Read Write
 effort: high
 ---
 
-ClearLegalTips için affiliate program araştırması yap ve başvuru hazırla.
+Research affiliate programs for ClearLegalTips and prepare applications.
 
-## Hedef: $ARGUMENTS
-(Program adı, kategori, veya "tümü")
+## Target: $ARGUMENTS
+(Program name, category, or "all")
 
 ---
 
-## ClearLegalTips Öncelikli Program Listesi
+## ClearLegalTips Priority Program List
 
-| Program | Platform | Tahmini Komisyon | Durum |
+| Program | Platform | Estimated Commission | Status |
 |---|---|---|---|
-| LawDepot | Impact | ~30% recurring | Başvurulmadı |
-| ZenBusiness | ShareASale / Direct | ~$100-150/sale | Başvurulmadı |
-| Northwest Registered Agent | ShareASale | ~$100/sale | Başvurulmadı |
-| Rocket Lawyer | CJ Affiliate | ~$30/sale | Başvurulmadı |
-| LegalZoom | CJ Affiliate | ~$15-30/sale | Başvurulmadı |
-| Nolo | Direct | ~10-15% | Başvurulmadı |
-| Incfile (Bizee) | Direct | ~$75/sale | Başvurulmadı |
-| Trust & Will | Impact | ~$30-50/sale | Başvurulmadı |
-| CompleteCasez | Direct | ~$50/sale | Başvurulmadı |
-| BizFilings | CJ Affiliate | ~$50/sale | Başvurulmadı |
+| LawDepot | Impact | ~30% recurring | Not applied |
+| ZenBusiness | ShareASale / Direct | ~$100-150/sale | Not applied |
+| Northwest Registered Agent | ShareASale | ~$100/sale | Not applied |
+| Rocket Lawyer | CJ Affiliate | ~$30/sale | Not applied |
+| LegalZoom | CJ Affiliate | ~$15-30/sale | Not applied |
+| Nolo | Direct | ~10-15% | Not applied |
+| Incfile (Bizee) | Direct | ~$75/sale | Not applied |
+| Trust & Will | Impact | ~$30-50/sale | Not applied |
+| CompleteCasez | Direct | ~$50/sale | Not applied |
+| BizFilings | CJ Affiliate | ~$50/sale | Not applied |
 
 ---
 
-## Araştırma Adımları
+## Research Steps
 
-### 1. Program Detaylarını Araştır
-Her program için şunları bul:
-- Affiliate program URL'i (genellikle site.com/affiliates)
-- Komisyon oranı ve yapısı (CPS, CPA, recurring?)
-- Cookie süresi (30 gün? 90 gün?)
-- Minimum ödeme eşiği
-- Ödeme yöntemi (PayPal, check, wire)
-- Onay süreci (otomatik mi, manuel mi?)
-- Yasaklı trafik türleri (PPC yasak mı?)
-- Promosyon materyalleri (banner, text link)
+### 1. Research Program Details
+Find the following for each program:
+- Affiliate program URL (usually site.com/affiliates)
+- Commission rate and structure (CPS, CPA, recurring?)
+- Cookie duration (30 days? 90 days?)
+- Minimum payout threshold
+- Payment method (PayPal, check, wire)
+- Approval process (automatic or manual?)
+- Prohibited traffic types (PPC prohibited?)
+- Promotional materials (banners, text links)
 
-Arama: `"[PROGRAM ADI] affiliate program" commission cookie`
+Search: `"[PROGRAM NAME] affiliate program" commission cookie`
 
-### 2. Komisyon Karşılaştırma Tablosu
+### 2. Commission Comparison Table
 
 ```
-| Program | Komisyon | Cookie | Min Ödeme | Onay | Platform |
-|---------|----------|--------|-----------|------|----------|
-| LawDepot | % | gün | $ | oto/manuel | Impact |
+| Program | Commission | Cookie | Min Payout | Approval | Platform |
+|---------|------------|--------|------------|----------|----------|
+| LawDepot | % | days | $ | auto/manual | Impact |
 ...
 ```
 
-### 3. Başvuru Emaili Şablonu Oluştur
+### 3. Draft Application Email
 
-Şu bilgileri içerecek şekilde:
+Include the following:
 
 ```
 Subject: Affiliate Partnership Inquiry — ClearLegalTips.com
 
 Hello [Program Name] Affiliate Team,
 
-My name is [Ad], and I run ClearLegalTips.com, a legal education 
+My name is [Name], and I run ClearLegalTips.com, a legal education 
 website helping US consumers navigate DIY legal processes.
 
 SITE STATS (approximate, growing):
@@ -85,52 +85,52 @@ Could you share details about your affiliate program, or point
 me to the application page?
 
 Best regards,
-[Ad]
+[Name]
 ClearLegalTips.com
 [Email]
 ```
 
-### 4. Program Başvuru Sayfalarını Bul
+### 4. Find Program Application Pages
 
 ```
-Arama: "[program adı] affiliate program apply"
-Kontrol et:
-- Impact.com hesabı var mı?
-- ShareASale hesabı var mı?
-- CJ Affiliate hesabı var mı?
-- Direct program mu?
+Search: "[program name] affiliate program apply"
+Check:
+- Does it have an Impact.com account?
+- Does it have a ShareASale account?
+- Does it have a CJ Affiliate account?
+- Is it a direct program?
 ```
 
 ---
 
-## Çıktı Formatı
+## Output Format
 
 ```
-=== AFİLİATE ARAŞTIRMA RAPORU ===
-Tarih: [tarih]
+=== AFFILIATE RESEARCH REPORT ===
+Date: [date]
 
 PROGRAM: [Program Name]
 URL: [affiliate program URL]
 Platform: [Impact / ShareASale / CJ / Direct]
-Komisyon: [oran]
-Cookie: [gün]
-Min Ödeme: [$]
-Onay: [Otomatik / Manuel / 2-5 gün]
-Başvuru: [URL]
-Not: [Özel şartlar, yasaklar]
+Commission: [rate]
+Cookie: [days]
+Min Payout: [$]
+Approval: [Automatic / Manual / 2-5 days]
+Application: [URL]
+Notes: [Special terms, restrictions]
 
-HAZIR EMAIL:
-[email içeriği]
+READY EMAIL:
+[email content]
 
-ÖNCELİK: [Yüksek / Orta / Düşük]
-NEDEN: [Açıklama]
+PRIORITY: [High / Medium / Low]
+REASON: [Description]
 ```
 
 ---
 
-## Sonraki Adım
+## Next Step
 
-Başvuru tamamlandığında `workspace/OPERATIONS_MANUAL.md` güncellenecek:
+When application is complete, update `workspace/OPERATIONS_MANUAL.md`:
 ```
-| [Program] | [Platform] | [Tarih] | Başvuruldu | Bekliyor |
+| [Program] | [Platform] | [Date] | Applied | Pending |
 ```

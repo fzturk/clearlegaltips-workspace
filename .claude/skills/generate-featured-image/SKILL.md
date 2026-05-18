@@ -1,16 +1,16 @@
 ---
 name: generate-featured-image
-description: ComfyUI kullanarak WordPress featured image oluşturur. "Görsel oluştur", "featured image yap", "makale görseli" gibi taleplerde kullan. ComfyUI'nin açık olması gerekir (localhost:8000).
+description: Generates WordPress featured images using ComfyUI. Use for "create image", "make featured image", "article image" requests. ComfyUI must be running (localhost:8000).
 allowed-tools: Bash Read Write
 effort: medium
 ---
 
-ClearLegalTips.com için 1200×630px featured image oluştur.
+Generate a 1200×630px featured image for ClearLegalTips.com.
 
-## Giriş: $ARGUMENTS
-(Format: "makale başlığı | konu açıklaması" veya sadece makale başlığı)
+## Input: $ARGUMENTS
+(Format: "article title | topic description" or just article title)
 
-## Adım 1 — ComfyUI Durumunu Kontrol Et
+## Step 1 — Check ComfyUI Status
 
 ```bash
 python3 -c "
@@ -27,9 +27,9 @@ except Exception as e:
 "
 ```
 
-ComfyUI çalışmıyorsa dur ve kullanıcıya bildir.
+Stop and notify the user if ComfyUI is not running.
 
-## Adım 2 — Mevcut Modeli Kontrol Et
+## Step 2 — Check Available Models
 
 ```bash
 python3 -c "
@@ -43,11 +43,11 @@ for m in models[:5]:
 "
 ```
 
-## Adım 3 — Image Prompt Oluştur
+## Step 3 — Create Image Prompt
 
-Makale başlığı ve konusuna göre İngilizce image prompt yaz:
+Write an English image prompt based on the article title and topic:
 
-**Prompt şablonu (legal content için):**
+**Prompt template (for legal content):**
 ```
 professional legal document illustration, [TOPIC-RELATED ELEMENT], 
 clean minimalist design, navy blue #1C2B4A and white color scheme, 
@@ -63,7 +63,7 @@ anime, people faces, hands, distorted, ugly, bad anatomy,
 cluttered, busy background
 ```
 
-## Adım 4 — ComfyUI API'ye Gönder
+## Step 4 — Send to ComfyUI API
 
 ```bash
 python3 "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/tools/comfyui_generate.py" \
@@ -71,14 +71,14 @@ python3 "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/tools/comfy
   --negative "NEGATIVE_PROMPT" \
   --output "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/generated-images/FILENAME.jpg"
 ```
-Not: Script dahili olarak 1216×640 üretir, PIL ile 1200×630'a yeniden boyutlandırır.
+Note: Script internally generates at 1216×640 and resizes to 1200×630 via PIL.
 
-## Adım 5 — Manuel Mod (ComfyUI kapalıysa)
+## Step 5 — Manual Mode (if ComfyUI is offline)
 
-ComfyUI açık değilse şu formatı kullanıcıya ver:
+If ComfyUI is not running, provide this format to the user:
 
 ```
-=== COMFYUI MANUEL PROMPT ===
+=== COMFYUI MANUAL PROMPT ===
 
 POSITIVE PROMPT:
 [prompt]
@@ -96,25 +96,25 @@ SETTINGS:
 Save location: workspace/generated-images/[filename].jpg
 ```
 
-## Çıktı
+## Output
 
-Görsel oluşturulunca:
-1. Dosya yolu bildir: `workspace/generated-images/[dosya-adı].jpg`
-2. WordPress'e yüklemek için komut ver:
+When image is generated:
+1. Report file path: `workspace/generated-images/[filename].jpg`
+2. Provide the upload command:
 
 ```powershell
-# WordPress Media Library'e yükle (WP Studio)
+# Upload to WordPress Media Library (WP Studio)
 C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp media import "C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/generated-images/FILENAME.jpg" --post_id=POST_ID --featured_image --path="C:\Users\fatih\Studio\clearlegaltips"
 ```
 
-## Adlandırma Kuralı
+## Naming Convention
 
 `post-{ID}-{slug}-featured.jpg`  
-Örnek: `post-131-free-nda-template-featured.jpg`
+Example: `post-131-free-nda-template-featured.jpg`
 
-## Toplu Üretim
+## Batch Generation
 
-Birden fazla makale için:
+For multiple articles:
 ```
 /generate-featured-image post-131 | NDA template article
 /generate-featured-image post-132 | Independent contractor agreement

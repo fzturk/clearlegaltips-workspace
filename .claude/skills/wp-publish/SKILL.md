@@ -1,47 +1,47 @@
 ---
 name: wp-publish
-description: Hazır makaleyi WordPress'e yükler. "Yayınla", "WordPress'e gönder", "post oluştur", "draft yap" gibi taleplerde kullan.
+description: Publishes a ready article to WordPress. Use for "publish", "send to WordPress", "create post", "make draft" requests.
 allowed-tools: Read Bash PowerShell
 effort: medium
 ---
 
-ClearLegalTips.com WordPress sitesine makale yükle.
+Upload an article to ClearLegalTips.com WordPress site.
 
-## Giriş: $ARGUMENTS
-Format: "dosya_yolu | post_id (opsiyonel)" veya "makale başlığı"
+## Input: $ARGUMENTS
+Format: "file_path | post_id (optional)" or "article title"
 
-## Ön Koşul: WP Studio Çalışıyor Olmalı
-http://localhost:8881 erişilebilir olmalı.
+## Prerequisite: WP Studio Must Be Running
+http://localhost:8881 must be accessible.
 
 ---
 
-## Seçenek A — WP-CLI ile Yükle (Local Studio)
+## Option A — Upload via WP-CLI (Local Studio)
 
-### 1. Makale Dosyasını Oku
-`workspace/articles/` altındaki .md dosyasını oku.
+### 1. Read Article File
+Read the .md file under `workspace/articles/`.
 
-### 2. Post Meta Bilgilerini Belirle
+### 2. Determine Post Meta
 
-Makaleden şunları tespit et:
-- **Başlık** (H1 veya dosya adından)
-- **Kategori** — şu 5 kategoriden birini seç (ID'leri bulmak için):
+Identify from the article:
+- **Title** (from H1 or filename)
+- **Category** — choose one of these 5 (to find IDs):
   ```powershell
   C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat wp term list category --fields=term_id,name --path="C:\Users\fatih\Studio\clearlegaltips"
   ```
-  Kategoriler: Legal Document Templates | Business & LLC | Cost Guides & Calculators | How-to Guides | State-Specific Guides
-- **Etiketler** — içerikten uygun etiketleri seç
-- **Focus keyword** — H1'den çıkar
-- **Meta description** — 150-155 karakter
+  Categories: Legal Document Templates | Business & LLC | Cost Guides & Calculators | How-to Guides | State-Specific Guides
+- **Tags** — select appropriate tags from content
+- **Focus keyword** — extract from H1
+- **Meta description** — 150-155 characters
 
-### 3. WP-CLI Post Oluştur
+### 3. Create WP-CLI Post
 
-Çok satırlı HTML içerik için doğrudan `--post_content` yerine `eval-file` kullan:
+Use `eval-file` instead of `--post_content` directly for multi-line HTML content:
 
 ```powershell
 $WPCLI = "C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat"
 $WP_PATH = "C:\Users\fatih\Studio\clearlegaltips"
 
-# PHP script ile post oluştur (içerik escape sorununu önler)
+# Create post via PHP script (avoids content escape issues)
 $php = @'
 <?php
 $pid = wp_insert_post([
@@ -59,21 +59,21 @@ $php | Out-File -Encoding utf8 "$env:TEMP\wp_create_post.php"
 ```
 
 ```powershell
-# Meta verileri ayarla
+# Set meta fields
 $POST_ID = "ID_FROM_ABOVE"
 & $WPCLI wp post meta update $POST_ID rank_math_focus_keyword "KEYWORD" --path="$WP_PATH"
 & $WPCLI wp post meta update $POST_ID rank_math_description "META DESC" --path="$WP_PATH"
 & $WPCLI wp post term add $POST_ID category CATEGORY_ID --path="$WP_PATH"
 ```
 
-### 4. Featured Image Yükle (varsa)
+### 4. Upload Featured Image (if available)
 
 ```powershell
-# Görsel media library'e import et ve featured image yap
+# Import image to media library and set as featured image
 & $WPCLI wp media import "IMAGE_PATH" --post_id=$POST_ID --featured_image --path="$WP_PATH"
 ```
 
-### 5. Cache Temizle
+### 5. Flush Cache
 
 ```powershell
 & $WPCLI wp cache flush --path="$WP_PATH"
@@ -81,22 +81,22 @@ $POST_ID = "ID_FROM_ABOVE"
 
 ---
 
-## Seçenek B — REST API ile Yükle (Canlı Site)
+## Option B — Upload via REST API (Live Site)
 
-WordPress MCP kuruluysa (`wordpress` server) şunu kullan:
+If the WordPress MCP is configured (`wordpress` server):
 
 ```
-WordPress MCP üzerinden:
-1. Makale içeriğini al
-2. wp_posts tablosuna yaz (status: draft)
+Via WordPress MCP:
+1. Fetch article content
+2. Write to wp_posts table (status: draft)
 3. postmeta: rank_math_focus_keyword, rank_math_description
-4. Kategori ve etiket ata
-5. Featured image yükle
+4. Assign category and tags
+5. Upload featured image
 ```
 
 ---
 
-## Çıktı
+## Output
 
 ```
 POST CREATED:
@@ -114,9 +114,9 @@ To publish:
 
 ---
 
-## Mevcut Post Güncelleme
+## Update Existing Post
 
-Var olan bir postu güncellemek için (HTML içerik için eval-file kullan):
+To update an existing post (use eval-file for HTML content):
 
 ```powershell
 $php = @'

@@ -1,68 +1,68 @@
 ---
 name: eeat-geo-optimize
-description: Makaleyi E-E-A-T ve GEO (Generative Engine Optimization) standartlarına göre optimize eder. "E-E-A-T kontrol", "AI arama optimizasyonu", "güven artır", "GEO" gibi taleplerde kullan.
+description: Optimizes articles to E-E-A-T and GEO (Generative Engine Optimization) standards. Use for "E-E-A-T check", "AI search optimization", "build trust", "GEO" requests.
 allowed-tools: Read WebSearch Bash
 effort: high
 ---
 
-ClearLegalTips makalesini E-E-A-T ve GEO için optimize et.
+Optimize a ClearLegalTips article for E-E-A-T and GEO.
 
-## Hedef: $ARGUMENTS
-(Post ID, makale başlığı veya dosya yolu)
+## Target: $ARGUMENTS
+(Post ID, article title, or file path)
 
 ---
 
-## E-E-A-T Kontrol Listesi (Google EEAT Framework)
+## E-E-A-T Checklist (Google EEAT Framework)
 
-### Experience (Deneyim)
-- [ ] Yazar profilinde ilgili deneyim belirtilmiş mi? (bio'da "X yıl hukuk alanında...")
-- [ ] Makalede gerçek kullanım örnekleri var mı? ("When I reviewed 50 NDA templates...")
-- [ ] Birinci elden gözlem veya vaka çalışması var mı?
-- [ ] Tarih damgası güncel mi?
+### Experience
+- [ ] Does the author profile mention relevant experience? (bio: "X years in legal field...")
+- [ ] Does the article include real usage examples? ("When I reviewed 50 NDA templates...")
+- [ ] Is there first-hand observation or case study?
+- [ ] Is the date stamp current?
 
-### Expertise (Uzmanlık)
-- [ ] Yazar biyografisi makalenin konusuyla eşleşiyor mu?
-- [ ] Hukuki terminoloji doğru kullanılmış mı?
-- [ ] Kaynaklar akademik/resmi mi? (.gov, .edu, established law firms)
-- [ ] İçerik derinlik gösteriyor mu? (yüzeysel değil, gerçek bilgi)
+### Expertise
+- [ ] Does the author bio match the article's topic?
+- [ ] Is legal terminology used correctly?
+- [ ] Are sources authoritative? (.gov, .edu, established law firms)
+- [ ] Does the content demonstrate depth? (not surface-level, real knowledge)
 
-### Authoritativeness (Otorite)
-- [ ] Yazar ve site about sayfası detaylı mı?
-- [ ] Sosyal kanıt var mı? (atıflar, bahsedilmeler)
-- [ ] İç linkleme güçlü mü? (hub-spoke yapısı)
-- [ ] Editöryal süreç belgelenmiş mi?
+### Authoritativeness
+- [ ] Are the author and site About pages detailed?
+- [ ] Is there social proof? (citations, mentions)
+- [ ] Is internal linking strong? (hub-spoke structure)
+- [ ] Is the editorial process documented?
 
-### Trustworthiness (Güvenilirlik)
-- [ ] FTC disclosure her makalede var mı? ✓ (clt-disclosure div)
-- [ ] Legal disclaimer her makalede var mı? ✓ (clt-disclaimer div)
-- [ ] Privacy Policy, Terms, Disclaimer sayfaları var mı? ✓
-- [ ] SSL aktif mi? (canlı geçişte kontrol et)
-- [ ] Affiliate ilişkisi açıkça belirtilmiş mi?
-- [ ] İletişim bilgisi (Contact sayfası) var mı? ✓
+### Trustworthiness
+- [ ] FTC disclosure present in every article? ✓ (clt-disclosure div)
+- [ ] Legal disclaimer present in every article? ✓ (clt-disclaimer div)
+- [ ] Privacy Policy, Terms, Disclaimer pages exist? ✓
+- [ ] SSL active? (verify on live site)
+- [ ] Affiliate relationship clearly disclosed?
+- [ ] Contact info (Contact page) available? ✓
 
 ---
 
 ## GEO — Generative Engine Optimization
 
-GEO, ChatGPT / Gemini / Perplexity / Bing Copilot gibi AI arama motorlarının içeriğini kaynak olarak göstermesini sağlar.
+GEO ensures ChatGPT / Gemini / Perplexity / Bing Copilot cite your content as a source.
 
-### GEO Optimizasyon Teknikler
+### GEO Optimization Techniques
 
-**1. Doğrudan Cevap Formatı (Direct Answer)**
-AI'ların snippet olarak alması için içeriğin başında açık, kısa tanım ver:
+**1. Direct Answer Format**
+Provide a clear, concise definition at the start for AI snippets:
 ```
 "An NDA (Non-Disclosure Agreement) is a legally binding contract 
 that prevents parties from sharing confidential information. 
 In the US, NDAs are enforceable in all 50 states."
 ```
 
-**2. Soru-Cevap Yapısı**
-Her H2'yi soru formatında yaz:
-- "What is an NDA?" yerine "What Is an NDA and When Do You Need One?"
-- AI'lar soru-cevap formatını daha kolay alıntılar
+**2. Question-Answer Structure**
+Write each H2 as a question:
+- Instead of "What is an NDA?" use "What Is an NDA and When Do You Need One?"
+- AI systems more easily quote Q&A format
 
-**3. Sayısal/Liste Formatı**
-AI'lar sayısal listeleri kaynak göstermeyi sever:
+**3. Numbered/List Format**
+AI systems prefer to cite numbered lists:
 ```
 "5 key elements every NDA must include:
 1. Definition of confidential information
@@ -72,69 +72,69 @@ AI'lar sayısal listeleri kaynak göstermeyi sever:
 5. Consequences of breach"
 ```
 
-**4. Kaynak Atıfları**
-Resmi kaynakları açıkça belirt:
+**4. Source Citations**
+Explicitly reference official sources:
 ```
 "According to the Uniform Trade Secrets Act (UTSA), adopted in 
 47 states, trade secrets include..."
 ```
 
-**5. Güncellik Sinyalleri**
-- Yıl içeren başlıklar: "NDA Template 2026"
-- "Last updated: [tarih]" etiketi
-- Yeni yasal değişiklikleri ekle
+**5. Freshness Signals**
+- Year in title: "NDA Template 2026"
+- "Last updated: [date]" tag
+- Include recent legal changes
 
-**6. Coğrafi Sinyal (State-Specific)**
-AI'lar bölgesel sorulara bölgesel içerik döndürür:
+**6. Geographic Signals (State-Specific)**
+AI returns regional content for regional queries:
 ```
 "In Texas, NDAs must... In California, NDAs cannot..."
 ```
 
 ---
 
-## Optimize Edilecek Elementler
+## Elements to Optimize
 
-### Makaleyi Oku ve Şunları Kontrol Et:
+### Read the Article and Check:
 
 ```powershell
-# Makale içeriğini al
+# Fetch article content
 $WPCLI = "C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat"
 $WP_PATH = "C:\Users\fatih\Studio\clearlegaltips"
 & $WPCLI wp post get $ARGUMENTS --fields=post_content --path="$WP_PATH"
 ```
 
-Şunları tespit et:
-1. Açılış paragrafı doğrudan cevap veriyor mu?
-2. H2'ler soru formatında mı?
-3. Sayısal listeler var mı?
-4. Resmi kaynak atıfları var mı?
-5. Yazar bio bölümü var mı?
+Identify:
+1. Does the opening paragraph give a direct answer?
+2. Are H2 headings in question format?
+3. Are there numbered lists?
+4. Are there official source citations?
+5. Is there an author bio section?
 
 ---
 
-## Çıktı
+## Output
 
 ```
-=== E-E-A-T / GEO OPTİMİZASYON RAPORU ===
-Post: [ID / Başlık]
+=== E-E-A-T / GEO OPTIMIZATION REPORT ===
+Post: [ID / Title]
 
-E-E-A-T SKORU:
-Experience: [✓/✗] [açıklama]
-Expertise:  [✓/✗] [açıklama]
-Authority:  [✓/✗] [açıklama]
-Trust:      [✓/✗] [açıklama]
+E-E-A-T SCORE:
+Experience: [✓/✗] [description]
+Expertise:  [✓/✗] [description]
+Authority:  [✓/✗] [description]
+Trust:      [✓/✗] [description]
 
-GEO OPTİMİZASYONU:
+GEO OPTIMIZATION:
 Direct Answer: [✓/✗]
 Q&A Format:   [✓/✗]
 Number Lists:  [✓/✗]
 Citations:     [✓/✗]
 Freshness:     [✓/✗]
 
-ÖNERİLEN DEĞİŞİKLİKLER:
-1. [Değişiklik 1]
-2. [Değişiklik 2]
+RECOMMENDED CHANGES:
+1. [Change 1]
+2. [Change 2]
 
-PHP GÜNCELLEME KOMUTU:
-[WP-CLI komutu]
+WP-CLI UPDATE COMMAND:
+[command]
 ```

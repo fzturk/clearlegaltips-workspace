@@ -1,29 +1,29 @@
 ---
 name: schema-markup
-description: WordPress makalelerine HowTo, FAQPage veya Article schema markup ekler. "Schema ekle", "yapılandırılmış veri", "rich result" gibi taleplerde kullan.
+description: Adds HowTo, FAQPage, or Article schema markup to WordPress articles. Use for "add schema", "structured data", "rich result" requests.
 allowed-tools: Read Bash
 effort: medium
 ---
 
-ClearLegalTips makalelerine JSON-LD schema markup ekle.
+Add JSON-LD schema markup to ClearLegalTips articles.
 
-## Hedef: $ARGUMENTS
-(Post ID veya makale türü)
+## Target: $ARGUMENTS
+(Post ID or article type)
 
 ---
 
-## Makale Türüne Göre Schema Seçimi
+## Schema Selection by Article Type
 
-| Makale Tipi | Schema | Neden |
+| Article Type | Schema | Why |
 |---|---|---|
-| Template articles (131-150) | HowTo + FAQPage | "How to use/fill" adımları var |
-| Cost guides (151-165) | FAQPage + Article | Soru-cevap ağırlıklı |
-| How-to guides (166-175) | HowTo + FAQPage | Adım adım süreç |
-| State guides (176-180) | FAQPage + Article | Bölgesel bilgi |
+| Template articles (131-150) | HowTo + FAQPage | Has "How to use/fill" steps |
+| Cost guides (151-165) | FAQPage + Article | Q&A heavy |
+| How-to guides (166-175) | HowTo + FAQPage | Step-by-step process |
+| State guides (176-180) | FAQPage + Article | Regional information |
 
 ---
 
-## Schema Şablonları
+## Schema Templates
 
 ### HowTo Schema
 ```json
@@ -51,8 +51,8 @@ ClearLegalTips makalelerine JSON-LD schema markup ekle.
   }
 }
 ```
-Not: Template articles (131-150) için `value: "0"` uygundur (şablon ücretsiz).
-Cost guide makalelerde (151-165) gerçek maliyet aralığını gir (örn. "50-500") veya bu alanı tamamen kaldır.
+Note: For template articles (131-150), `value: "0"` is appropriate (template is free).
+For cost guide articles (151-165), enter the actual cost range (e.g. "50-500") or remove this field entirely.
 
 ### FAQPage Schema
 ```json
@@ -108,27 +108,27 @@ Cost guide makalelerde (151-165) gerçek maliyet aralığını gir (örn. "50-50
 
 ---
 
-## Adımlar
+## Steps
 
-### 1. Makale İçeriğini Analiz Et
-Post ID verildiyse WP-CLI ile oku:
+### 1. Analyze Article Content
+If Post ID is given, read via WP-CLI:
 ```powershell
 $WPCLI = "C:\Users\fatih\AppData\Local\studio_app\bin\studio.bat"
 $WP_PATH = "C:\Users\fatih\Studio\clearlegaltips"
 & $WPCLI wp post get POST_ID --fields=post_title,post_content,post_date --path="$WP_PATH"
 ```
 
-### 2. Schema JSON Üret
-- Makale içindeki H2 başlıkları → HowTo steps
-- FAQ bölümündeki sorular → FAQPage mainEntity
-- Yazar bilgisi → CLAUDE.md'den al
+### 2. Generate Schema JSON
+- H2 headings in article → HowTo steps
+- Questions in FAQ section → FAQPage mainEntity
+- Author info → from CLAUDE.md
 
-### 3. WordPress'e Ekle
+### 3. Add to WordPress
 
-Schema'yı post'un `post_content` başına `<script type="application/ld+json">` olarak ekle:
+Add schema to the beginning of the post's `post_content` as `<script type="application/ld+json">`:
 
 ```powershell
-# PHP script ile ekle
+# Add via PHP script
 $script = @'
 <?php
 $pid = POST_ID;
@@ -148,20 +148,20 @@ $script | Out-File -Encoding utf8 "$env:TEMP\add_schema.php"
 & $WPCLI wp eval-file "$env:TEMP\add_schema.php" --path="$WP_PATH"
 ```
 
-### 4. Doğrula
-Schema eklenince Google Rich Results Test URL'ini ver:
+### 4. Validate
+After schema is added, provide the Google Rich Results Test URL:
 ```
 https://search.google.com/test/rich-results?url=https://clearlegaltips.com/SLUG/
 ```
 
 ---
 
-## Toplu Schema Ekleme
+## Bulk Schema Addition
 
-Tüm 50 makaleye türlerine göre schema eklemek için:
+To add schema to all 50 articles by type:
 ```
-Post 131-150: HowTo + FAQPage
-Post 151-165: FAQPage + Article
-Post 166-175: HowTo + FAQPage
-Post 176-180: FAQPage + Article
+Posts 131-150: HowTo + FAQPage
+Posts 151-165: FAQPage + Article
+Posts 166-175: HowTo + FAQPage
+Posts 176-180: FAQPage + Article
 ```
