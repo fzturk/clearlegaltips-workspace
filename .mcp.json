@@ -1,0 +1,60 @@
+{
+  "mcpServers": {
+    "wordpress": {
+      "command": "npx",
+      "args": ["-y", "@instawp/mcp-wp"],
+      "env": {
+        "WP_URL": "https://clearlegaltips.com",
+        "WP_USER": "DOLDURUN",
+        "WP_APP_PASSWORD": "DOLDURUN"
+      }
+    },
+    "search-console": {
+      "command": "npx",
+      "args": ["-y", "@ahonn/mcp-server-gsc"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "DOLDURUN",
+        "GOOGLE_CLIENT_SECRET": "DOLDURUN",
+        "GOOGLE_REDIRECT_URI": "http://localhost:3000/callback"
+      }
+    },
+    "pagespeed": {
+      "command": "npx",
+      "args": ["pagespeed-insights-mcp"],
+      "env": {
+        "PAGESPEED_API_KEY": "DOLDURUN"
+      }
+    },
+    "google-analytics": {
+      "command": "npx",
+      "args": ["-y", "@mario-hernandez/google-analytics-mcp-claude-code"],
+      "env": {
+        "GA4_PROPERTY_ID": "DOLDURUN",
+        "GOOGLE_CLIENT_ID": "DOLDURUN",
+        "GOOGLE_CLIENT_SECRET": "DOLDURUN"
+      }
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "DOLDURUN"
+      }
+    },
+    "pdf": {
+      "command": "npx",
+      "args": ["-y", "markdown2pdf-mcp"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "DOLDURUN"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-playwright"]
+    }
+  }
+}

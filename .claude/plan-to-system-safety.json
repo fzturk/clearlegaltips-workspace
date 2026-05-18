@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "hooks": {
+    "userPromptSubmitted": [
+      {
+        "type": "command",
+        "command": "bash .github/hooks/scripts/forbidden-pattern.sh"
+      }
+    ],
+    "preToolUse": [
+      {
+        "type": "command",
+        "command": "bash .github/hooks/scripts/safety-check.sh"
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "command": "bash .github/hooks/scripts/audit-log.sh"
+      }
+    ]
+  }
+}

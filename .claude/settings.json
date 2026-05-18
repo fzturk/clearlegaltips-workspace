@@ -1,0 +1,53 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "FILE=$(cat | python3 -c \"import sys,json; d=json.load(sys.stdin); print(d.get('tool_input',{}).get('file_path',''))\" 2>/dev/null); if [[ \"$FILE\" == *.php ]]; then php -l \"$FILE\" 2>&1 || true; fi",
+            "timeout": 10000,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Claude Code dikkat istiyor — ClearLegalTips', 'Claude Code', 'OK', 'Information')\"",
+            "timeout": 5000
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"$(date '+%Y-%m-%d %H:%M'): Session ended\" >> \"C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/session-log.txt\"",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"$(date '+%Y-%m-%d %H:%M'): Subagent completed\" >> \"C:/Users/fatih/Desktop(1)/Claude/clear_legal_tips/workspace/agent-log.txt\"",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
