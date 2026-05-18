@@ -1,7 +1,7 @@
 ---
 name: wp-publish
 description: Hazır makaleyi WordPress'e yükler. "Yayınla", "WordPress'e gönder", "post oluştur", "draft yap" gibi taleplerde kullan.
-allowed-tools: Read Bash
+allowed-tools: Read Bash PowerShell
 effort: medium
 ---
 
@@ -45,14 +45,14 @@ $WP_PATH = "C:\Users\fatih\Studio\clearlegaltips"
 $php = @'
 <?php
 $pid = wp_insert_post([
-    'post_title'   => 'BAŞLIK',
-    'post_content' => 'MAKALE_HTML_İÇERİĞİ',
+    'post_title'   => 'TITLE',
+    'post_content' => 'ARTICLE_HTML_CONTENT',
     'post_status'  => 'draft',
     'post_author'  => 291,
     'post_date'    => '2026-04-26 10:00:00',
     'post_type'    => 'post',
 ]);
-if (is_wp_error($pid)) { echo "HATA: " . $pid->get_error_message(); } else { echo "POST_ID: $pid"; }
+if (is_wp_error($pid)) { echo "ERROR: " . $pid->get_error_message(); } else { echo "POST_ID: $pid"; }
 '@
 $php | Out-File -Encoding utf8 "$env:TEMP\wp_create_post.php"
 & $WPCLI wp eval-file "$env:TEMP\wp_create_post.php" --path="$WP_PATH"
@@ -122,10 +122,10 @@ Var olan bir postu güncellemek için (HTML içerik için eval-file kullan):
 $php = @'
 <?php
 $pid = POST_ID;
-$updated_content = 'YENİ_HTML_İÇERİK';
+$updated_content = 'NEW_HTML_CONTENT';
 wp_update_post(['ID' => $pid, 'post_content' => $updated_content]);
 clean_post_cache($pid);
-echo "Güncellendi: $pid\n";
+echo "Updated: $pid\n";
 '@
 $php | Out-File -Encoding utf8 "$env:TEMP\wp_update_post.php"
 & $WPCLI wp eval-file "$env:TEMP\wp_update_post.php" --path="$WP_PATH"

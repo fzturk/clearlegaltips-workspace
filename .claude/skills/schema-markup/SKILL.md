@@ -30,24 +30,24 @@ ClearLegalTips makalelerine JSON-LD schema markup ekle.
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "BAŞLIK",
+  "name": "TITLE",
   "description": "META DESCRIPTION",
   "step": [
     {
       "@type": "HowToStep",
-      "name": "ADIM 1 BAŞLIĞI",
-      "text": "ADIM 1 AÇIKLAMA"
+      "name": "STEP 1 TITLE",
+      "text": "STEP 1 DESCRIPTION"
     },
     {
       "@type": "HowToStep",
-      "name": "ADIM 2 BAŞLIĞI",
-      "text": "ADIM 2 AÇIKLAMA"
+      "name": "STEP 2 TITLE",
+      "text": "STEP 2 DESCRIPTION"
     }
   ],
   "estimatedCost": {
     "@type": "MonetaryAmount",
     "currency": "USD",
-    "value": "GERÇEK_MALİYET_VEYA_0"
+    "value": "ACTUAL_COST_OR_0"
   }
 }
 ```
@@ -62,18 +62,18 @@ Cost guide makalelerde (151-165) gerçek maliyet aralığını gir (örn. "50-50
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "SORU 1?",
+      "name": "QUESTION 1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "CEVAP 1"
+        "text": "ANSWER 1"
       }
     },
     {
       "@type": "Question",
-      "name": "SORU 2?",
+      "name": "QUESTION 2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "CEVAP 2"
+        "text": "ANSWER 2"
       }
     }
   ]
@@ -85,11 +85,11 @@ Cost guide makalelerde (151-165) gerçek maliyet aralığını gir (örn. "50-50
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "BAŞLIK",
+  "headline": "TITLE",
   "description": "META DESCRIPTION",
   "author": {
     "@type": "Person",
-    "name": "YAZAR ADI",
+    "name": "AUTHOR NAME",
     "url": "https://clearlegaltips.com/author/SLUG/"
   },
   "publisher": {
@@ -101,8 +101,8 @@ Cost guide makalelerde (151-165) gerçek maliyet aralığını gir (örn. "50-50
       "url": "https://clearlegaltips.com/wp-content/uploads/clear_legal_tips_logo_for_google.png"
     }
   },
-  "datePublished": "TARİH",
-  "dateModified": "TARİH"
+  "datePublished": "DATE",
+  "dateModified": "DATE"
 }
 ```
 

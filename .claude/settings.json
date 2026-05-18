@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell.exe -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Claude Code dikkat istiyor — ClearLegalTips', 'Claude Code', 'OK', 'Information')\"",
+            "command": "powershell.exe -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Claude Code needs attention — ClearLegalTips', 'Claude Code', 'OK', 'Information')\"",
             "timeout": 5000
           }
         ]

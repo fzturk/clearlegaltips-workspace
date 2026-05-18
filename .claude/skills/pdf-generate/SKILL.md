@@ -27,20 +27,20 @@ Markdown dosyayı şu formatta düzenle:
 
 ```markdown
 ---
-title: "Başlık"
+title: "Title"
 author: "ClearLegalTips.com"
 date: "2026"
 ---
 
-# Başlık
+# Title
 
-**Önemli Not:** Bu belge genel bilgi amaçlıdır ve hukuki tavsiye niteliği taşımaz.
+**Important:** This document is for general informational purposes only and does not constitute legal advice.
 
-[İÇERİK]
+[CONTENT]
 
 ---
 *© 2026 ClearLegalTips.com — clearlegaltips.com*
-*Bu belge yalnızca bilgilendirme amaçlıdır. Hukuki tavsiye için lisanslı bir avukana başvurun.*
+*This document is for informational purposes only. Consult a licensed attorney for advice specific to your situation.*
 ```
 
 ---

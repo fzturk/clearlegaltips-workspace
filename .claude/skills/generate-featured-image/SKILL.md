@@ -22,7 +22,7 @@ try:
     print('GPU:', data.get('system', {}).get('cuda_device_name', 'CPU'))
 except Exception as e:
     print('COMFYUI_NOT_RUNNING:', e)
-    print('Lütfen ComfyUI başlatın ve tekrar deneyin.')
+    print('Please start ComfyUI and try again.')
     sys.exit(1)
 "
 ```
@@ -37,7 +37,7 @@ import urllib.request, json
 r = urllib.request.urlopen('http://127.0.0.1:8000/object_info/CheckpointLoaderSimple', timeout=5)
 data = json.loads(r.read())
 models = data['CheckpointLoaderSimple']['input']['required']['ckpt_name'][0]
-print('Mevcut modeller:')
+print('Available models:')
 for m in models[:5]:
     print(' -', m)
 "

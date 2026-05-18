@@ -51,9 +51,9 @@ H2: Bottom Line
 ```html
 <div class="clt-cta-box">
 <h3>Ready to Get Started?</h3>
-<p>[Kısa açıklama — neden bu servis?]</p>
+<p>[Brief description — why this service is the best option]</p>
 <a href="/recommend/[slug]" class="clt-affiliate-btn" rel="nofollow sponsored">
-  [Servis Adı] ile Başla →
+  Get Started with [Service Name] →
 </a>
 </div>
 ```
@@ -63,9 +63,9 @@ H2: Bottom Line
 <div class="clt-related-articles">
 <h3>Related Articles</h3>
 <ul>
-<li><a href="/[slug-1]">[Makale 1 Başlığı]</a></li>
-<li><a href="/[slug-2]">[Makale 2 Başlığı]</a></li>
-<li><a href="/[slug-3]">[Makale 3 Başlığı]</a></li>
+<li><a href="/[slug-1]">[Article 1 Title]</a></li>
+<li><a href="/[slug-2]">[Article 2 Title]</a></li>
+<li><a href="/[slug-3]">[Article 3 Title]</a></li>
 </ul>
 </div>
 ```
