@@ -131,6 +131,30 @@ Mevcut placeholder linkler `'#'` destination ile kayıtlı — gerçek affiliate
 - Complianz GDPR (US/CCPA)
 - Kadence Blocks
 
+## Görsel Üretim — ComfyUI
+
+| Alan | Değer |
+|---|---|
+| ComfyUI URL | http://127.0.0.1:8000 |
+| Varsayılan Model | juggernautXL_ragnarokBy.safetensors |
+| Diğer Modeller | cyberrealisticXL_v100, flux1-dev-bnb-nf4-v2, flux1-schnell-fp8, sd_xl_base_1.0 |
+| Donanım | CPU (RAM ~64GB) |
+| Üretim Süresi | ~3-10 dakika / görsel (20 step) |
+| Çıktı Boyutu | 1216×640 → PIL ile 1200×630'a yeniden boyutlandırılır |
+| Helper Script | workspace/tools/comfyui_generate.py |
+| Çıktı Dizini | workspace/generated-images/ |
+
+**Kullanım:**
+```bash
+python3 workspace/tools/comfyui_generate.py \
+  --prompt "professional NDA legal document, pen on paper, navy blue" \
+  --output "workspace/generated-images/post-131-nda-featured.jpg"
+```
+
+**Skill:** `/generate-featured-image "NDA template article"`
+
+---
+
 ## Workspace Yapısı
 
 ```
