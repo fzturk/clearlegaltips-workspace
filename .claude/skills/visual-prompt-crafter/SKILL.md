@@ -1,6 +1,8 @@
 ---
 name: visual-prompt-crafter
 description: Generates optimized ComfyUI prompts for ClearLegalTips featured images. Use when asked to "create image prompt", "ComfyUI prompt", "featured image prompt", "generate image for article", or before running generate-featured-image skill.
+allowed-tools: Read Write
+effort: low
 ---
 
 # Visual Prompt Crafter

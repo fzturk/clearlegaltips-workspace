@@ -1,6 +1,8 @@
 ---
 name: popup-cro
 description: Designs exit-intent and scroll-triggered popups for ClearLegalTips email capture and affiliate promotion. Use when asked to "create a popup", "exit popup", "scroll popup", "email capture popup", or "reduce exit rate with a popup".
+allowed-tools: Read Write
+effort: low
 ---
 
 # Popup CRO — Exit-Intent & Scroll Triggers

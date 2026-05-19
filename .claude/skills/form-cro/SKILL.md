@@ -1,6 +1,8 @@
 ---
 name: form-cro
 description: Optimizes lead capture forms on ClearLegalTips for maximum email signup conversion. Use when asked to "optimize the form", "improve signups", "lead form CRO", "why aren't people signing up", or when building the lead magnet quiz form.
+allowed-tools: Read Write
+effort: medium
 ---
 
 # Form CRO — Lead Capture Optimization

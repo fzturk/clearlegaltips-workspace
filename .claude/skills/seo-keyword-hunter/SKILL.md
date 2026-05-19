@@ -1,6 +1,8 @@
 ---
 name: seo-keyword-hunter
 description: Finds high-value keyword opportunities for ClearLegalTips beyond the existing 50 articles. Use when asked to "find keywords", "keyword research", "what keywords should we target", "expand keyword coverage", or before planning new articles.
+allowed-tools: Read Write WebSearch WebFetch
+effort: high
 ---
 
 # SEO Keyword Hunter

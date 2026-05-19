@@ -1,6 +1,8 @@
 ---
 name: content-gap-finder
 description: Identifies content topics that competitors rank for but ClearLegalTips does not. Use when asked to "find content gaps", "what should we write next", "competitor analysis", "topic research", or "what are we missing".
+allowed-tools: Read Write WebSearch WebFetch
+effort: high
 ---
 
 # Content Gap Finder

@@ -1,6 +1,8 @@
 ---
 name: seo-brief-builder
 description: Creates detailed SEO content briefs for new ClearLegalTips articles before writing begins. Use when asked to "create a brief", "content brief", "article brief", "brief for [topic]", or before using legal-blog-writer skill.
+allowed-tools: Read Write WebSearch WebFetch
+effort: medium
 ---
 
 # SEO Brief Builder
@@ -77,7 +79,7 @@ Secondary Keywords: [list]
 Target Author: [Sarah Jenkins | Marcus Thorne | Elena Rodriguez | David Miller]
 Target Word Count: [X]
 Target Affiliate(s): [service — ThirstyAffiliates slug]
-Publish Date: [next available after 2026-04-25]
+Publish Date: [next staggered slot — query latest WP `post_date` + 1 day]
 
 SEARCH INTENT: [informational / commercial]
 

@@ -11,28 +11,6 @@
             "async": true
           }
         ]
-      },
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell.exe -NonInteractive -Command \"$json = [Console]::In.ReadToEnd(); if ($json) { $cmd = ($json | ConvertFrom-Json).tool_input.command; if ($cmd -match 'eval-file|wp_insert_post|wp_update_post') { Write-Output 'REMINDER: Run WP Fastest Cache flush after bulk updates. PHP: if(class_exists(WpFastestCache)){$wpfc=new WpFastestCache();$wpfc->deleteCache();}' } }\"",
-            "timeout": 5000,
-            "async": true
-          }
-        ]
-      },
-      {
-        "matcher": "Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell.exe -NonInteractive -Command \"$json = [Console]::In.ReadToEnd(); if ($json) { $fp = ($json | ConvertFrom-Json).tool_input.file_path; if ($fp -and $fp -match 'wp-content.*\\.php') { $content = ($json | ConvertFrom-Json).tool_input.content; if ($content -match 'wp_insert_post') { Write-Output 'REMINDER: New article PHP script detected. After publishing, generate featured image with: python3 workspace/tools/comfyui_generate.py --prompt \"...\" --output \"workspace/generated-images/post-{id}-{slug}.jpg\"' } } }\"",
-            "timeout": 5000,
-            "async": true
-          }
-        ]
       }
     ],
     "Notification": [

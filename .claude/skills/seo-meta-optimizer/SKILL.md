@@ -1,6 +1,8 @@
 ---
 name: seo-meta-optimizer
 description: Rewrites Rank Math meta titles and descriptions for ClearLegalTips articles to maximize CTR. Use when asked to "optimize meta", "improve meta description", "fix SEO title", or when running a batch update on post metadata.
+allowed-tools: Read Write Bash
+effort: medium
 ---
 
 # SEO Meta Optimizer

@@ -1,6 +1,8 @@
 ---
 name: content-reviver
 description: Rewrites or substantially upgrades underperforming ClearLegalTips articles to recover or improve their search rankings. Use when asked to "revive this article", "article not ranking", "rewrite for better SEO", "this article is underperforming", or "update and improve post [ID]".
+allowed-tools: Read Write Bash
+effort: high
 ---
 
 # Content Reviver

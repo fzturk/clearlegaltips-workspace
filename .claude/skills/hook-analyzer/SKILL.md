@@ -1,6 +1,8 @@
 ---
 name: hook-analyzer
 description: Analyzes and rewrites the opening 150 words of ClearLegalTips articles to reduce bounce rate and increase time-on-page. Use when asked to "improve the intro", "fix the hook", "rewrite the opening", "reduce bounce rate", or "make this more engaging".
+allowed-tools: Read Write
+effort: low
 ---
 
 # Hook Analyzer

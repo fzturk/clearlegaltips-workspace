@@ -1,6 +1,8 @@
 ---
 name: ab-test-setup
 description: Designs A/B tests for ClearLegalTips CTAs, headlines, and conversion elements. Use when asked to "set up an A/B test", "test this CTA", "what should we test", "A/B test plan", or "which version converts better".
+allowed-tools: Read Write
+effort: medium
 ---
 
 # A/B Test Setup

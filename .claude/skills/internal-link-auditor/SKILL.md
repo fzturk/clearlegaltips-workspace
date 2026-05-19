@@ -1,6 +1,8 @@
 ---
 name: internal-link-auditor
 description: Audits and improves internal linking across ClearLegalTips articles using the hub-spoke model. Use when asked to "fix internal links", "improve internal linking", "audit links", "hub-spoke", or "which articles should link to each other".
+allowed-tools: Read Write Bash
+effort: medium
 ---
 
 # Internal Link Auditor

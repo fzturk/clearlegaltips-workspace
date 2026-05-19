@@ -1,6 +1,8 @@
 ---
 name: content-refresher
 description: Updates existing ClearLegalTips articles with current dates, statistics, law changes, and pricing. Use when asked to "update this article", "refresh content", "content is outdated", "update the stats", or when running quarterly content maintenance.
+allowed-tools: Read Write Bash
+effort: medium
 ---
 
 # Content Refresher

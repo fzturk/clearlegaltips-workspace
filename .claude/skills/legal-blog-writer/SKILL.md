@@ -1,6 +1,8 @@
 ---
 name: legal-blog-writer
 description: Writes 3000+ word SEO-optimized legal articles for ClearLegalTips. Use when asked to "write an article", "draft a post", "create content about [legal topic]", or "write a new article for the site".
+allowed-tools: Read Write WebSearch
+effort: high
 ---
 
 # Legal Blog Writer
@@ -112,7 +114,7 @@ Focus Keyword: [primary keyword]
 SEO Title: [50-60 chars]
 Meta Description: [140-155 chars]
 Suggested Author ID: [291|292|293|294]
-Suggested Publish Date: [next available date after 2026-04-25]
+Suggested Publish Date: [next staggered slot — query latest WP `post_date` + 1 day]
 ```
 
 ## Output Format

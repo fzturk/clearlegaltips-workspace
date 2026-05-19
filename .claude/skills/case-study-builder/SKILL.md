@@ -1,6 +1,8 @@
 ---
 name: case-study-builder
 description: Creates E-E-A-T boosting case studies and success stories for ClearLegalTips using real DIY legal outcomes. Use when asked to "write a case study", "success story", "real example", "E-E-A-T content", or "show social proof".
+allowed-tools: Read Write
+effort: medium
 ---
 
 # Case Study Builder

@@ -1,6 +1,8 @@
 ---
 name: brand-voice-legal
 description: Reviews and rewrites ClearLegalTips content to match the site's brand voice. Use when asked to "check tone", "rewrite in our voice", "brand review", "does this sound right for our site", or before publishing any new article or copy.
+allowed-tools: Read Write
+effort: low
 ---
 
 # Brand Voice — ClearLegalTips

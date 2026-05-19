@@ -1,6 +1,8 @@
 ---
 name: email-newsletter-writer
 description: Writes monthly email newsletters for ClearLegalTips subscribers with legal tips and affiliate promotions. Use when asked to "write a newsletter", "email newsletter", "monthly email", "email to subscribers", or "draft a legal tips email".
+allowed-tools: Read Write
+effort: medium
 ---
 
 # Email Newsletter Writer

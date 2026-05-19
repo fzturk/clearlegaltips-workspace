@@ -1,6 +1,8 @@
 ---
 name: content-synthesizer
 description: Synthesizes research, notes, and raw inputs into structured ClearLegalTips article outlines and drafts. Use when asked to "synthesize this research", "turn these notes into an article", "I have research — help me write this", or when multiple source materials need combining into a single article.
+allowed-tools: Read Write WebSearch WebFetch
+effort: high
 ---
 
 # Content Synthesizer

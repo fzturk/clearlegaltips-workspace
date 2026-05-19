@@ -1,6 +1,8 @@
 ---
 name: legal-copywriter
 description: Writes high-converting copy for ClearLegalTips — headlines, CTAs, landing page sections, email subject lines, and ad copy. Use when asked to "write copy", "improve this headline", "make this more persuasive", "ad copy", "landing page copy", or "make this CTA better".
+allowed-tools: Read Write
+effort: medium
 ---
 
 # Legal Copywriter

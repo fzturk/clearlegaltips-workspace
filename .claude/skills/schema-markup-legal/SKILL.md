@@ -1,6 +1,8 @@
 ---
 name: schema-markup-legal
 description: Adds FAQ and HowTo structured data (JSON-LD) to ClearLegalTips articles for featured snippets. Use when asked to "add schema", "add structured data", "FAQ schema", "rich snippet", or for any article that answers questions or explains a process.
+allowed-tools: Read Write Bash
+effort: medium
 ---
 
 # Schema Markup — Legal Content

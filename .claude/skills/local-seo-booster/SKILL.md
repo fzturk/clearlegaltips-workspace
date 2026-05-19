@@ -1,6 +1,8 @@
 ---
 name: local-seo-booster
 description: Optimizes ClearLegalTips state-specific articles and creates state-expansion strategies for existing content. Use when asked to "state-specific", "local SEO", "optimize for [state]", "expand to states", "state guide", or when working on posts 176-180.
+allowed-tools: Read Write WebSearch
+effort: medium
 ---
 
 # Local SEO Booster

@@ -1,6 +1,8 @@
 ---
 name: serp-analyzer
 description: Analyzes search engine results for target keywords to understand what Google is rewarding and identify ranking opportunities for ClearLegalTips. Use when asked to "analyze SERP", "what's ranking for X", "competitor analysis", "what does Google want for this keyword", or before writing any new article.
+allowed-tools: Read Write WebSearch WebFetch
+effort: medium
 ---
 
 # SERP Analyzer

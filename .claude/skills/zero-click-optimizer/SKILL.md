@@ -1,6 +1,8 @@
 ---
 name: zero-click-optimizer
 description: Optimizes ClearLegalTips content to win featured snippets and answer boxes (position zero) in Google. Use when asked to "featured snippet", "position zero", "answer box", "zero-click", "snippet optimization", or "how do we get the snippet for X".
+allowed-tools: Read Write WebSearch
+effort: medium
 ---
 
 # Zero-Click Optimizer

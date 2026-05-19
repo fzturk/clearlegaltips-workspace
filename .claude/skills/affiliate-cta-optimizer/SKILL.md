@@ -1,6 +1,8 @@
 ---
 name: affiliate-cta-optimizer
 description: Analyzes and optimizes affiliate CTA placement, copy, and conversion signals on ClearLegalTips article pages. Use when asked to "improve CTAs", "optimize affiliate buttons", "page CRO", "improve conversions", "why aren't people clicking", or "analyze this article for conversion".
+allowed-tools: Read Write Bash
+effort: medium
 ---
 
 # Affiliate CTA Optimizer (Page CRO)
