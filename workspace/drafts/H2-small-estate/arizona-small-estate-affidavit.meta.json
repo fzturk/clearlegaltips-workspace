@@ -1,0 +1,18 @@
+{
+  "slug": "arizona-small-estate-affidavit",
+  "publish_date": "2026-10-22",
+  "title": "Arizona Small Estate Affidavit (2026): $200,000 Personal, $300,000 Real Property",
+  "rank_math_title": "Arizona Small Estate Affidavit (2026): $200K and $300K",
+  "rank_math_description": "Arizona small estate affidavits after HB 2116: $200,000 personal property after 30 days, $300,000 real property after 6 months, how value is measured.",
+  "focus_keyword": "arizona small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/transfer-on-death-deed-template-2026/", "/california-small-estate-affidavit/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://www.azleg.gov/ars/14/03971.htm", "https://www.azcourts.gov/selfservicecenter/Probate-Forms", "https://fowlerstclair.com/blog/arizonas-new-small-estate-affidavit-law/"],
+  "pdf_filename": "az-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet A: personal property net of liens vs $200,000", "Worksheet B: real property at assessor full cash value minus mortgage principal vs $300,000", "Second PDF az-small-estate-checklist.pdf: 30-day and 6-month tracks + recording step"],
+  "featured_image_prompt": "Arizona stucco home with desert landscaping, a document folder and house key on a patio table, warm light, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Arizona small estate limits before and after HB 2116", "prompt": "bar chart $75k->$200k and $100k->$300k, Arizona outline, navy/cream"}],
+  "editor_notes": "Statute text read from azleg.gov 26 Sept 2026. HB 2116 effective date from practitioner sources; azleg session-law page was not reachable from the drafting environment."
+}

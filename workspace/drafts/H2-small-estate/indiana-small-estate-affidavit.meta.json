@@ -1,0 +1,18 @@
+{
+  "slug": "indiana-small-estate-affidavit",
+  "publish_date": "2026-10-19",
+  "title": "Indiana Small Estate Affidavit (2026): $100,000 Limit After Funeral Costs",
+  "rank_math_title": "Indiana Small Estate Affidavit (2026): $100,000 Limit",
+  "rank_math_description": "Indiana small estate affidavit: $100,000 after liens and funeral costs, 45-day wait, no court filing, cars via BMV after 5 days, and the real estate route.",
+  "focus_keyword": "indiana small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/transfer-on-death-deed-template-2026/", "/illinois-small-estate-affidavit/", "/ohio-small-estate-affidavit/", "/michigan-small-estate-affidavit/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-8-1.html", "https://codes.findlaw.com/in/title-29-probate/in-code-sect-29-1-8-3.html", "https://forms.in.gov/Download.aspx?id=4264"],
+  "pdf_filename": "in-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: gross probate estate, minus liens, minus funeral = test vs $100,000", "Distributee list with notice-sent dates", "Second PDF in-small-estate-checklist.pdf: 9 steps incl. BMV at 5 days and recorder affidavit"],
+  "featured_image_prompt": "Indiana farmhouse kitchen table with a notarized affidavit, a pickup key and a funeral receipt, morning light, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Indiana small estate limit by date of death", "prompt": "step chart $25k/$50k/$100k with date ranges, navy/cream"}],
+  "editor_notes": "Statute text via FindLaw mirrors (iga.in.gov is a JS app). IC 29-1-8-3 details kept general on purpose; confirm with the county recorder before adding specifics."
+}

@@ -7,6 +7,7 @@ editorial calendar. Exit code 1 if any ERROR is found.
 Usage:
   python3 workspace/tools/qa_draft.py workspace/drafts/H2-small-estate/
   python3 workspace/tools/qa_draft.py workspace/drafts/H2-small-estate/texas-small-estate-affidavit.html
+  python3 workspace/tools/qa_draft.py <path> --check-links   # also fetch every external URL (404 = error)
 """
 import csv
 import glob
@@ -14,6 +15,7 @@ import html as htmllib
 import json
 import os
 import re
+import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -157,8 +159,37 @@ def check(path, cal, live):
     return errs, warns
 
 
+_LINK_CACHE = {}
+
+
+def link_status(url):
+    """HTTP status via curl (follows redirects). 0 = no response."""
+    if url not in _LINK_CACHE:
+        r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", "-L", "-m", "20",
+                            "-A", "Mozilla/5.0", url], capture_output=True, text=True)
+        _LINK_CACHE[url] = int(r.stdout or 0)
+    return _LINK_CACHE[url]
+
+
+def check_links(path):
+    errs, warns = [], []
+    h = open(path, encoding="utf-8").read()
+    for u in sorted(set(re.findall(r'href="(https?://[^"]+)"', h))):
+        u = htmllib.unescape(u)
+        if "clearlegaltips.com" in u:
+            continue
+        code = link_status(u)
+        if code in (404, 410):
+            errs.append(f"dead link {code}: {u}")
+        elif code == 0 or code >= 500 or code in (401, 403):
+            warns.append(f"link not verifiable ({code}): {u}")
+    return errs, warns
+
+
 def main():
-    args = sys.argv[1:] or [os.path.join(ROOT, "workspace", "drafts")]
+    argv = [a for a in sys.argv[1:] if a != "--check-links"]
+    want_links = "--check-links" in sys.argv
+    args = argv or [os.path.join(ROOT, "workspace", "drafts")]
     files = []
     for a in args:
         if os.path.isdir(a):
@@ -172,6 +203,10 @@ def main():
     total = 0
     for f in files:
         errs, warns = check(f, cal, live)
+        if want_links:
+            e2, w2 = check_links(f)
+            errs += e2
+            warns += w2
         total += len(errs)
         status = "OK " if not errs else "ERR"
         print(f"[{status}] {os.path.relpath(f, ROOT)}")

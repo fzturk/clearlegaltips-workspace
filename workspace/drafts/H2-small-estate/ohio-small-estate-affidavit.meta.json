@@ -14,5 +14,5 @@
   "pdf_outline": ["Worksheet: remove spouse-selected cars (<= $65,000), subtract nothing else, total estate incl. real estate", "Box: $35,000 vs $100,000 test; $40,000 support allowance", "Second PDF oh-release-from-administration-checklist.pdf: 7 steps + waiver of notice list"],
   "featured_image_prompt": "Ohio two-story farmhouse with a probate court envelope and car keys on a porch table, autumn light, navy and crimson accents, no text",
   "inline_images": [{"alt": "Ohio release from administration thresholds", "prompt": "two stat tiles $35,000 and $100,000 with spouse icon, Ohio outline, navy/cream"}],
-  "editor_notes": "Verify the supremecourt.ohio.gov probate forms URL before publishing (site restructures occasionally). County filing fees vary; not stated on purpose."
+  "editor_notes": "Form links checked Sept 2026 (Standard Probate Forms 5.0 / 5.10). County filing fees vary; not stated on purpose."
 }
