@@ -6,15 +6,41 @@
   "rank_math_description": "Ohio small claims in 2026: $6,000 limit, local filing fees ($92 in Franklin County), no assignees, magistrate hearings, 14-day objections and 7% interest.",
   "focus_keyword": "ohio small claims court",
   "category_id": 8,
-  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
-  "go_slugs": ["lawdepot-payment-demand-letter"],
-  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/new-york-small-claims-court/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/security-deposit-demand-letter-template-get-deposit-back-2026/", "/promissory-note-template-secured-and-unsecured/"],
-  "sources": ["https://codes.ohio.gov/ohio-revised-code/section-1925.02", "https://codes.ohio.gov/ohio-revised-code/section-1925.17", "https://tax.ohio.gov/home/annual-certified-interest-rates", "https://www.fcmcclerk.com/documents/civil/civilcost.pdf"],
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/new-york-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://codes.ohio.gov/ohio-revised-code/section-1925.02",
+    "https://codes.ohio.gov/ohio-revised-code/section-1925.17",
+    "https://www.courtclerk.org/judgment-interest-rates/",
+    "https://www.fcmcclerk.com/documents/civil/civilcost.pdf"
+  ],
   "pdf_filename": "oh-small-claims-filing-checklist.pdf",
-  "pdf_outline": ["Checklist: demand letter -> right municipal/county court -> complaint (exact legal name) -> fee + service -> counterclaim deadline (7 days before trial) -> magistrate hearing -> 14-day objections -> 30-day appeal -> collection (debtor exam, garnishment, certificate of judgment)", "Box: what small claims can't hear (assignees, libel/slander, replevin, punitive damages)", "Shared small-claims-evidence-organizer.pdf"],
+  "pdf_outline": [
+    "Checklist: demand letter -> right municipal/county court -> complaint (exact legal name) -> fee + service -> counterclaim deadline (7 days before trial) -> magistrate hearing -> 14-day objections -> 30-day appeal -> collection (debtor exam, garnishment, certificate of judgment)",
+    "Box: what small claims can't hear (assignees, libel/slander, replevin, punitive damages)",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
   "featured_image_prompt": "Ohio municipal courthouse exterior on a crisp autumn morning, a folder of receipts and a pen on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
   "inline_images": [
-    {"alt": "Ohio small claims timeline", "prompt": "horizontal timeline: complaint, certified mail service, counterclaim 7 days before trial, magistrate hearing, 14-day objections, 30-day appeal, navy/crimson on cream"}
+    {
+      "alt": "Ohio small claims timeline",
+      "prompt": "horizontal timeline: complaint, certified mail service, counterclaim 7 days before trial, magistrate hearing, 14-day objections, 30-day appeal, navy/crimson on cream"
+    }
   ],
-  "editor_notes": "Fees are Franklin County Municipal Court (fcmcclerk.com cost schedule). If you add Cleveland/Cincinnati figures, confirm on those clerk sites. Interest: 7% is for 2026 judgments; update in January 2027."
+  "editor_notes": "Fees are Franklin County Municipal Court (fcmcclerk.com cost schedule). If you add Cleveland/Cincinnati figures, confirm on those clerk sites. Interest: 7% is for 2026 judgments; update in January 2027. The 7% (2026) and 8% (2025) figures were read from tax.ohio.gov's 'Annual Certified Interest Rates' page, which returns HTTP 404 to automated checks; the Hamilton County Clerk page is linked instead."
 }
