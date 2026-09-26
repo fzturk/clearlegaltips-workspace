@@ -61,7 +61,26 @@ def small_estate(rows, link):
     return head, body
 
 
-RENDER = {"small-estate": small_estate}
+def small_claims(rows, link):
+    pub = published_slugs() if link else {}
+    head = ["State", "Limit", "Other limits", "Court", "Filing fee", "Law"]
+    body = []
+    for r in rows:
+        slug = r["state"].lower().replace(" ", "-") + "-small-claims-court"
+        name = e(r["state"])
+        if slug in pub:
+            name = f'<a href="/{slug}/">{name}</a>'
+        lim = e(r["limit_text"])
+        if r["changed"]:
+            lim += f'<br><small>{e(r["changed"])}</small>'
+        body.append(
+            f'<tr id="{r["code"].lower()}">\n<td>{name}</td>\n<td>{lim}</td>\n'
+            f'<td>{e(r["other_limits"]) or "—"}</td>\n<td>{e(r["court"])}</td>\n<td>{e(r["fee_text"])}</td>\n'
+            f'<td><a href="{e(r["source_url"])}" rel="nofollow noopener" target="_blank">{e(r["statute"])}</a></td>\n</tr>')
+    return head, body
+
+
+RENDER = {"small-estate": small_estate, "small-claims": small_claims}
 
 
 def load(vertical):
@@ -78,6 +97,19 @@ def table(vertical, link=False):
 
 def stats(vertical):
     rows = load(vertical)
+    if vertical != "small-estate":
+        lim = sorted((int(r["limit_usd"]), r["state"]) for r in rows if r["limit_usd"])
+        vals = [v for v, _ in lim]
+        print("rows:", len(rows), "| max:", lim[-1], "min:", lim[0], "median:", statistics.median(vals))
+        c = {}
+        for v in vals:
+            c[v] = c.get(v, 0) + 1
+        print("by limit:", sorted(c.items()))
+        ch = [(r["state"], r["changed"]) for r in rows if r["changed"]]
+        print("changed:", len(ch))
+        for x in ch:
+            print("  ", x)
+        return
     lim = [(int(r["limit_usd"]), r["state"]) for r in rows if r["limit_usd"]]
     vals = sorted(v for v, _ in lim)
     print("states with dollar limit:", len(lim), "| no cap:", [r["state"] for r in rows if not r["limit_usd"]])

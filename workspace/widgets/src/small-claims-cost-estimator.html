@@ -1,0 +1,89 @@
+<!-- ClearLegalTips widget: Small Claims Cost Estimator. Paste as ONE Custom HTML block.
+     Data: workspace/data/small-claims.csv (rebuild with workspace/tools/build_widgets.py). -->
+<div class="clt-widget" id="clt-sc" style="background:#F8F6F2;border:1px solid #d8d2c6;border-left:4px solid #1C2B4A;border-radius:12px;padding:20px 22px;margin:24px 0;line-height:1.5;">
+  <h3 style="margin:0 0 4px;color:#1C2B4A;">Small Claims Cost Estimator</h3>
+  <p style="margin:0 0 14px;font-size:.92em;color:#555;">Check whether your claim fits your state&#8217;s small claims limit and what the filing fee is likely to be. General information, not legal advice.</p>
+  <noscript><p><strong>This estimator needs JavaScript.</strong> Use the state-by-state table on this page instead.</p></noscript>
+  <form id="clt-sc-form" style="display:grid;gap:12px;" onsubmit="return false;">
+    <label style="display:grid;gap:4px;font-weight:600;">State where you will file
+      <select id="clt-sc-state" required style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;"><option value="">Choose a state</option></select>
+    </label>
+    <label style="display:grid;gap:4px;font-weight:600;">Amount you want to claim ($)
+      <input id="clt-sc-amt" type="number" min="0" step="100" inputmode="numeric" placeholder="e.g. 4500" style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;">
+      <span style="font-weight:400;font-size:.85em;color:#666;">The money owed or the cost of the damage. Most states leave out interest and court costs when they apply the limit.</span>
+    </label>
+    <fieldset style="border:0;padding:0;margin:0;display:grid;gap:4px;">
+      <legend style="font-weight:600;padding:0;">Who is filing?</legend>
+      <label><input type="radio" name="clt-sc-who" value="person" checked> An individual</label>
+      <label><input type="radio" name="clt-sc-who" value="entity"> A business (LLC, corporation, partnership)</label>
+    </fieldset>
+    <label style="display:grid;gap:4px;font-weight:600;">Number of people or businesses you are suing
+      <input id="clt-sc-defs" type="number" min="1" max="10" value="1" inputmode="numeric" style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;max-width:120px;">
+    </label>
+    <button type="button" id="clt-sc-go" style="justify-self:start;background:#C0392B;color:#fff;border:0;border-radius:6px;padding:11px 18px;font-weight:700;cursor:pointer;font:inherit;">Estimate</button>
+  </form>
+  <div id="clt-sc-out" aria-live="polite" style="margin-top:16px;"></div>
+</div>
+<script>
+(function () {
+  var DATA = __DATA__;
+  var $ = function (id) { return document.getElementById(id); };
+  var sel = $('clt-sc-state'), out = $('clt-sc-out');
+  if (!sel || !out) return;
+  DATA.forEach(function (r) {
+    var o = document.createElement('option');
+    o.value = r.code; o.textContent = r.state; sel.appendChild(o);
+  });
+  function money(n) { return '$' + Number(n).toLocaleString('en-US', {maximumFractionDigits: 2}); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]; }); }
+  function tierFee(tiers, amt) {
+    var parts = String(tiers).split('|');
+    for (var i = 0; i < parts.length; i++) {
+      var p = parts[i].split(':');
+      if (p[0] === '' || amt <= Number(p[0])) return Number(p[1]);
+    }
+    return null;
+  }
+  function box(color, title, lines) {
+    return '<div style="background:#fff;border:1px solid #d8d2c6;border-left:4px solid ' + color + ';border-radius:8px;padding:14px 16px;">' +
+      '<p style="margin:0 0 8px;font-weight:700;color:' + color + ';">' + title + '</p><ul style="margin:0;padding-left:20px;">' +
+      lines.map(function (l) { return '<li style="margin:4px 0;">' + l + '</li>'; }).join('') + '</ul></div>';
+  }
+  $('clt-sc-go').addEventListener('click', function () {
+    var r = null, code = sel.value;
+    for (var i = 0; i < DATA.length; i++) if (DATA[i].code === code) r = DATA[i];
+    if (!r) { out.innerHTML = '<p style="color:#C0392B;">Choose a state first.</p>'; return; }
+    var amt = parseFloat($('clt-sc-amt').value);
+    var who = (document.querySelector('input[name="clt-sc-who"]:checked') || {}).value;
+    var defs = Math.max(1, Math.min(10, parseInt($('clt-sc-defs').value, 10) || 1));
+    var limit = (who === 'entity' && r.entity_limit_usd) ? r.entity_limit_usd : r.limit_usd;
+    var lines = [], state = 'ok';
+    lines.push('<strong>Court:</strong> ' + esc(r.court) + '.');
+    lines.push('<strong>Limit:</strong> ' + esc(r.limit_text) + (who === 'entity' && r.entity_limit_usd ? '; ' + money(r.entity_limit_usd) + ' when a business files' : '') + '.');
+    if (r.other_limits) lines.push('<strong>Other limits:</strong> ' + esc(r.other_limits) + '.');
+    if (isNaN(amt) || amt <= 0) {
+      state = 'unsure';
+      lines.push('Enter the amount you want to claim to compare it with the ' + money(limit) + ' limit.');
+    } else if (amt > limit) {
+      state = 'over';
+      lines.push('Your claim of ' + money(amt) + ' is <strong>' + money(amt - limit) + ' over</strong> the limit. You can either sue for ' + money(limit) + ' and permanently give up the difference, or file in the regular civil court, where the rules are more formal and fees are higher. Splitting one claim into several cases is not allowed.');
+    } else {
+      lines.push('Your claim of ' + money(amt) + ' is within the ' + money(limit) + ' limit.');
+    }
+    var fee = null;
+    if (!isNaN(amt) && amt > 0 && r.fee_tiers) fee = tierFee(r.fee_tiers, Math.min(amt, limit));
+    else if (r.fee_min !== '' && r.fee_min === r.fee_max) fee = Number(r.fee_min);
+    if (fee != null) {
+      lines.push('<strong>Estimated filing fee:</strong> ' + money(fee) + (r.fee_tiers ? ' for a claim of this size' : '') + '. Fee waivers are available if you cannot afford it.');
+    } else {
+      lines.push('<strong>Filing fee:</strong> ' + esc(r.fee_text) + '. Your county clerk can quote the exact amount. Fee waivers are available if you cannot afford it.');
+    }
+    lines.push('<strong>Serving the papers:</strong> budget for ' + defs + (defs === 1 ? ' defendant' : ' defendants') + ' to be served by certified mail, sheriff, constable or a process server; each is usually a separate charge. The clerk can tell you the local rate.');
+    if (r.changed) lines.push('<strong>Recent change:</strong> ' + esc(r.changed) + '.');
+    if (r.notes) lines.push(esc(r.notes) + '.');
+    lines.push('<strong>Law:</strong> <a href="' + esc(r.source_url) + '" target="_blank" rel="noopener nofollow">' + esc(r.statute) + '</a> (verified ' + esc(r.verified_date) + ').');
+    var head = state === 'over' ? ['#C0392B', 'Over the small claims limit'] : state === 'unsure' ? ['#8a6d1c', 'Enter your claim amount'] : ['#1f7a3f', 'Fits in small claims court'];
+    out.innerHTML = box(head[0], head[1], lines) + '<p style="font-size:.82em;color:#666;margin:10px 0 0;">Estimates only. Local rules, fee changes and the type of claim can change the answer; confirm with the court clerk before you file.</p>';
+  });
+})();
+</script>

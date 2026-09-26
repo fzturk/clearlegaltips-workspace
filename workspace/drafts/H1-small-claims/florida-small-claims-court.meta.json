@@ -1,0 +1,20 @@
+{
+  "slug": "florida-small-claims-court",
+  "publish_date": "2026-11-05",
+  "title": "Florida Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Florida Small Claims Court (2026): $8,000 Limit & Fees",
+  "rank_math_description": "Florida small claims in 2026: $8,000 limit, $55-$300 fees, the mandatory pretrial conference, the new 120-day service rule and wage garnishment limits.",
+  "focus_keyword": "florida small claims court",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/texas-small-claims-court/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/security-deposit-demand-letter-template-get-deposit-back-2026/", "/promissory-note-template-secured-and-unsecured/"],
+  "sources": ["https://floridacourtrules.com/small-claims/rule-7.010/", "https://floridacourtrules.com/small-claims/rule-7.070/", "https://floridacourtrules.com/small-claims/rule-7.090/", "https://www.miamidadeclerk.gov/clerk/small-claims.page", "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0200-0299/0222/Sections/0222.11.html", "https://myfloridacfo.com/division/aa/local-governments/judgement-interest-rates"],
+  "pdf_filename": "fl-small-claims-filing-checklist.pdf",
+  "pdf_outline": ["Checklist: demand letter -> venue -> Statement of Claim (+ attach written contract) -> Summons/Notice to Appear -> file & pay ($55/$80/$175/$300) -> serve within 120 days -> pretrial conference (within 50 days) -> mediation -> trial -> 15-day new trial / 30-day appeal -> collection", "Collection box: head-of-family wage exemption ($750/week), homestead, judgment lien, 7.87% interest (Q4 2026)", "Shared small-claims-evidence-organizer.pdf"],
+  "featured_image_prompt": "Florida county courthouse with palm trees in bright morning light, a folder of receipts and a pen on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "Florida small claims timeline from filing to trial", "prompt": "horizontal timeline: statement of claim, 120-day service, pretrial conference within 50 days, mediation, trial, appeal windows, navy/crimson on cream"}
+  ],
+  "editor_notes": "Rule text cited via floridacourtrules.com because the Florida Bar PDF (www-media.floridabar.org, July 1, 2026 edition) could not be downloaded from the cloud; if you can open it locally, you may swap the source links to the Florida Bar PDF. Judgment interest 7.87% is for Oct 1 - Dec 31, 2026; update if the post is refreshed in 2027."
+}
