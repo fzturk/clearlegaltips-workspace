@@ -40,21 +40,16 @@ H2: Bottom Line
 
 ### 4. Required Elements (Every Article)
 
-**FTC Disclosure** (top of article):
+**FTC Disclosure** (top of article, before the first `/go/` link — exact live wording):
 ```html
-<div class="clt-disclosure">
-<strong>Disclosure:</strong> This article contains affiliate links. If you purchase through our links, we may earn a commission at no extra cost to you. We only recommend services we've researched and believe provide value.
-</div>
+<div class="clt-disclosure"><strong>Affiliate Disclosure:</strong> ClearLegalTips is reader-supported. When you buy through links on this page we may earn a commission at no extra cost to you. This never affects which services we recommend. <a href="/affiliate-disclosure/">Learn more</a>.</div>
 ```
 
 **CTA Box** (for the relevant affiliate service):
 ```html
 <div class="clt-cta-box">
-<h3>Ready to Get Started?</h3>
-<p>[Brief description — why this service is the best option]</p>
-<a href="/recommend/[slug]" class="clt-affiliate-btn" rel="nofollow sponsored">
-  Get Started with [Service Name] →
-</a>
+<p class="clt-cta-text">[Brief description — why this service fits this reader's situation]</p>
+<p><a href="/go/[slug]" class="clt-affiliate-btn" rel="nofollow sponsored">[Action] &rarr;</a></p>
 </div>
 ```
 
@@ -72,8 +67,17 @@ H2: Bottom Line
 
 **Legal Disclaimer** (bottom of article):
 ```html
-<div class="clt-disclaimer">
-<strong>Legal Disclaimer:</strong> The information provided in this article is for general informational purposes only and does not constitute legal advice. For advice specific to your situation, consult a licensed attorney in your jurisdiction.
+<div class="clt-disclaimer"><strong>Legal Disclaimer:</strong> This article is general information, not legal advice. ClearLegalTips is not a law firm and does not provide legal representation. Laws vary by state and change over time. For guidance on your specific situation, consult a licensed attorney in your jurisdiction.</div>
+```
+
+**Sources block** (before the disclaimer; every number in the article must trace to one of these):
+```html
+<div class="clt-sources">
+<h3>Sources &amp; References</h3>
+<ul>
+<li><a href="[official URL]" target="_blank" rel="noopener nofollow">[domain]</a></li>
+</ul>
+<p><em>Fact-checked: [Month Year]</em></p>
 </div>
 ```
 
@@ -94,15 +98,34 @@ Alt text: [Descriptive text containing the focus keyword]
 
 ## Affiliate CTA Slug Guide
 
+Always link through `/go/{slug}` (302 redirects managed on the live site). Never write a direct affiliate URL, and never use the retired `/recommend/` paths. The full live list is in CLAUDE.md.
+
 | Topic | Slug |
 |---|---|
-| LLC formation | /recommend/zenbusiness |
-| Registered agent | /recommend/northwest-ra |
-| Legal documents | /recommend/lawdepot |
-| Online divorce | /recommend/completecase |
-| Living trust | /recommend/trust-and-will |
-| Trademark | /recommend/legalzoom |
-| EIN / Business formation | /recommend/incfile |
+| Legal documents (general) | /go/lawdepot |
+| Business documents / operating agreement | /go/lawdepot-business, /go/lawdepot-llc-operating-agreement |
+| Real estate / landlord documents | /go/lawdepot-realestate, /go/lawdepot-eviction-notice, /go/lawdepot-residential-lease |
+| Family / divorce documents | /go/lawdepot-family |
+| Estate (will, trust, affidavit) | /go/lawdepot-estate, /go/lawdepot-last-will, /go/lawdepot-living-trust, /go/lawdepot-affidavit-form |
+| Demand letters / collections | /go/lawdepot-payment-demand-letter |
+| LLC formation (incl. non-residents) | /go/doola |
+| Landlord software | /go/doorloop |
+| Privacy policy / terms | /go/termly |
+| Freelancer taxes | /go/keeper-tax |
+
+New programs (Trust & Will, OnlineDivorce, CompleteCase, NEXT Insurance, Gusto) get a `/go/` slug only after approval and after the redirect exists on the live site. Until then use the LawDepot fallback.
+
+## Categories (live IDs)
+
+| ID | Category |
+|---|---|
+| 1 | Legal Templates |
+| 6 | Business Calculators |
+| 7 | Estate & Family |
+| 8 | Filing Guides |
+| 9 | Reviews & Comparisons |
+
+Use existing tags only (3–4 per post). Author is always the single ClearLegalTips user. Publish with the real date — never backdate. No fictional experts and no "attorney-reviewed" claims.
 
 ## Output Format
 
