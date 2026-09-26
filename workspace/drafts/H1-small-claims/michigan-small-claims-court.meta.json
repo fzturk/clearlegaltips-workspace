@@ -1,0 +1,20 @@
+{
+  "slug": "michigan-small-claims-court",
+  "publish_date": "2026-11-10",
+  "title": "Michigan Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Michigan Small Claims Court (2026): $7,000 Limit & Fees",
+  "rank_math_description": "Michigan small claims in 2026: $7,000 limit, $30-$70 fees, no lawyers or collection agencies, five claims a week, and the 7-day magistrate appeal rule.",
+  "focus_keyword": "michigan small claims court",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/ohio-small-claims-court/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/security-deposit-demand-letter-template-get-deposit-back-2026/", "/promissory-note-template-secured-and-unsecured/"],
+  "sources": ["https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-8401", "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-8408", "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-8427", "https://www.courts.michigan.gov/4986e9/siteassets/court-administration/resources/dfee.pdf", "https://www.michigan.gov/taxes/interest-rates-for-money-judgments"],
+  "pdf_filename": "mi-small-claims-filing-checklist.pdf",
+  "pdf_outline": ["Checklist: demand letter -> right district court -> Affidavit and Claim (+1 copy per defendant) -> fee ($30/$50/$70) + postage -> clerk mails -> decide: stay, ask for judge, or remove -> hearing -> 7-day appeal (magistrate only) -> collection ($15 writs)", "Box: rights you waive by staying in small claims (MCL 600.8412)", "Shared small-claims-evidence-organizer.pdf"],
+  "featured_image_prompt": "Michigan district courthouse exterior with autumn maple trees, a folder of receipts and a pen on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "Michigan small claims decision path", "prompt": "simple flowchart icons: file, magistrate or judge, 7-day appeal to judge, final, navy/crimson on cream, no text"}
+  ],
+  "editor_notes": "Interest figure (3.959% + 1%) applies from July 1, 2026; the next reset is January 1, 2027. The $5 fee is the MCL 600.1986 electronic filing system fee listed in the SCAO district court fee table."
+}

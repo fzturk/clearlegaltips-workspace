@@ -1,0 +1,45 @@
+{
+  "slug": "georgia-small-claims-court",
+  "publish_date": "2026-11-13",
+  "title": "Georgia Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Georgia Small Claims Court (2026): $15,000 Limit & Fees",
+  "rank_math_description": "Georgia small claims in 2026: $15,000 magistrate court limit, county fees, the 30-day answer and default rules, no juries, and de novo appeals.",
+  "focus_keyword": "georgia small claims court",
+  "category_id": 8,
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/florida-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://law.onecle.com/georgia/title-15/15-10-41.html",
+    "https://codes.findlaw.com/ga/title-15-courts/ga-code-sect-15-10-43/",
+    "https://law.onecle.com/georgia/title-7/7-4-12.html",
+    "https://dekalbcountymagistratecourt.com/civil-matters/small-claims/small-claims-faqs/"
+  ],
+  "pdf_filename": "ga-small-claims-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: demand letter -> defendant's county -> Statement of Claim -> fee + service -> 30-day answer window -> default (15 days to open) or hearing notice (15-30 days) -> hearing (no jury) -> 30-day de novo appeal -> fi. fa. / garnishment",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
+  "featured_image_prompt": "Georgia county courthouse with white columns and magnolia trees, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {
+      "alt": "Georgia magistrate court timeline",
+      "prompt": "horizontal timeline: claim, service, 30 days to answer, 15 days to open default, hearing 15-30 days after notice, 30-day appeal, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "DeKalb's small claims page shows $104 at the top and $54 in its FAQ; the draft uses $104 and flags the discrepancy. Call the clerk (404-371-2261) or check before publishing if you want a firmer number."
+}
