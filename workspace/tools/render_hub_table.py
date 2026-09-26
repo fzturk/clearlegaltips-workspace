@@ -80,7 +80,26 @@ def small_claims(rows, link):
     return head, body
 
 
-RENDER = {"small-estate": small_estate, "small-claims": small_claims}
+def divorce(rows, link):
+    pub = published_slugs() if link else {}
+    head = ["State", "Residency", "Waiting period", "No-fault ground", "Filing fee", "Law"]
+    body = []
+    for r in rows:
+        slug = "how-to-file-for-divorce-in-" + r["state"].lower().replace(" ", "-")
+        name = e(r["state"])
+        if slug in pub:
+            name = f'<a href="/{slug}/">{name}</a>'
+        res = e(r["residency_text"])
+        if r["changed"]:
+            res += f'<br><small>{e(r["changed"])}</small>'
+        body.append(
+            f'<tr id="{r["code"].lower()}">\n<td>{name}</td>\n<td>{res}</td>\n<td>{e(r["wait_text"])}</td>\n'
+            f'<td>{e(r["no_fault_text"])}</td>\n<td>{e(r["fee_text"])}</td>\n'
+            f'<td><a href="{e(r["source_url"])}" rel="nofollow noopener" target="_blank">{e(r["statute"])}</a></td>\n</tr>')
+    return head, body
+
+
+RENDER = {"small-estate": small_estate, "small-claims": small_claims, "divorce": divorce}
 
 
 def load(vertical):
@@ -97,6 +116,16 @@ def table(vertical, link=False):
 
 def stats(vertical):
     rows = load(vertical)
+    if vertical == "divorce":
+        c = {}
+        for r in rows:
+            c[r["wait_from"]] = c.get(r["wait_from"], 0) + 1
+        print("rows:", len(rows), "| wait_from:", c)
+        res = sorted((int(r["residency_days"]), r["code"]) for r in rows)
+        print("residency days:", res)
+        print("no wait:", [r["code"] for r in rows if r["wait_from"] == "none"])
+        print("changed:", [(r["code"], r["changed"]) for r in rows if r["changed"]])
+        return
     if vertical != "small-estate":
         lim = sorted((int(r["limit_usd"]), r["state"]) for r in rows if r["limit_usd"])
         vals = [v for v, _ in lim]

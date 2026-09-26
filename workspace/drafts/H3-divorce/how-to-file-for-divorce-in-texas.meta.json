@@ -1,0 +1,45 @@
+{
+  "slug": "how-to-file-for-divorce-in-texas",
+  "type": "spoke",
+  "publish_date": "2026-12-01",
+  "title": "How to File for Divorce in Texas (2027): Fees & Steps",
+  "rank_math_title": "How to File for Divorce in Texas (2027): $350 Fee, 60 Days",
+  "rank_math_description": "Texas divorce 2027: 6-month + 90-day county residency, 60-day wait, $350-$365 Harris County fee, waiver of service, forms, 30-day remarriage rule.",
+  "focus_keyword": "how to file for divorce in texas",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Online Divorce"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/online-divorce-in-texas-california-florida-state-specific-guides/",
+    "/divorce-cost-calculator/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/"
+  ],
+  "sources": [
+    "https://texas.public.law/statutes/tex._fam._code_section_6.301",
+    "https://texas.public.law/statutes/tex._fam._code_section_6.702",
+    "https://texas.public.law/statutes/tex._fam._code_section_6.4035",
+    "https://www.hcdistrictclerk.com/common/civil/pdf/Fee_Schedule_Civil_and_Family.pdf",
+    "https://texaslawhelp.org/article/divorce-guide"
+  ],
+  "pdf_filename": "texas-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: residency (6 mo TX + 90 days county) -> agree terms -> Original Petition -> e-file + $350/$365 or Statement of Inability -> Waiver of Service (after filing, notarized) or citation -> answer deadline (TRCP 99) -> Final Decree -> 60-day minimum -> prove-up -> certified copies -> QDRO -> 31st day remarriage",
+    "Box: Harris County fee table (2026)"
+  ],
+  "featured_image_prompt": "Texas county courthouse steps at golden hour with a folder of divorce forms and a pen on a bench in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "Texas uncontested divorce timeline",
+      "prompt": "horizontal timeline: petition, waiver, 60 days, prove-up, decree, 30 days before remarriage; navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "Fees: Harris County District Clerk schedule eff. Jan 1, 2026 (updated July 15, 2026); recheck in W13 for Jan 1, 2027 changes. Statutes via texas.public.law (mirror of statutes.capitol.texas.gov). Cannibalization: this spoke = filing process; live 176 = online divorce services (linked). If you add Dallas/Bexar/Travis fees, confirm on each district clerk site."
+}

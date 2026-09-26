@@ -1,0 +1,95 @@
+<!-- ClearLegalTips widget: Divorce Timeline Estimator. Paste as ONE Custom HTML block.
+     Data: workspace/data/divorce.csv (rebuild with workspace/tools/build_widgets.py). -->
+<div class="clt-widget" id="clt-dv" style="background:#F8F6F2;border:1px solid #d8d2c6;border-left:4px solid #1C2B4A;border-radius:12px;padding:20px 22px;margin:24px 0;line-height:1.5;">
+  <h3 style="margin:0 0 4px;color:#1C2B4A;">Divorce Timeline Estimator</h3>
+  <p style="margin:0 0 14px;font-size:.92em;color:#555;">See whether you meet your state&#8217;s residency rule and the earliest date an uncontested divorce could be final. General information, not legal advice.</p>
+  <noscript><p><strong>This estimator needs JavaScript.</strong> Use the state-by-state table on this page instead.</p></noscript>
+  <form id="clt-dv-form" style="display:grid;gap:12px;" onsubmit="return false;">
+    <label style="display:grid;gap:4px;font-weight:600;">State where you will file
+      <select id="clt-dv-state" required style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;"><option value="">Choose a state</option></select>
+    </label>
+    <label style="display:grid;gap:4px;font-weight:600;">How many months has the filing spouse lived in this state?
+      <input id="clt-dv-months" type="number" min="0" step="1" inputmode="numeric" placeholder="e.g. 8" style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;max-width:160px;">
+    </label>
+    <fieldset style="border:0;padding:0;margin:0;display:grid;gap:4px;">
+      <legend style="font-weight:600;padding:0;">Do you have minor children together?</legend>
+      <label><input type="radio" name="clt-dv-kids" value="no" checked> No</label>
+      <label><input type="radio" name="clt-dv-kids" value="yes"> Yes</label>
+    </fieldset>
+    <label style="display:grid;gap:4px;font-weight:600;">Planned (or actual) filing date
+      <input id="clt-dv-file" type="date" style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;">
+      <span style="font-weight:400;font-size:.85em;color:#666;">We assume the other spouse is served (or signs a waiver) about 2 weeks after filing.</span>
+    </label>
+    <label style="display:grid;gap:4px;font-weight:600;">Date you separated (only matters in some states)
+      <input id="clt-dv-sep" type="date" style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;">
+    </label>
+    <button type="button" id="clt-dv-go" style="justify-self:start;background:#C0392B;color:#fff;border:0;border-radius:6px;padding:11px 18px;font-weight:700;cursor:pointer;font:inherit;">Estimate my timeline</button>
+  </form>
+  <div id="clt-dv-out" aria-live="polite" style="margin-top:16px;"></div>
+</div>
+<script>
+(function () {
+  var DATA = __DATA__;
+  var BEFORE = {NC: 1, SC: 1, VA: 1};
+  var $ = function (id) { return document.getElementById(id); };
+  var sel = $('clt-dv-state'), out = $('clt-dv-out');
+  if (!sel || !out) return;
+  DATA.forEach(function (r) {
+    var o = document.createElement('option');
+    o.value = r.code; o.textContent = r.state; sel.appendChild(o);
+  });
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]; }); }
+  function addDays(d, n) { var t = new Date(d.getTime()); t.setDate(t.getDate() + n); return t; }
+  function fmt(d) { return d.toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'}); }
+  function parse(v) { return v ? new Date(v + 'T00:00:00') : null; }
+  function box(color, title, lines) {
+    return '<div style="background:#fff;border:1px solid #d8d2c6;border-left:4px solid ' + color + ';border-radius:8px;padding:14px 16px;">' +
+      '<p style="margin:0 0 8px;font-weight:700;color:' + color + ';">' + title + '</p><ul style="margin:0;padding-left:20px;">' +
+      lines.map(function (l) { return '<li style="margin:4px 0;">' + l + '</li>'; }).join('') + '</ul></div>';
+  }
+  $('clt-dv-go').addEventListener('click', function () {
+    var r = null, code = sel.value;
+    for (var i = 0; i < DATA.length; i++) if (DATA[i].code === code) r = DATA[i];
+    if (!r) { out.innerHTML = '<p style="color:#C0392B;">Choose a state first.</p>'; return; }
+    var months = parseFloat($('clt-dv-months').value);
+    var kids = (document.querySelector('input[name="clt-dv-kids"]:checked') || {}).value === 'yes';
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var filed = parse($('clt-dv-file').value) || today;
+    var sep = parse($('clt-dv-sep').value);
+    var lines = [], ok = true, warn = false;
+    var needDays = Number(r.residency_days) || 0;
+    lines.push('<strong>Residency:</strong> ' + esc(r.residency_text) + '.');
+    if (!isNaN(months) && needDays > 0) {
+      if (months * 30.4 < needDays) { ok = false; lines.push('Based on ' + months + ' months, you may <strong>not yet meet</strong> the residency rule. You could qualify around <strong>' + fmt(addDays(filed, Math.ceil(needDays - months * 30.4))) + '</strong> if you file then.'); }
+      else lines.push('Based on ' + months + ' months, you appear to meet the residency rule.');
+    }
+    var wait = Number(kids && r.wait_days_children !== '' ? r.wait_days_children : r.wait_days) || 0;
+    var from = r.wait_from, earliest = null;
+    if (from === 'filing') earliest = addDays(filed, wait);
+    else if (from === 'service') earliest = addDays(addDays(filed, 14), wait);
+    else if (from === 'decision') earliest = null;
+    else if (from === 'separation') {
+      if (sep) {
+        var s2 = addDays(sep, wait);
+        if (BEFORE[r.code] && s2 > filed) { warn = true; lines.push('In ' + esc(r.state) + ' the separation period generally must be complete <strong>before you file</strong>. Based on your separation date, the earliest filing date is about <strong>' + fmt(s2) + '</strong>.'); }
+        earliest = s2 > filed ? s2 : filed;
+      }
+      else { warn = true; lines.push('This state measures time from your <strong>separation date</strong>. Enter it above for an estimate.'); }
+    } else earliest = filed;
+    lines.push('<strong>Waiting period:</strong> ' + esc(r.wait_text) + (kids && r.wait_days_children !== '' ? ' (using the longer period that applies with minor children)' : '') + '.');
+    if (from === 'decision') lines.push('The final judgment can be entered <strong>3 months after the court&#8217;s decision</strong>; the decision date depends on the court&#8217;s calendar.');
+    if (earliest) {
+      if (earliest < today) earliest = today;
+      lines.push('<strong>Earliest possible final date:</strong> about <strong>' + fmt(earliest) + '</strong>, if the divorce is uncontested and the court&#8217;s schedule allows. Most courts take longer.');
+    }
+    if (from === 'separation' && r.separation_days) lines.push('In ' + esc(r.state) + ', the no-fault route requires living apart first: ' + esc(r.no_fault_text) + '.');
+    lines.push('<strong>No-fault ground:</strong> ' + esc(r.no_fault_text) + '.');
+    lines.push('<strong>Filing fee:</strong> ' + (r.fee_usd !== '' ? '$' + Number(r.fee_usd).toLocaleString('en-US') : esc(r.fee_text)) + '. Fee waivers are available if you cannot afford it.');
+    if (r.changed) lines.push('<strong>Recent change:</strong> ' + esc(r.changed) + '.');
+    if (r.notes) lines.push(esc(r.notes) + '.');
+    lines.push('<strong>Law:</strong> <a href="' + esc(r.source_url) + '" target="_blank" rel="noopener nofollow">' + esc(r.statute) + '</a> (verified ' + esc(r.verified_date) + ').');
+    var head = !ok ? ['#C0392B', 'Residency not met yet'] : warn ? ['#8a6d1c', 'More information needed'] : ['#1f7a3f', 'Your estimated timeline'];
+    out.innerHTML = box(head[0], head[1], lines) + '<p style="font-size:.82em;color:#666;margin:10px 0 0;">Estimates only. Contested cases, court backlogs, required classes and service delays can add months. Check with the court clerk or a family law attorney.</p>';
+  });
+})();
+</script>
