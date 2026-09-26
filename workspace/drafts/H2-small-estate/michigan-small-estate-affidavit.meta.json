@@ -1,0 +1,18 @@
+{
+  "slug": "michigan-small-estate-affidavit",
+  "publish_date": "2026-10-15",
+  "title": "Michigan Small Estate Affidavit (2026): $53,000 Limit, PC 598 and Court Assignment",
+  "rank_math_title": "Michigan Small Estate Affidavit (2026): $53,000 Limit",
+  "rank_math_description": "Michigan small estates in 2026: $53,000 limit, PC 598 affidavit after 28 days with no real estate, or a court assignment that can include a mortgaged home.",
+  "focus_keyword": "michigan small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/ohio-small-estate-affidavit/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3983", "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3982", "https://michiganlegalhelp.org/resources/wills-and-life-planning/overview-of-michigans-small-estate-processes"],
+  "pdf_filename": "mi-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: real property yes/no branch; net vs gross value; mortgage deduction cap", "Second PDF mi-small-estate-checklist.pdf: PC 598 steps and court assignment steps side by side, 63-day notice"],
+  "featured_image_prompt": "Michigan lakeside cottage porch with a PC 598 form envelope and a car key, early autumn, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Michigan small estate amounts for 2026", "prompt": "three stat tiles $53,000, $264,000, 28 days with mitten outline, navy/cream"}],
+  "editor_notes": "2026 figures ($53,000 / $264,000 / $100,000 vehicles) from Michigan Legal Help; statute text from legislature.mi.gov (2024 PA 1). Check the SCAO forms URL before publishing."
+}

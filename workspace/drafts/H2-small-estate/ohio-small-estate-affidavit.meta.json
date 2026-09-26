@@ -1,0 +1,18 @@
+{
+  "slug": "ohio-small-estate-affidavit",
+  "publish_date": "2026-10-14",
+  "title": "Ohio Small Estate Affidavit (2026): Release From Administration at $35,000 or $100,000",
+  "rank_math_title": "Ohio Small Estate Affidavit (2026): $35K & $100K Rules",
+  "rank_math_description": "Ohio uses a release from administration, not an affidavit: $35,000 or $100,000 for a spouse, real estate included, plus the $65,000 car and $40,000 rules.",
+  "focus_keyword": "ohio small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/transfer-on-death-deed-template-2026/", "/small-estate-affidavit-limits-by-state/", "/pennsylvania-small-estate-affidavit/"],
+  "sources": ["https://codes.ohio.gov/ohio-revised-code/section-2113.03", "https://codes.ohio.gov/ohio-revised-code/section-2113.031", "https://codes.ohio.gov/ohio-revised-code/section-2106.13", "https://codes.ohio.gov/ohio-revised-code/section-2106.18"],
+  "pdf_filename": "oh-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: remove spouse-selected cars (<= $65,000), subtract nothing else, total estate incl. real estate", "Box: $35,000 vs $100,000 test; $40,000 support allowance", "Second PDF oh-release-from-administration-checklist.pdf: 7 steps + waiver of notice list"],
+  "featured_image_prompt": "Ohio two-story farmhouse with a probate court envelope and car keys on a porch table, autumn light, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Ohio release from administration thresholds", "prompt": "two stat tiles $35,000 and $100,000 with spouse icon, Ohio outline, navy/cream"}],
+  "editor_notes": "Verify the supremecourt.ohio.gov probate forms URL before publishing (site restructures occasionally). County filing fees vary; not stated on purpose."
+}
