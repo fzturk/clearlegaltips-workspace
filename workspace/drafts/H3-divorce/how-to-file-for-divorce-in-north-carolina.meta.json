@@ -1,0 +1,45 @@
+{
+  "slug": "how-to-file-for-divorce-in-north-carolina",
+  "type": "spoke",
+  "publish_date": "2026-12-11",
+  "title": "How to File for Divorce in North Carolina (2027): $225 Fee",
+  "rank_math_title": "How to File for Divorce in NC (2027): 1-Year Rule, $225",
+  "rank_math_description": "North Carolina divorce 2027: 1 year of separation, 6-month residency, $225 statewide fee, 30-day answer, and why property and alimony claims come first.",
+  "focus_keyword": "how to file for divorce in north carolina",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Legal Separation"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/how-to-file-for-divorce-in-georgia/",
+    "/how-to-file-for-divorce-in-pennsylvania/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/",
+    "/how-to-file-for-legal-separation-online-process-and-cost-2026/"
+  ],
+  "sources": [
+    "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_50/GS_50-6.html",
+    "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_50/GS_50-11.html",
+    "https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_7a/gs_7a-305.html",
+    "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_50/GS_50-20.html"
+  ],
+  "pdf_filename": "north-carolina-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: separation date + proof -> 1 year apart (separate residences) -> residency 6 mo -> decide ED/alimony (agreement or claims BEFORE judgment) -> verified complaint -> file $225 / indigent petition -> service -> 30 days -> hearing or summary judgment -> certified judgment",
+    "Warning box: G.S. 50-11 claims lost after divorce"
+  ],
+  "featured_image_prompt": "North Carolina county courthouse with brick facade and white columns, a calendar page and a folder on a bench in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "North Carolina divorce timeline",
+      "prompt": "horizontal timeline graphic, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "nccourts.gov blocked from cloud: AOC form numbers intentionally omitted. Fee $225 derived from G.S. 7A-305(a)(1) $16 + (a)(1a) $4 + (a)(2) $130 + (a2) $75. 'Separate residences' rule is case law (e.g., Smith v. Smith line); keep the 'generally' wording."
+}
