@@ -1,0 +1,21 @@
+{
+  "slug": "texas-small-estate-affidavit",
+  "publish_date": "2026-10-06",
+  "title": "Texas Small Estate Affidavit (2026): $75,000 Limit, Judge Approval & County Forms",
+  "rank_math_title": "Texas Small Estate Affidavit (2026): $75K Limit & Rules",
+  "rank_math_description": "Texas small estate affidavit rules for 2026: $75,000 limit (homestead excluded), no will, 30-day wait, 2 witnesses, judge approval and a $360 Dallas fee.",
+  "focus_keyword": "texas small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/affidavit-of-heirship-template-2026/", "/probate-cost-estimator/", "/small-estate-affidavit-limits-by-state/", "/transfer-on-death-deed-template-2026/"],
+  "sources": ["https://statutes.capitol.texas.gov/Docs/ES/htm/ES.205.htm", "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.42.htm", "https://www.dallascounty.org/government/county-clerk/probate-courts/know-before.php"],
+  "pdf_filename": "tx-small-estate-asset-worksheet.pdf",
+  "pdf_outline": ["Asset worksheet: columns asset / how titled / value / exempt? / counts toward $75,000?", "Homestead and exempt-property notes (Prop. Code ch. 42 limits)", "Second PDF tx-small-estate-filing-checklist.pdf: the 6 filing steps + who signs"],
+  "featured_image_prompt": "Texas county courthouse facade at golden hour with a folded document and pen in foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "Texas small estate affidavit eligibility checklist", "prompt": "six-box checklist graphic with Texas outline, navy on cream"},
+    {"alt": "Recording a Texas small estate affidavit for the homestead", "prompt": "modest home, deed with county recording stamp, navy/cream"}
+  ],
+  "editor_notes": "Fee: Dallas $360 verified on dallascounty.org Sept 2026; if adding Harris/Travis/Bexar fees, confirm on each county clerk site first."
+}

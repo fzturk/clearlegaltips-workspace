@@ -1,0 +1,21 @@
+{
+  "slug": "california-small-estate-affidavit",
+  "publish_date": "2026-10-07",
+  "title": "California Small Estate Affidavit (2026): $208,850 Limit, Rules & the $750K Home Petition",
+  "rank_math_title": "California Small Estate Affidavit (2026): $208,850 Limit",
+  "rank_math_description": "California small estate affidavit: $208,850 limit through March 2028, 40-day wait, no court filing, what's excluded, and the new $750,000 home petition.",
+  "focus_keyword": "california small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/small-estate-affidavit-limits-by-state/", "/transfer-on-death-deed-template-2026/", "/living-trust-vs-will-cost-breakdown-diy-vs-attorney/"],
+  "sources": ["https://courts.ca.gov/system/files/file/probate-code-890-adjusted-amounts.pdf", "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2016", "https://selfhelp.courts.ca.gov/probate/simple-transfer"],
+  "pdf_filename": "ca-small-estate-asset-worksheet.pdf",
+  "pdf_outline": ["Worksheet: asset / titled how / gross value / excluded under §13050? / counts toward $208,850?", "Box: real property routes (DE-305 up to $69,625 after 6 months; DE-310 primary residence up to $750,000)", "Second PDF ca-small-estate-checklist.pdf: the §13101 statements as a checklist + documents per holder"],
+  "featured_image_prompt": "California bungalow porch with a manila envelope and house keys on a table, warm afternoon light, navy and crimson accents, editorial, no text",
+  "inline_images": [
+    {"alt": "California small estate thresholds for 2026", "prompt": "four stat tiles $208,850 / $69,625 / $750,000 / $20,875, navy on cream"},
+    {"alt": "Transferring a California house without full probate", "prompt": "California single-story home, petition papers on table, navy/crimson"}
+  ],
+  "editor_notes": "All dollar figures from the Judicial Council Probate Code 890 table (PDF text extracted Sept 2026). The DE-310 filing fee was not stated on purpose; add it only from the court's current fee schedule."
+}

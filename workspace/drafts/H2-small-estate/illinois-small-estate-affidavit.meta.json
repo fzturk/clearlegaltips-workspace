@@ -1,0 +1,18 @@
+{
+  "slug": "illinois-small-estate-affidavit",
+  "publish_date": "2026-10-09",
+  "title": "Illinois Small Estate Affidavit (2026): $150,000 Limit, Vehicles Excluded",
+  "rank_math_title": "Illinois Small Estate Affidavit (2026): $150,000 Limit",
+  "rank_math_description": "Illinois small estate affidavit: $150,000 limit for deaths from Aug. 15, 2025, vehicles excluded, no waiting period, no real estate, and the debt rules.",
+  "focus_keyword": "illinois small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/transfer-on-death-deed-template-2026/", "/probate-cost-estimator/", "/small-estate-affidavit-limits-by-state/", "/texas-small-estate-affidavit/", "/small-estate-affidavit-template-2026/"],
+  "sources": ["https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K25-1", "https://www.illinoiscourts.gov/documents-and-forms/approved-forms/", "https://www.illinoislegalaid.org/legal-information/using-small-estate-affidavit"],
+  "pdf_filename": "il-small-estate-worksheet.pdf",
+  "pdf_outline": ["Assets worksheet (vehicles in a separate excluded column)", "Debts worksheet sorted into Illinois claim classes, Class 1 first", "Second PDF il-small-estate-checklist.pdf: 8 steps incl. filing the original will with the circuit clerk"],
+  "featured_image_prompt": "Chicago-style brick two-flat exterior with a notarized document and car key on a cafe table in foreground, navy and crimson accents, editorial, no text",
+  "inline_images": [{"alt": "Illinois small estate affidavit requirements", "prompt": "checklist graphic with Illinois outline, navy on cream"}],
+  "editor_notes": "ilga.gov was unreachable from the drafting environment (503); the $150,000 / Aug. 15 2025 / vehicle exclusion figures are confirmed by Illinois Legal Aid Online and multiple practitioner sources. Before publishing, open ilga.gov 755 ILCS 5/25-1 and note the Public Act number in the 'What changed' line if you want to cite it."
+}

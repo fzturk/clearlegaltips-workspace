@@ -1,0 +1,101 @@
+<!-- ClearLegalTips widget: Small Estate Eligibility Checker. Paste as ONE Custom HTML block.
+     Data: workspace/data/small-estate.csv (rebuild with workspace/tools/build_widgets.py). -->
+<div class="clt-widget" id="clt-se" style="background:#F8F6F2;border:1px solid #d8d2c6;border-left:4px solid #1C2B4A;border-radius:12px;padding:20px 22px;margin:24px 0;line-height:1.5;">
+  <h3 style="margin:0 0 4px;color:#1C2B4A;">Small Estate Eligibility Checker</h3>
+  <p style="margin:0 0 14px;font-size:.92em;color:#555;">Answer four questions to see whether your state&#8217;s small estate shortcut is likely available. General information, not legal advice.</p>
+  <noscript><p><strong>This checker needs JavaScript.</strong> Use the state-by-state table on this page instead.</p></noscript>
+  <form id="clt-se-form" style="display:grid;gap:12px;" onsubmit="return false;">
+    <label style="display:grid;gap:4px;font-weight:600;">State where the person lived
+      <select id="clt-se-state" required style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;"><option value="">Choose a state</option></select>
+    </label>
+    <label style="display:grid;gap:4px;font-weight:600;">Estimated value of assets that would go through probate ($)
+      <input id="clt-se-value" type="number" min="0" step="1000" inputmode="numeric" placeholder="e.g. 60000" style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;">
+      <span style="font-weight:400;font-size:.85em;color:#666;">Leave out joint accounts, payable-on-death accounts, life insurance and retirement accounts with a named beneficiary, and anything held in a living trust.</span>
+    </label>
+    <fieldset style="border:0;padding:0;margin:0;display:grid;gap:4px;">
+      <legend style="font-weight:600;padding:0;">Does that include real estate owned only in the person&#8217;s name?</legend>
+      <label><input type="radio" name="clt-se-re" value="no" checked> No</label>
+      <label><input type="radio" name="clt-se-re" value="yes"> Yes</label>
+    </fieldset>
+    <fieldset style="border:0;padding:0;margin:0;display:grid;gap:4px;">
+      <legend style="font-weight:600;padding:0;">Are you the surviving spouse?</legend>
+      <label><input type="radio" name="clt-se-sp" value="no" checked> No</label>
+      <label><input type="radio" name="clt-se-sp" value="yes"> Yes</label>
+    </fieldset>
+    <label style="display:grid;gap:4px;font-weight:600;">Date of death
+      <input id="clt-se-dod" type="date" style="padding:9px;border:1px solid #bbb;border-radius:6px;font:inherit;">
+    </label>
+    <button type="button" id="clt-se-go" style="justify-self:start;background:#C0392B;color:#fff;border:0;border-radius:6px;padding:11px 18px;font-weight:700;cursor:pointer;font:inherit;">Check eligibility</button>
+  </form>
+  <div id="clt-se-out" aria-live="polite" style="margin-top:16px;"></div>
+</div>
+<script>
+(function () {
+  var DATA = __DATA__;
+  var $ = function (id) { return document.getElementById(id); };
+  var sel = $('clt-se-state'), out = $('clt-se-out');
+  if (!sel || !out) return;
+  DATA.forEach(function (r) {
+    var o = document.createElement('option');
+    o.value = r.code; o.textContent = r.state; sel.appendChild(o);
+  });
+  function money(n) { return '$' + Number(n).toLocaleString('en-US'); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]; }); }
+  function radio(name) { var x = document.querySelector('input[name="' + name + '"]:checked'); return x ? x.value : 'no'; }
+  var COURT = {
+    no: 'No court filing: you give the signed, notarized affidavit directly to the bank, DMV or other holder.',
+    filed: 'The affidavit or statement is filed with a court office before you use it.',
+    approval: 'The affidavit is filed with the court and must be approved by a judge.',
+    petition: 'This is a short court proceeding (a petition), not an affidavit-only process.'
+  };
+  function box(color, title, lines) {
+    return '<div style="background:#fff;border:1px solid #d8d2c6;border-left:4px solid ' + color + ';border-radius:8px;padding:14px 16px;">' +
+      '<p style="margin:0 0 8px;font-weight:700;color:' + color + ';">' + title + '</p><ul style="margin:0;padding-left:20px;">' +
+      lines.map(function (l) { return '<li style="margin:4px 0;">' + l + '</li>'; }).join('') + '</ul></div>';
+  }
+  $('clt-se-go').addEventListener('click', function () {
+    var r = null, code = sel.value;
+    for (var i = 0; i < DATA.length; i++) if (DATA[i].code === code) r = DATA[i];
+    if (!r) { out.innerHTML = '<p style="color:#C0392B;">Choose a state first.</p>'; return; }
+    var val = parseFloat($('clt-se-value').value);
+    var re = radio('clt-se-re') === 'yes', sp = radio('clt-se-sp') === 'yes';
+    var limit = (sp && r.spouse_limit_usd) ? r.spouse_limit_usd : r.limit_usd;
+    var lines = [], ok = true, unsure = false;
+    lines.push('<strong>' + esc(r.state) + ' procedure:</strong> ' + esc(r.procedure) + '.');
+    lines.push('<strong>Limit:</strong> ' + esc(r.limit_text) + '.');
+    if (limit === '' || limit == null) {
+      unsure = true;
+      lines.push('This state has no dollar-based affidavit. The route above depends on agreement among heirs or the court, not on the estate&#8217;s size.');
+    } else if (isNaN(val)) {
+      unsure = true;
+      lines.push('Enter an estimated value to compare it with the ' + money(limit) + ' limit.');
+    } else if (val > limit) {
+      ok = false;
+      lines.push('Your estimate of ' + money(val) + ' is <strong>over</strong> the ' + money(limit) + ' limit' + (r.indexed === 'yes' ? ' (this state adjusts its limit for inflation; confirm the figure for the year of death)' : '') + '.');
+    } else {
+      lines.push('Your estimate of ' + money(val) + ' is within the ' + money(limit) + ' limit' + (r.indexed === 'yes' ? ' (inflation-adjusted; confirm the figure for the year of death)' : '') + '.');
+    }
+    if (re) {
+      if (r.real_estate === 'no') { ok = false; lines.push('Real estate in the person&#8217;s sole name <strong>disqualifies</strong> this shortcut in ' + esc(r.state) + '. The real estate needs probate or a separate transfer method.'); }
+      else if (r.real_estate === 'separate') { unsure = true; lines.push(esc(r.state) + ' handles real estate through a <strong>separate</strong> procedure with its own rules.'); }
+      else if (r.real_estate === 'homestead') { unsure = true; lines.push('Only the homestead can pass this way in ' + esc(r.state) + '; other real estate needs probate.'); }
+      else if (r.real_estate === 'check') { unsure = true; lines.push('Real estate rules here have exceptions; check the statute or the probate court before relying on this route.'); }
+      else { lines.push('Real estate can be included in ' + esc(r.state) + ', subject to the dollar limit.'); }
+    }
+    if (r.wait_days) {
+      var d = $('clt-se-dod').value, when = '';
+      if (d) {
+        var t = new Date(d + 'T00:00:00'); t.setDate(t.getDate() + Number(r.wait_days));
+        var now = new Date(); now.setHours(0, 0, 0, 0);
+        when = t <= now ? ' The waiting period has passed.' : ' Earliest date: <strong>' + t.toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'}) + '</strong>.';
+      }
+      lines.push('<strong>Waiting period:</strong> ' + r.wait_days + ' days after death.' + when);
+    }
+    lines.push('<strong>Court involvement:</strong> ' + (COURT[r.court] || 'Check with the local probate court.'));
+    if (r.notes) lines.push(esc(r.notes) + '.');
+    lines.push('<strong>Law:</strong> <a href="' + esc(r.source_url) + '" target="_blank" rel="noopener nofollow">' + esc(r.statute) + '</a> (verified ' + esc(r.verified_date) + ').');
+    var head = !ok ? ['#C0392B', 'Probably not eligible for the shortcut'] : unsure ? ['#8a6d1c', 'Possibly eligible, with conditions'] : ['#1f7a3f', 'Likely eligible'];
+    out.innerHTML = box(head[0], head[1], lines) + '<p style="font-size:.82em;color:#666;margin:10px 0 0;">Estimates only. Values, debts and heir disputes can change the answer; the probate court clerk can confirm which procedure applies.</p>';
+  });
+})();
+</script>
