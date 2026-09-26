@@ -34,7 +34,7 @@
     var o = document.createElement('option');
     o.value = r.code; o.textContent = r.state; sel.appendChild(o);
   });
-  function money(n) { return '$' + Number(n).toLocaleString('en-US', {maximumFractionDigits: 2}); }
+  function money(n) { n = Number(n); var d = n % 1 ? 2 : 0; return '$' + n.toLocaleString('en-US', {minimumFractionDigits: d, maximumFractionDigits: d}); }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]; }); }
   function tierFee(tiers, amt) {
     var parts = String(tiers).split('|');

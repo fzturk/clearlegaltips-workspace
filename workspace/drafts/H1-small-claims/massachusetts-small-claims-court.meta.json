@@ -1,0 +1,46 @@
+{
+  "slug": "massachusetts-small-claims-court",
+  "publish_date": "2026-11-25",
+  "title": "Massachusetts Small Claims Court (2026): Limit, Fees & Filing",
+  "rank_math_title": "Massachusetts Small Claims Court (2026): $7,000 Limit",
+  "rank_math_description": "Massachusetts small claims in 2026: $7,000 limit (no cap for car damage), $40-$150 fees, mailed notice, one-way appeals, payment orders and 93A letters.",
+  "focus_keyword": "massachusetts small claims court",
+  "category_id": 8,
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/new-york-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleI/Chapter218/Section21",
+    "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleI/Chapter218/Section23",
+    "https://www.mass.gov/info-details/small-claims-standards-303-filing-fees",
+    "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleIV/Chapter246/Section28"
+  ],
+  "pdf_filename": "ma-small-claims-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: demand letter (93A: 30 days before) -> choose district (yours or defendant's) -> Statement of Small Claim -> fee ($40-$150) -> clerk mails notice -> mediation -> hearing (clerk-magistrate) -> defendant's 10-day appeal -> payment order / payment review hearing / trustee process",
+    "Box: Chapter 93A demand letter elements",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
+  "featured_image_prompt": "Massachusetts district courthouse with New England brick and white trim in autumn, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {
+      "alt": "Massachusetts small claims path",
+      "prompt": "icon flow: claim, mailed notice, mediation or hearing, 10-day defendant appeal, payment order, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "mass.gov blocks automated access from the cloud; fees taken from 'Small Claims Standards 3:03 Filing fees' via search. The 12% interest statement is general (G.L. c. 231 §§6B-6C / c. 235 §8); if you want a firmer cite, check mass.gov's judgment interest page when publishing."
+}

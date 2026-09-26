@@ -1,0 +1,46 @@
+{
+  "slug": "tennessee-small-claims-court",
+  "publish_date": "2026-11-24",
+  "title": "Tennessee Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Tennessee Small Claims Court (2026): $25,000 Limit",
+  "rank_math_description": "Tennessee small claims in 2026: $25,000 General Sessions limit, civil warrant costs ($145.75 in Nashville), trial on the warrant date and 10-day appeals.",
+  "focus_keyword": "tennessee small claims court",
+  "category_id": 8,
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/georgia-small-claims-court/",
+    "/north-carolina-small-claims-court/",
+    "/virginia-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://codes.findlaw.com/tn/title-16-courts/tn-code-sect-16-15-501/",
+    "https://codes.findlaw.com/tn/title-27-appeal-and-review/tn-code-sect-27-5-108/",
+    "https://circuitclerk.nashville.gov/wp-content/uploads/GS-Filing-Fees-071226.pdf"
+  ],
+  "pdf_filename": "tn-small-claims-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: demand letter -> county -> civil warrant -> fees (Davidson $145.75 + $52/extra defendant) -> sheriff service -> trial on warrant date (no written answer needed) -> 10-day de novo appeal -> garnishment / execution / lien",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
+  "featured_image_prompt": "Tennessee county courthouse with a clock tower on a sunny morning, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {
+      "alt": "Tennessee General Sessions timeline",
+      "prompt": "horizontal timeline: civil warrant, sheriff service, trial, judgment, 10-day appeal, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "tncourts.gov interest page is JS-only from the cloud; if you want an exact current rate, copy it from the AOC page when publishing. Davidson fees effective July 12, 2026."
+}
