@@ -1,0 +1,18 @@
+{
+  "slug": "virginia-small-estate-affidavit",
+  "publish_date": "2026-10-16",
+  "title": "Virginia Small Estate Affidavit (2026): $75,000 Limit, 60-Day Wait, All Heirs Sign",
+  "rank_math_title": "Virginia Small Estate Affidavit (2026): $75,000 Limit",
+  "rank_math_description": "Virginia's small estate affidavit now covers $75,000 (July 2025). 60-day wait, every heir signs, no court filing, and a no-affidavit rule up to $35,000.",
+  "focus_keyword": "virginia small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/transfer-on-death-deed-template-2026/", "/small-estate-affidavit-limits-by-state/", "/pennsylvania-small-estate-affidavit/", "/free-last-will-and-testament-template/"],
+  "sources": ["https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-601/", "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-602/", "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-603/"],
+  "pdf_filename": "va-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: personal probate assets at date of death; flag any single asset <= $35,000", "Successor list with signature lines and designated successor", "Second PDF va-small-estate-checklist.pdf: 7 steps incl. probating the will with the circuit court clerk"],
+  "featured_image_prompt": "Virginia colonial brick house with a document being signed by several people at a dining table, soft light, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Virginia small estate affidavit signed by all known successors", "prompt": "several hands signing one document, Virginia outline, navy/cream"}],
+  "editor_notes": "Statute text read from law.lis.virginia.gov on 26 Sept 2026 (2025 c. 148). §64.2-601 was also amended by 2026 c. 40; the fetched current text still shows $75,000 and 60 days."
+}

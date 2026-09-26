@@ -1,0 +1,18 @@
+{
+  "slug": "new-jersey-small-estate-affidavit",
+  "publish_date": "2026-10-26",
+  "title": "New Jersey Small Estate Affidavit (2026): $50,000 Spouse, $20,000 Heir Rules",
+  "rank_math_title": "New Jersey Small Estate Affidavit (2026): $50K / $20K",
+  "rank_math_description": "New Jersey small estate affidavits: $50,000 for a spouse (first $10,000 debt-free), $20,000 for one heir with consent, no will, via the county surrogate.",
+  "focus_keyword": "new jersey small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/new-york-small-estate-affidavit/", "/pennsylvania-small-estate-affidavit/", "/estate-tax-by-state/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://codes.findlaw.com/nj/title-3b-administration-of-estates-decedents-and-others/nj-st-sect-3b-10-3/", "https://codes.findlaw.com/nj/title-3b-administration-of-estates-decedents-and-others/nj-st-sect-3b-10-4/", "https://www.nj.gov/treasury/taxation/inheritance-estate/inheritance.shtml"],
+  "pdf_filename": "nj-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: real + personal assets in sole name; spouse ($50,000, first $10,000 debt-free) vs heir ($20,000) branch", "Heir consent signature page", "Second PDF nj-small-estate-checklist.pdf: what to bring to the surrogate + tax waiver questions for the bank"],
+  "featured_image_prompt": "New Jersey county courthouse entrance with a surrogate office sign blurred, a folder and pen on a bench, navy and crimson accents, no text",
+  "inline_images": [{"alt": "New Jersey surrogate small estate affidavits", "prompt": "surrogate office counter with two forms labeled spouse and heir, NJ outline, navy/cream"}],
+  "editor_notes": "Inheritance tax waiver section intentionally avoids naming form numbers and percentages released without waiver; confirm current Division of Taxation guidance before adding specifics."
+}

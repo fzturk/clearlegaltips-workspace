@@ -1,0 +1,47 @@
+{
+  "slug": "how-to-file-for-divorce-in-california",
+  "type": "spoke",
+  "publish_date": "2026-12-02",
+  "title": "How to File for Divorce in California (2027): Fees & Steps",
+  "rank_math_title": "How to File for Divorce in California (2027): $435, 6 Months",
+  "rank_math_description": "California divorce 2027: 6-month + 3-month county residency, $435 fee ($870 joint), 6-month wait from service, FL-100 forms, summary dissolution.",
+  "focus_keyword": "how to file for divorce in california",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Online Divorce"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/how-to-file-for-divorce-in-texas/",
+    "/online-divorce-in-texas-california-florida-state-specific-guides/",
+    "/divorce-cost-calculator/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/",
+    "/how-to-file-for-uncontested-divorce-online-without-an-attorney/"
+  ],
+  "sources": [
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FAM&sectionNum=2320",
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FAM&sectionNum=2339",
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FAM&sectionNum=2400",
+    "https://www.humboldt.courts.ca.gov/system/files/general/2026-statewide-civil-fee-schedule.pdf",
+    "https://selfhelp.courts.ca.gov/divorce"
+  ],
+  "pdf_filename": "california-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: residency (or legal separation + amend, §2321) -> FL-100/FL-110 (+FL-105) -> file $435 / $870 joint / FW-001 -> serve (FL-115 or FL-117) -> 30-day response -> preliminary disclosure within 60 days (FL-140/142/150 + 2 yrs tax returns) -> FL-141 -> settlement -> FL-170/FL-180 -> status ends 6 months after service",
+    "Box: summary dissolution eligibility (FL-800)"
+  ],
+  "featured_image_prompt": "California superior court building with palm trees, a stack of family law forms and a pen on a table in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "California divorce timeline showing the six-month waiting period",
+      "prompt": "horizontal timeline from filing to 6 months after service; navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "Fee from the Superior Court Statewide Civil Fee Schedule eff. Jan 1, 2026 (Humboldt court copy; items 97-100). Riverside/San Bernardino/San Francisco add a courthouse surcharge (schedule appendix). Recheck the 2027 schedule in W13. Summary dissolution dollar limits intentionally not stated (adjusted every odd year; Jan 1, 2027 adjustment pending); add current FL-810 figures at publish time if you want."
+}

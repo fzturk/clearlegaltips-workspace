@@ -1,0 +1,20 @@
+{
+  "slug": "texas-small-claims-court",
+  "publish_date": "2026-11-04",
+  "title": "Texas Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Texas Small Claims Court (2026): $20,000 Limit & Costs",
+  "rank_math_description": "Texas small claims in 2026: $20,000 justice court limit, $54 filing + service, 14-day answer, $22 jury, 21-day appeal and why wages can't be garnished.",
+  "focus_keyword": "texas small claims court",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/california-small-claims-court/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/security-deposit-demand-letter-template-get-deposit-back-2026/", "/promissory-note-template-secured-and-unsecured/"],
+  "sources": ["https://texas.public.law/statutes/tex._gov't_code_section_27.031", "https://sll.texas.gov/faqs/small-claims-maximum", "https://www.jp.hctx.net/files/Harris%20County%20Justice%20Courts%20Civil%20Filing%20Fees%20and%20Court%20Costs.pdf", "https://texas.public.law/statutes/tex._prop._code_section_42.001", "https://texas.public.law/statutes/tex._fin._code_section_304.003"],
+  "pdf_filename": "tx-small-claims-filing-checklist.pdf",
+  "pdf_outline": ["Checklist: demand letter -> venue (county + precinct, Rule 502.4) -> Small Claims Petition -> file & pay ($54 + service) -> service (Rule 501.2) -> 14-day answer / default -> jury demand 14 days before trial ($22) -> trial -> 21-day appeal window -> collection", "Collection reality box: wages exempt; bank garnishment, execution, abstract of judgment", "Shared small-claims-evidence-organizer.pdf"],
+  "featured_image_prompt": "Texas justice of the peace courthouse exterior with a lone star flag, a folder of receipts on a wooden bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "Texas justice court small claims timeline", "prompt": "horizontal timeline: petition, service, 14 days to answer, trial, 21 days to appeal, navy/crimson on cream"}
+  ],
+  "editor_notes": "Fees are Harris County (eff. Jan. 1, 2025). If you add Dallas/Bexar/Travis figures, confirm on each county's JP site. Texas Supreme Court small claims petition form: link it from txcourts.gov if you find the current PDF URL (not added because the URL could not be verified from the cloud)."
+}

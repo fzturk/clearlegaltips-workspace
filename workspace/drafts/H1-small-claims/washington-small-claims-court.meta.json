@@ -1,0 +1,20 @@
+{
+  "slug": "washington-small-claims-court",
+  "publish_date": "2026-11-20",
+  "title": "Washington Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Washington Small Claims Court (2026): $10,000 Limit & Fee",
+  "rank_math_description": "Washington small claims in 2026: $10,000 for individuals, $5,000 for businesses, $35 fee, lawyers only with consent, 10-day service rule and appeal limits.",
+  "focus_keyword": "washington small claims court",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/california-small-claims-court/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/security-deposit-demand-letter-template-get-deposit-back-2026/", "/promissory-note-template-secured-and-unsecured/"],
+  "sources": ["https://app.leg.wa.gov/rcw/default.aspx?cite=12.40&full=true", "https://app.leg.wa.gov/RCW/default.aspx?cite=6.27.150", "https://app.leg.wa.gov/RCW/default.aspx?cite=4.56.110"],
+  "pdf_filename": "wa-small-claims-filing-checklist.pdf",
+  "pdf_outline": ["Checklist: demand letter -> district court -> Notice of Small Claim (verified) -> $35 + surcharge -> service complete 10 days before hearing -> mediation option -> hearing -> appeal thresholds ($250 / $1,000) -> 30 days to pay, then garnishment / superior court lien docket", "Shared small-claims-evidence-organizer.pdf"],
+  "featured_image_prompt": "Washington State district courthouse with evergreen trees and soft overcast light, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "Washington small claims timeline", "prompt": "horizontal timeline: notice of claim, service 10 days before hearing, hearing, 30 days to pay, garnishment, navy/crimson on cream"}
+  ],
+  "editor_notes": "County dispute resolution surcharges (RCW 7.75.035) vary; if you want a total, check King County District Court's fee page before publishing."
+}

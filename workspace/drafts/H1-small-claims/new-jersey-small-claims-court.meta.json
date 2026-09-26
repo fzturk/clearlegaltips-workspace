@@ -1,0 +1,46 @@
+{
+  "slug": "new-jersey-small-claims-court",
+  "publish_date": "2026-11-23",
+  "title": "New Jersey Small Claims Court (2026): Limit, Fees & Filing",
+  "rank_math_title": "New Jersey Small Claims Court (2026): $5,000 Limit & Fees",
+  "rank_math_description": "New Jersey small claims in 2026: $5,000 limit, $35 fee (+$5 per extra defendant), Special Civil Part to $20,000, 45-day appeals and 4.5% interest.",
+  "focus_keyword": "new jersey small claims court",
+  "category_id": 8,
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/new-york-small-claims-court/",
+    "/pennsylvania-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://www.njcourts.gov/self-help/small-claims-court",
+    "https://www.njcourts.gov/notices/notice-post-judgment-interest-rate-calendar-year-2026-rule-442-11",
+    "https://codes.findlaw.com/nj/title-46-property/nj-st-sect-46-8-21-1.html"
+  ],
+  "pdf_filename": "nj-small-claims-filing-checklist.pdf",
+  "pdf_outline": [
+    "Which court? Small Claims ($5,000) / Special Civil Part ($20,000) / Law Division",
+    "Checklist: demand letter -> county Special Civil Part -> complaint -> $35 (+$5 per extra defendant) -> court serves -> mediation/trial -> 45-day appeal -> information subpoena / wage execution (10%) / bank levy / statewide lien",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
+  "featured_image_prompt": "New Jersey county courthouse with classical facade under a pale autumn sky, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {
+      "alt": "New Jersey court options by claim amount",
+      "prompt": "three-tier infographic: Small Claims $5,000, Special Civil Part $20,000, Law Division, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "njcourts.gov blocks automated fetches from the cloud; figures were read via WebFetch of the official page. Interest 4.5% applies to judgments entered in 2026; the 2027 rate is announced each July."
+}

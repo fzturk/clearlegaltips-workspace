@@ -1,0 +1,18 @@
+{
+  "slug": "tennessee-small-estate-affidavit",
+  "publish_date": "2026-10-27",
+  "title": "Tennessee Small Estate Affidavit (2026): The New Limited Letters Process Up to $50,000",
+  "rank_math_title": "Tennessee Small Estate Affidavit (2026): $50K, New Rules",
+  "rank_math_description": "Tennessee replaced its small estate affidavit in 2023: a sworn petition for limited letters, $50,000 personal property, 45-day wait, bond or waiver.",
+  "focus_keyword": "tennessee small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/how-to-create-a-living-trust-online-best-services-compared/", "/virginia-small-estate-affidavit/", "/georgia-small-estate-affidavit/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://codes.findlaw.com/tn/title-30-administration-of-estates/tn-code-sect-30-4-102/", "https://codes.findlaw.com/tn/title-30-administration-of-estates/tn-code-sect-30-4-103/"],
+  "pdf_filename": "tn-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: itemized personal property with values; creditor list with amounts", "Bond waiver consent page for each adult heir/beneficiary", "Second PDF tn-small-estate-petition-checklist.pdf: 9 steps"],
+  "featured_image_prompt": "Tennessee county courthouse square with a folder labeled Limited Letters on a bench, soft morning light, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Tennessee small estate limited letters process", "prompt": "flow graphic: petition, bond or waiver, limited letters, collect; TN outline, navy/cream"}],
+  "editor_notes": "Tennessee does NOT allow transfer on death deeds (bills withdrawn 2026); the draft says so explicitly. Filing fees vary by county; not stated."
+}

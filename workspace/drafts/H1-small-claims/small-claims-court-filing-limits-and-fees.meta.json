@@ -1,0 +1,25 @@
+{
+  "slug": "small-claims-court-filing-limits-and-fees",
+  "post_id": 165,
+  "type": "hub-upgrade",
+  "publish_date": "2026-11-02",
+  "title": "Small Claims Court Limits & Fees by State (2026)",
+  "rank_math_title": "Small Claims Court Limits by State (2026): All 50 + DC",
+  "rank_math_description": "Small claims limits for all 50 states + DC, $2,500 to $25,000, with filing fees, courts and the 10 states that raised their limit in 2024-2026.",
+  "focus_keyword": "small claims court limits by state",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/promissory-note-template-secured-and-unsecured/", "/editorial-standards/"],
+  "sources": ["workspace/data/small-claims.csv (51 official sources)", "https://legislature.idaho.gov/statutesrules/idstat/title1/t1ch23/sect1-2301/", "https://www.mainelegislature.org/legis/statutes/14/title14sec7482.html", "https://code.wvlegislature.gov/50-2-1/", "https://docs.legis.wisconsin.gov/statutes/statutes/799/01", "https://www.revisor.mn.gov/statutes/cite/491a.01"],
+  "widget": "workspace/widgets/small-claims-cost-estimator.html",
+  "pdf_filename": "small-claims-limits-by-state-2026.pdf",
+  "pdf_outline": ["One-page 50-state table (state, limit, other limits, court, filing fee, statute)", "Second PDF small-claims-filing-checklist.pdf: the 10 steps from 'How to File a Small Claims Case' as tick boxes plus an evidence list", "CSV: export workspace/data/small-claims.csv as small-claims-limits-by-state-2026.csv (drop fee_tiers/entity_limit_usd if you prefer)"],
+  "featured_image_prompt": "Editorial photo-style illustration: a small courtroom podium with a manila folder of receipts and a gavel on a cream background, navy and crimson accents, soft daylight, no text",
+  "inline_images": [
+    {"alt": "Small claims court limits by state, 2026 map", "prompt": "flat infographic US map shaded cream to navy by small claims limit, legend $2,500-$25,000"},
+    {"alt": "Number of states at each small claims limit, 2026", "prompt": "flat bar chart navy and crimson, x-axis limits $2,500-$25,000"},
+    {"alt": "How the small claims data was verified against state statutes", "prompt": "desk with statute book, laptop with legislature site, checklist, navy/cream"}
+  ],
+  "editor_notes": "HUB UPGRADE of live post ID 165: keep the URL and the original publish date (this is an update, not a new post; do NOT change the date). Replace the whole post body with this draft; the old table had wrong figures for NE ($3,900 -> $7,500), ID ($5,000 -> $15,000), KS ($4,000 -> $10,000), ME ($6,000 -> $10,000), MN ($15,000 -> $20,000), UT ($11,000 -> $20,000), AZ ($3,500 -> $5,000), WV ($10,000 -> $20,000), VT ($5,000 -> $10,000) and NY city courts ($10,000 -> $5,000). The old attorney/appeal columns were dropped because most rows were unverified; spoke posts cover them per state. Old download files in uploads/2026/07 can stay; upload the new 2026/11 files. Change the old /go/lawdepot CTA to /go/lawdepot-payment-demand-letter. Spoke state names in the table become links through the Friday patches (render_hub_table.py --link-published)."
+}

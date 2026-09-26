@@ -1,0 +1,25 @@
+{
+  "slug": "divorce-requirements-by-state",
+  "type": "hub",
+  "publish_date": "2026-11-30",
+  "title": "Divorce Requirements by State (2027): Fees, Residency, Waiting",
+  "rank_math_title": "Divorce Requirements by State (2027): All 50 + DC Table",
+  "rank_math_description": "Divorce residency rules, waiting periods, no-fault grounds and filing fees for all 50 states + DC, each linked to the statute. Checked for 2027.",
+  "focus_keyword": "divorce requirements by state",
+  "category_id": 7,
+  "tags": ["Divorce", "Family Law", "Legal Separation"],
+  "go_slugs": ["lawdepot-family"],
+  "internal_links": ["/divorce-cost-calculator/", "/how-to-file-for-uncontested-divorce-online-without-an-attorney/", "/is-online-divorce-worth-it/", "/alimony-calculator-by-state-spousal-support-2026/", "/free-parenting-plan-template/", "/child-custody-agreement-template/", "/how-to-file-for-legal-separation-online-process-and-cost-2026/", "/editorial-standards/", "/contact/"],
+  "sources": ["workspace/data/divorce.csv (51 official sources)", "https://www.humboldt.courts.ca.gov/system/files/general/2026-statewide-civil-fee-schedule.pdf", "https://www.hcdistrictclerk.com/common/civil/pdf/Fee_Schedule_Civil_and_Family.pdf", "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0028/Sections/0028.241.html", "https://www.collierclerk.com/court-divisions/family-law/divorce/divorce-fees/", "https://www.nysenate.gov/legislation/laws/CVP/8018", "https://www.nysenate.gov/legislation/laws/CVP/8020", "https://le.utah.gov/xcode/Title81/Chapter4/81-4-S402.html"],
+  "widget": "workspace/widgets/divorce-cost-timeline-estimator.html",
+  "pdf_filename": "divorce-requirements-by-state-2027.pdf",
+  "pdf_outline": ["One-page 50-state table: state, residency, waiting period, no-fault ground, filing fee, statute", "Second PDF uncontested-divorce-filing-checklist.pdf: the 9 steps from 'How an Uncontested Divorce Works' as tick boxes + a documents list (marriage certificate, financial affidavit, settlement, parenting plan, child support worksheet)"],
+  "featured_image_prompt": "Editorial photo-style illustration: two wedding rings resting apart on a stack of court forms beside a pen, cream background, navy and crimson accents, soft daylight, no text, no people",
+  "inline_images": [
+    {"alt": "Divorce residency requirements by state, 2027 map", "prompt": "flat infographic US map shaded cream to navy by residency period"},
+    {"alt": "Divorce waiting periods by state, 2027", "prompt": "flat horizontal bar chart navy and crimson, states by waiting period bucket"},
+    {"alt": "Uncontested divorce timeline from petition to final decree", "prompt": "horizontal timeline, navy/crimson on cream"},
+    {"alt": "How the divorce requirements data was verified", "prompt": "desk with family code book, laptop with legislature site, checklist, navy/cream"}
+  ],
+  "editor_notes": "NEW HUB (category 7 Estate & Family). Year label 2027 per plan. Before publishing (W13 buffer / Nov 30): recheck Jan 1, 2027 fee changes for CA, NY, Harris County TX and Collier County FL; if rechecked, change the Fact-checked line. CTA uses /go/lawdepot-family until OnlineDivorce/CompleteCase is approved; then swap the CTA to the divorce service slug. Widget: paste workspace/widgets/divorce-cost-timeline-estimator.html in place of the WIDGET comment. ALSO THIS WEEK (see hub-link-updates/W09.md): embed the same widget in live post 163 (divorce-cost-calculator) and apply the post 176 narrowing proposal. Several official sites (mass.gov, nycourts.gov, njcourts.gov, nccourts.gov, ilga.gov) blocked cloud access; those rows were verified via FindLaw/public.law mirrors of the statute text. Spoke state names become links through Friday patches (render_hub_table.py divorce --link-published --inject ...)."
+}

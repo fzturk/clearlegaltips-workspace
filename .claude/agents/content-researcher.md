@@ -88,7 +88,7 @@ Create a comprehensive content brief for the given topic. Always use real, verif
 
 ## Affiliate CTA Recommendation
 Service: [Service name]
-Slug: /recommend/[slug]
+Slug: /go/[slug] (existing live slug only; see CLAUDE.md)
 Why it fits: [explanation]
 
 ## Internal Link Opportunities (from ClearLegalTips)

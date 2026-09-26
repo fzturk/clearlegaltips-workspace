@@ -1,0 +1,47 @@
+{
+  "slug": "how-to-file-for-divorce-in-pennsylvania",
+  "type": "spoke",
+  "publish_date": "2026-12-07",
+  "title": "How to File for Divorce in Pennsylvania (2027): Fees & Steps",
+  "rank_math_title": "How to File for Divorce in PA (2027): 90-Day Consent Route",
+  "rank_math_description": "Pennsylvania divorce 2027: 6-month residency, 90-day mutual consent or 1-year separation, $334.73 Philadelphia fee, forms, service and property claims.",
+  "focus_keyword": "how to file for divorce in pennsylvania",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Legal Separation"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/how-to-file-for-divorce-in-new-york/",
+    "/how-to-file-for-divorce-in-florida/",
+    "/how-to-file-for-divorce-in-california/",
+    "/divorce-cost-calculator/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/",
+    "/how-to-file-for-uncontested-divorce-online-without-an-attorney/"
+  ],
+  "sources": [
+    "https://codes.findlaw.com/pa/title-23-pacsa-domestic-relations/pa-csa-sect-23-3301/",
+    "https://codes.findlaw.com/pa/title-23-pacsa-domestic-relations/pa-csa-sect-23-3104/",
+    "https://www.courts.phila.gov/pdf/prothyfees.pdf",
+    "https://www.pacourts.us/learn/representing-yourself/divorce-proceedings"
+  ],
+  "pdf_filename": "pennsylvania-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: residency 6 mo -> choose 3301(c) or 3301(d) -> Notice to Defend + Complaint (+ counts) -> file ($334.73 Phila) / IFP -> serve within 30 days (personal or certified restricted) -> wait 90 days -> Affidavits of Consent + Waivers -> property settlement -> Praecipe to Transmit ($66.22) -> decree",
+    "Warning box: raise equitable distribution/alimony before decree"
+  ],
+  "featured_image_prompt": "Pennsylvania county courthouse with a keystone emblem on the facade, a folder of divorce papers on a bench in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "Pennsylvania divorce timeline",
+      "prompt": "horizontal timeline graphic, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "Fees: Philadelphia Office of Judicial Records schedule eff. Nov 12, 2025 (recheck in W13). legis.state.pa.us unreachable from cloud; statutes read via FindLaw. The Rules of Civil Procedure detail (consent affidavit 90 days after service; 30-day service window; certified mail restricted delivery) is from Pa.R.C.P. 1920.42/1930.4 and Rule 401 — spot-check on pacodeandbulletin.gov if you want to cite rule numbers."
+}
