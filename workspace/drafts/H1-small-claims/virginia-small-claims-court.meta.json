@@ -1,0 +1,46 @@
+{
+  "slug": "virginia-small-claims-court",
+  "publish_date": "2026-11-17",
+  "title": "Virginia Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Virginia Small Claims Court (2026): $5,000 Limit & Rules",
+  "rank_math_description": "Virginia small claims in 2026: $5,000 limit (HB 364 did not pass), no lawyers, trial on the first return date, defendant removal and 10-day appeals.",
+  "focus_keyword": "virginia small claims court",
+  "category_id": 8,
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/north-carolina-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://law.lis.virginia.gov/vacodefull/title16.1/chapter6/article5/",
+    "https://law.lis.virginia.gov/vacode/title16.1/chapter6/section16.1-106/",
+    "https://law.lis.virginia.gov/vacode/title34/chapter4/section34-29/",
+    "https://vacourts.gov/resources/small_claims_court_procedures.pdf"
+  ],
+  "pdf_filename": "va-small-claims-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: demand letter -> Warrant in Debt or Detinue -> right GDC -> fee (use vacourts fee calculator) -> pick trial date (5+ days after service) -> service -> trial on first return date -> 10-day appeal + 30-day bond -> interrogatories / garnishment / lien",
+    "Box: removal right of the defendant (16.1-122.4(B))",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
+  "featured_image_prompt": "Virginia general district courthouse with red brick and white columns in early morning light, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {
+      "alt": "Virginia small claims timeline",
+      "prompt": "horizontal timeline: warrant, service, trial on first return date, judgment, 10-day appeal, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "HB 364 (2026) status: the Code of Virginia (fetched Sept 26, 2026) still reads $5,000. Before publishing, glance at lis.virginia.gov for HB 364 in case a later session or special session changed it; if the Code changes, update the limit everywhere (hub CSV too)."
+}

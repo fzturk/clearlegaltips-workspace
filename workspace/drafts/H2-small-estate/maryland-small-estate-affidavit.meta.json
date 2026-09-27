@@ -1,0 +1,18 @@
+{
+  "slug": "maryland-small-estate-affidavit",
+  "publish_date": "2026-10-29",
+  "title": "Maryland Small Estate Affidavit (2026): Small Estate Administration Up to $50,000",
+  "rank_math_title": "Maryland Small Estate Affidavit (2026): $50K / $100K",
+  "rank_math_description": "Maryland uses small estate administration, not an affidavit: $50,000 ($100,000 spouse sole heir), one notice, 6-month claims, no Register fee since 2022.",
+  "focus_keyword": "maryland small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/how-to-create-a-living-trust-online-best-services-compared/", "/new-jersey-small-estate-affidavit/", "/virginia-small-estate-affidavit/", "/estate-tax-by-state/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://registers.maryland.gov/main/seinfo.html", "https://registers.maryland.gov/main/forms/RW1109update.pdf", "https://law.justia.com/codes/maryland/estates-and-trusts/title-5/subtitle-6/section-5-603/"],
+  "pdf_filename": "md-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: probate assets at FMV less secured debt; spouse sole heir branch ($100,000)", "Creditor deadline calculator: 6 months after death vs 30 days after notice", "Second PDF md-small-estate-checklist.pdf: 7 steps with Register of Wills"],
+  "featured_image_prompt": "Maryland row house on a quiet street with a Register of Wills envelope on the stoop, navy and crimson accents, editorial, no text",
+  "inline_images": [{"alt": "Maryland Register of Wills small estate process", "prompt": "Register of Wills counter with forms and newspaper notice, MD outline, navy/cream"}],
+  "editor_notes": "Maryland does not allow transfer on death deeds; the draft points to living trusts instead. Inheritance tax kept general (no rate stated); add the rate from the Comptroller/Register if desired."
+}

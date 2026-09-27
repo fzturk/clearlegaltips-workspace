@@ -1,0 +1,47 @@
+{
+  "slug": "how-to-file-for-divorce-in-new-york",
+  "type": "spoke",
+  "publish_date": "2026-12-04",
+  "title": "How to File for Divorce in New York (2027): Fees & Steps",
+  "rank_math_title": "How to File for Divorce in New York (2027): $335 in Fees",
+  "rank_math_description": "New York divorce 2027: 1- or 2-year residency, no waiting period, 6-month no-fault ground, $335 court fees, personal service, required notices.",
+  "focus_keyword": "how to file for divorce in new york",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Online Divorce"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/how-to-file-for-divorce-in-florida/",
+    "/how-to-file-for-divorce-in-california/",
+    "/how-to-file-for-divorce-in-texas/",
+    "/how-to-file-for-uncontested-divorce-online-without-an-attorney/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/"
+  ],
+  "sources": [
+    "https://www.nysenate.gov/legislation/laws/DOM/230",
+    "https://www.nysenate.gov/legislation/laws/DOM/170",
+    "https://www.nysenate.gov/legislation/laws/CVP/8018",
+    "https://www.nysenate.gov/legislation/laws/CVP/8020",
+    "https://ww2.nycourts.gov/divorce/index.shtml"
+  ],
+  "pdf_filename": "new-york-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: residency (DRL §230 five routes) -> Summons with Notice + 3 notices -> index number $210 / poor person relief -> personal service by non-party adult within 120 days -> Affidavit of Defendant -> settlement -> Affidavit of Plaintiff (170(7) sworn) -> barriers statement if religious ceremony -> Note of Issue $30 + RJI $95 -> findings + judgment -> Notice of Entry",
+    "Box: fee table ($335)"
+  ],
+  "featured_image_prompt": "New York county supreme courthouse columns with a stack of uncontested divorce forms and a pen on the steps in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "New York uncontested divorce paperwork sequence",
+      "prompt": "horizontal flow: index number, service, affidavit of defendant, note of issue and RJI, judgment; navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "nycourts.gov blocked cloud access: uncontested form names are listed without UD form numbers on purpose; add UD numbers only after checking the current packet. Fees verified from CPLR §8018 ($190+$5+$15=$210) and §8020 ($95 RJI, $30 calendar) via nysenate.gov (the link checker gets 403; pages are live). Maintenance and child support income caps not stated because they are adjusted periodically; add the current caps from nycourts if you want."
+}

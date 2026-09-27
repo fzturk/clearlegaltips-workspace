@@ -1,0 +1,20 @@
+{
+  "slug": "california-small-claims-court",
+  "publish_date": "2026-11-03",
+  "title": "California Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "California Small Claims Court (2026): $12,500 Limit & Fees",
+  "rank_math_description": "California small claims in 2026: $12,500 limit ($6,250 businesses), $30-$75 fees, no lawyers, 20-70 day hearings and why only the defendant can appeal.",
+  "focus_keyword": "california small claims court",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/security-deposit-demand-letter-template-get-deposit-back-2026/"],
+  "sources": ["https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.221", "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.230", "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.710", "https://selfhelp.courts.ca.gov/small-claims-california"],
+  "pdf_filename": "ca-small-claims-filing-checklist.pdf",
+  "pdf_outline": ["Checklist: demand letter -> SC-100 (+SC-100A) -> file & fee -> serve (15/20 days) -> SC-104 (5 days) -> hearing -> SC-130 -> SC-133 / collection", "Fee table ($30/$50/$75/$100) and limits ($12,500 / $6,250 / two >$2,500 per year)", "Shared PDF small-claims-evidence-organizer.pdf (reused by all small claims spokes): exhibit list, timeline, damages worksheet"],
+  "featured_image_prompt": "California-style courthouse steps in warm afternoon light with a folder of receipts and a small claims form on a bench, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "California small claims court timeline from filing to judgment", "prompt": "horizontal timeline: SC-100 filing, service deadline, hearing 20-70 days, 30-day appeal window, navy/crimson on cream"}
+  ],
+  "editor_notes": "Hub link: the hub (ID 165) is updated Nov 2, so the hub link here is live on publish. The evidence organizer PDF is shared by all 19 small claims spokes; generate it once."
+}

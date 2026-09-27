@@ -1,0 +1,18 @@
+{
+  "slug": "georgia-small-estate-affidavit",
+  "publish_date": "2026-10-20",
+  "title": "Georgia Small Estate Affidavit (2026): No Administration Necessary & the $15,000 Bank Rule",
+  "rank_math_title": "Georgia Small Estate Affidavit (2026): No-Cap Petition",
+  "rank_math_description": "Georgia has no dollar-based small estate affidavit: banks may pay up to $15,000 to family, and heirs can petition for no administration at any estate size.",
+  "focus_keyword": "georgia small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/small-estate-affidavit-limits-by-state/", "/florida-small-estate-affidavit/", "/affidavit-of-heirship-template-2026/"],
+  "sources": ["https://codes.findlaw.com/ga/title-53-wills-trusts-and-administration-of-estates/ga-code-sect-53-2-40.html", "https://codes.findlaw.com/ga/title-7-banking-and-finance/ga-code-sect-7-1-239/", "https://fultoncountyga.gov/-/media/Departments/Probate-Court/Georgia-Probate-Forms/GPCSF-9-Petition-for-Order-Declaring-No-Administration-Necessary.pdf"],
+  "pdf_filename": "ga-small-estate-route-finder.pdf",
+  "pdf_outline": ["Route finder: will? -> probate; bank deposits <= $15,000 -> bank affidavit; heirs all agree + debts handled -> GPCSF 9; else administration", "Heirs agreement signature page template (attested by clerk or notary)", "Second PDF ga-no-administration-checklist.pdf: 7 steps"],
+  "featured_image_prompt": "Georgia porch with rocking chairs and a probate petition folder on a side table, warm evening light, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Georgia bank affidavit for a deceased depositor", "prompt": "bank teller window, family member with affidavit, Georgia outline, navy/cream"}],
+  "editor_notes": "Georgia probate court fees are set by statute and vary by service; not stated. Year's support section kept general."
+}

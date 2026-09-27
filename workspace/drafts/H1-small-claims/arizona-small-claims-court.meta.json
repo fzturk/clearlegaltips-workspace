@@ -1,0 +1,20 @@
+{
+  "slug": "arizona-small-claims-court",
+  "publish_date": "2026-11-18",
+  "title": "Arizona Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Arizona Small Claims Court (2026): New $5,000 Limit",
+  "rank_math_description": "Arizona small claims in 2026: the new $5,000 limit (SB 1022), $58 filing in Maricopa, no lawyers, no appeal, the 10-day transfer rule and 10% wage cap.",
+  "focus_keyword": "arizona small claims court",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/california-small-claims-court/", "/michigan-small-claims-court/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/security-deposit-demand-letter-template-get-deposit-back-2026/", "/promissory-note-template-secured-and-unsecured/"],
+  "sources": ["https://www.azleg.gov/ars/22/00503.htm", "https://www.azleg.gov/ars/22/00519.htm", "https://www.azleg.gov/ars/33/01131.htm", "https://justicecourts.maricopa.gov/about-us/justice-court-fees"],
+  "pdf_filename": "az-small-claims-filing-checklist.pdf",
+  "pdf_outline": ["Checklist: demand letter -> justice court precinct -> complaint ($58 Maricopa) -> service -> 20-day answer -> hearing within 60 days -> transfer decision (10 days before) -> hearing -> written judgment within 10 days -> debtor exam / garnishment (10% cap)", "Warning box: no appeal (A.R.S. 22-519)", "Shared small-claims-evidence-organizer.pdf"],
+  "featured_image_prompt": "Arizona justice court building in desert light with saguaro in the distance, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "Arizona small claims timeline", "prompt": "horizontal timeline: complaint, service, 20-day answer, hearing within 60 days, transfer 10 days before, decision within 10 days, navy/crimson on cream"}
+  ],
+  "editor_notes": "Live post 165 and many competitors still say $3,500; this spoke and the hub use $5,000 (A.R.S. 22-503 as amended by SB 1022, Laws 2025 ch. 94)."
+}

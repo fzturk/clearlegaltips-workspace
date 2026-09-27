@@ -1,0 +1,44 @@
+{
+  "slug": "how-to-file-for-divorce-in-ohio",
+  "type": "spoke",
+  "publish_date": "2026-12-09",
+  "title": "How to File for Divorce in Ohio (2027): Fees & Steps",
+  "rank_math_title": "How to File for Divorce in Ohio (2027): Dissolution & Fees",
+  "rank_math_description": "Ohio divorce 2027: 6-month residency, dissolution hearing in 30-90 days or divorce after 42 days, Franklin County $225/$275 fees, forms and property rules.",
+  "focus_keyword": "how to file for divorce in ohio",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Legal Separation"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/how-to-file-for-divorce-in-illinois/",
+    "/how-to-file-for-divorce-in-pennsylvania/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/"
+  ],
+  "sources": [
+    "https://codes.ohio.gov/ohio-revised-code/section-3105.03",
+    "https://codes.ohio.gov/ohio-revised-code/section-3105.64",
+    "https://www.courtrules.net/ohio/ohio-civil-procedure/rule-75",
+    "https://clerk.franklincountyohio.gov/Legal-Divisions/Domestic-Relations/Domestic-Relations-Division-Fee-Schedule"
+  ],
+  "pdf_filename": "ohio-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist with two columns: Dissolution (agreement -> joint petition + affidavits -> file $225 -> hearing 30-90 days, both attend) vs Divorce (complaint + affidavits -> file $275 -> certified mail service -> 28 days answer -> hearing after 42 days)",
+    "Box: uniform affidavits list"
+  ],
+  "featured_image_prompt": "Ohio county courthouse with a clock tower, two folders labeled only by color on a table in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "Ohio divorce timeline",
+      "prompt": "horizontal timeline graphic, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "Franklin County Clerk fee schedule (no effective date shown; $275 divorce / $225 dissolution). Franklin DR local rule deposits ($250/$200 + $30) differ from the clerk page; the article uses the clerk fees. Civ.R. 75(K) 42-day rule verified via courtrules.net mirror; the supremecourt.ohio.gov rules PDF can replace it."
+}

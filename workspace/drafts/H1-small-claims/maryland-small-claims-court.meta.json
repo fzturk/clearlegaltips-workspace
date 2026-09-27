@@ -1,0 +1,47 @@
+{
+  "slug": "maryland-small-claims-court",
+  "publish_date": "2026-11-26",
+  "title": "Maryland Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Maryland Small Claims Court (2026): $5,000 Limit & Fees",
+  "rank_math_description": "Maryland small claims in 2026: $5,000 limit, $44 filing fee, $60 sheriff or $20 mail service, informal trials, 30-day appeals, 10% interest.",
+  "focus_keyword": "maryland small claims court",
+  "category_id": 8,
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/virginia-small-claims-court/",
+    "/new-jersey-small-claims-court/",
+    "/pennsylvania-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://www.mdcourts.gov/sites/default/files/court-forms/dca109.pdf",
+    "https://www.peoples-law.org/difference-between-large-claims-and-small-claims",
+    "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=15-601.1&enactments=false",
+    "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=11-107&enactments=false"
+  ],
+  "pdf_filename": "md-small-claims-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: demand letter -> District Court location -> Complaint/Application and Affidavit -> $44 + service ($60 sheriff / $20 mail) -> notice of intention to defend -> informal trial (no discovery) -> 30-day appeal (de novo) -> oral exam / garnishment / execution / lien",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
+  "featured_image_prompt": "Maryland district court building with brick facade near the Chesapeake in soft morning light, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {
+      "alt": "Maryland small claims timeline",
+      "prompt": "horizontal timeline: complaint, service, notice of intention to defend, trial, 30-day appeal, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "Thanksgiving Day (Nov 26) publish: if you prefer, publish Friday Nov 27 with Utah on Saturday, or keep as planned; do not backdate."
+}

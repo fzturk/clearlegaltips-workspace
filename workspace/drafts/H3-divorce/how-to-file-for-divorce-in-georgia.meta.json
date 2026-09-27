@@ -1,0 +1,45 @@
+{
+  "slug": "how-to-file-for-divorce-in-georgia",
+  "type": "spoke",
+  "publish_date": "2026-12-10",
+  "title": "How to File for Divorce in Georgia (2027): Fees & Steps",
+  "rank_math_title": "How to File for Divorce in Georgia (2027): 30 Days, $220",
+  "rank_math_description": "Georgia divorce 2027: 6-month residency, 30 days after service, $220 Fulton County fee, file in your spouse's county, forms, alimony and parenting plans.",
+  "focus_keyword": "how to file for divorce in georgia",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Legal Separation"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/how-to-file-for-divorce-in-ohio/",
+    "/how-to-file-for-divorce-in-texas/",
+    "/how-to-file-for-divorce-in-california/",
+    "/how-to-file-for-divorce-in-illinois/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/"
+  ],
+  "sources": [
+    "https://codes.findlaw.com/ga/title-19-domestic-relations/ga-code-sect-19-5-2/",
+    "https://codes.findlaw.com/ga/title-19-domestic-relations/ga-code-sect-19-5-3/",
+    "https://codes.findlaw.com/ga/title-19-domestic-relations/ga-code-sect-19-6-1/",
+    "https://www.fultonclerk.org/DocumentCenter/View/376/Superior-and-Magistrate-Court-Fee"
+  ],
+  "pdf_filename": "georgia-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: residency 6 mo -> venue (spouse's county) -> settlement agreement / parenting plan / worksheet -> petition + DR case filing info form -> file ($220 Fulton) / indigence affidavit -> acknowledgment of service or sheriff ($50) -> parenting seminar -> 30 days after service -> decree"
+  ],
+  "featured_image_prompt": "Georgia county courthouse with a gold dome style roof, a settlement agreement and pen on a bench in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "Georgia divorce timeline",
+      "prompt": "horizontal timeline graphic, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "O.C.G.A. read via FindLaw (justia 403, legis.ga.gov not public). Fulton fee schedule (HB851 citations) shows Divorce $220, Sheriff $50. Venue rule from Ga. Const. art. VI, §2, ¶I; the 'consent to venue' practice varies by county — check local practice. Jury trial on property is permitted in Georgia divorces (not on custody); keep that sentence only if you are comfortable citing O.C.G.A. §19-5-1 / case law."
+}

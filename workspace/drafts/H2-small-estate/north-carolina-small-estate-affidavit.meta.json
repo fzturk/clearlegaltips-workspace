@@ -1,0 +1,18 @@
+{
+  "slug": "north-carolina-small-estate-affidavit",
+  "publish_date": "2026-10-21",
+  "title": "North Carolina Small Estate Affidavit (2026): $20,000 Limit, Clerk Filing & Spouse Options",
+  "rank_math_title": "North Carolina Small Estate Affidavit (2026): $20K Limit",
+  "rank_math_description": "NC small estate affidavit: $20,000 limit ($30,000 spouse sole heir), 30-day wait, filed with the clerk, 90-day final report, $60,000 spousal allowance.",
+  "focus_keyword": "north carolina small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/virginia-small-estate-affidavit/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_28A/GS_28A-25-1.html", "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_28A/GS_28A-25-3.html", "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_28A/GS_28A-28-1.html", "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_30/GS_30-15.html"],
+  "pdf_filename": "nc-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: personal property less liens; spouse sole heir? branch to $30,000 and summary administration", "Disbursement order table (allowances -> debts in priority -> heirs)", "Second PDF nc-small-estate-checklist.pdf: file, collect, disburse, 90-day final affidavit"],
+  "featured_image_prompt": "North Carolina clerk of superior court counter with estate forms and a date stamp, clean editorial photo, navy and crimson accents, no text",
+  "inline_images": [{"alt": "North Carolina small estate thresholds", "prompt": "stat tiles $20,000 / $30,000 / $60,000 with NC outline, navy/cream"}],
+  "editor_notes": "All figures read from ncleg.gov statute pages on 26 Sept 2026. AOC form numbers intentionally not stated; confirm current form names with the clerk's estates division if you want to add them."
+}

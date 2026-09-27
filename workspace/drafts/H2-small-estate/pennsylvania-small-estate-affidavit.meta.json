@@ -1,0 +1,18 @@
+{
+  "slug": "pennsylvania-small-estate-affidavit",
+  "publish_date": "2026-10-13",
+  "title": "Pennsylvania Small Estate Affidavit (2026): The $10,000 Bank Rule and $50,000 Petition",
+  "rank_math_title": "Pennsylvania Small Estate Affidavit (2026): $50K Petition",
+  "rank_math_description": "Pennsylvania has no small estate affidavit: banks pay up to $10,000 to family, and estates up to $50,000 settle by Orphans' Court petition. Tax included.",
+  "focus_keyword": "pennsylvania small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/estate-tax-by-state/", "/probate-cost-estimator/", "/small-estate-affidavit-limits-by-state/", "/new-york-small-estate-affidavit/"],
+  "sources": ["https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2013/0/0035..HTM", "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F231%2Fchapter8005%2Fs5.50..html&d=reduce", "https://www.revenue.pa.gov/TaxTypes/InheritanceTax/Pages/default.aspx"],
+  "pdf_filename": "pa-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: per-bank totals (<= $10,000 for §3101) and remaining personal property toward $50,000", "Inheritance tax quick table (0 / 4.5 / 12 / 15%) and REV-1500 due dates", "Second PDF pa-small-estate-petition-checklist.pdf: Rule 5.50 contents and five exhibits"],
+  "featured_image_prompt": "Pennsylvania stone farmhouse porch with a folder labeled Orphans' Court Petition and a funeral receipt, soft light, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Pennsylvania bank payment to family under section 3101", "prompt": "bank counter with receipted funeral bill and passbook, navy/cream"}],
+  "editor_notes": "revenue.pa.gov link is the department's inheritance tax page; confirm the URL still resolves before publishing. County filing fees vary; add your county's fee if you want a number."
+}

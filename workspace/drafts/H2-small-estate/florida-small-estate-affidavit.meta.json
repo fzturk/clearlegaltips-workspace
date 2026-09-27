@@ -1,0 +1,18 @@
+{
+  "slug": "florida-small-estate-affidavit",
+  "publish_date": "2026-10-08",
+  "title": "Florida Small Estate Affidavit (2026): Summary Administration Now Up to $150,000",
+  "rank_math_title": "Florida Small Estate Affidavit (2026): $150K & Options",
+  "rank_math_description": "Florida has no general small estate affidavit. Summary administration now covers $150,000 (July 2026), plus $20,000, $2,000 and $5,000 shortcuts.",
+  "focus_keyword": "florida small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/small-estate-affidavit-limits-by-state/", "/texas-small-estate-affidavit/", "/california-small-estate-affidavit/", "/how-to-close-a-deceased-persons-accounts-and-prevent-identity-theft/"],
+  "sources": ["https://www.flsenate.gov/Laws/Statutes/2026/Chapter735/All", "https://www.flsenate.gov/Committees/billsummaries/2026/html/1337", "https://www.flsenate.gov/Laws/Statutes/2026/732.402"],
+  "pdf_filename": "fl-small-estate-route-finder.pdf",
+  "pdf_outline": ["Route finder: 5 Florida routes as a decision tree (with will? died >1 or >2 years ago? total non-exempt value?)", "Second PDF fl-summary-administration-checklist.pdf: petition signers, creditor diligent search log, service list, optional notice to creditors"],
+  "featured_image_prompt": "Florida courthouse steps with palm shadows, a folder labeled Petition in foreground, navy and crimson accents, editorial photo, no text",
+  "inline_images": [{"alt": "Florida small estate options decision tree", "prompt": "four-branch decision tree with Florida outline, navy/crimson on cream"}],
+  "editor_notes": "Live post 3131 still shows Florida summary administration at $75,000 and the bank affidavit at $1,000 - update both in the W01 patch. Filing fee intentionally omitted; add from the clerk's fee schedule if desired."
+}

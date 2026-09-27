@@ -1,0 +1,18 @@
+{
+  "slug": "new-york-small-estate-affidavit",
+  "publish_date": "2026-10-12",
+  "title": "New York Small Estate Affidavit (2026): $50,000 Voluntary Administration Guide",
+  "rank_math_title": "New York Small Estate Affidavit (2026): $50K Guide",
+  "rank_math_description": "New York small estates use voluntary administration: $50,000 personal property limit after the family set-off, a $1 filing fee, who can serve and duties.",
+  "focus_keyword": "new york small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/small-estate-affidavit-limits-by-state/", "/illinois-small-estate-affidavit/", "/how-to-close-a-deceased-persons-accounts-and-prevent-identity-theft/"],
+  "sources": ["https://www.nysenate.gov/legislation/laws/SCP/1301", "https://codes.findlaw.com/ny/surrogates-court-procedure-act/scp-sect-1304/", "https://codes.findlaw.com/ny/surrogates-court-procedure-act/scp-sect-1307/", "https://codes.findlaw.com/ny/estates-powers-and-trusts-law/ept-sect-5-3-1/"],
+  "pdf_filename": "ny-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: asset / joint or beneficiary? / set-off category (household $20k, car $25k, cash $25k) / counted", "Second PDF ny-voluntary-administration-checklist.pdf: 8 steps + SCPA 1303 priority list + account record template"],
+  "featured_image_prompt": "New York brownstone stoop with a court certificate envelope and reading glasses on the step, navy and crimson accents, editorial, no text",
+  "inline_images": [{"alt": "New York voluntary administration at the Surrogate's Court", "prompt": "courthouse facade, $1 receipt and certificate, navy/cream"}],
+  "editor_notes": "nycourts.gov blocked automated fetches; the checklist link is the official UCS form PDF. SCPA text verified via FindLaw mirrors Sept 2026."
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "utah-small-claims-court",
+  "publish_date": "2026-11-27",
+  "title": "Utah Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Utah Small Claims Court (2026): $20,000 Limit & Fees",
+  "rank_math_description": "Utah small claims in 2026: $20,000 limit (attorney fees included), $60-$185 fees, Online Dispute Resolution, 30-day service rule and 28-day appeals.",
+  "focus_keyword": "utah small claims court",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/colorado-small-claims-court/", "/arizona-small-claims-court/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/security-deposit-demand-letter-template-get-deposit-back-2026/", "/promissory-note-template-secured-and-unsecured/"],
+  "sources": ["https://www.utcourts.gov/en/self-help/case-categories/consumer/small-claims.html", "https://www.utcourts.gov/en/self-help/legal-help/procedures/fees.html", "https://le.utah.gov/xcode/Title15/Chapter1/15-1-S4.html", "https://le.utah.gov/xcode/Title57/Chapter17/57-17-S3.html"],
+  "pdf_filename": "ut-small-claims-filing-checklist.pdf",
+  "pdf_outline": ["Checklist: demand letter -> justice court (defendant's home or where events happened) -> ODR or regular forms -> fee ($60/$100/$185) -> service (30 days before trial; ODR within 120 days) -> ODR/trial -> 28-day appeal ($240 + $10) -> supplemental proceedings / garnishment / lien", "Shared small-claims-evidence-organizer.pdf"],
+  "featured_image_prompt": "Utah justice court building with red rock mountains in the distance at golden hour, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "Utah small claims timeline", "prompt": "horizontal timeline: affidavit, service 30 days before trial or ODR 120 days, ODR, trial, 28-day appeal, navy/crimson on cream"}
+  ],
+  "editor_notes": "Last spoke of the small claims cluster (19 spokes + hub). After publishing, run the W08 Friday patch and the full hub link update."
+}

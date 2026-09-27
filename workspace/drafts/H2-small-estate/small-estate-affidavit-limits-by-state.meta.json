@@ -1,0 +1,23 @@
+{
+  "slug": "small-estate-affidavit-limits-by-state",
+  "publish_date": "2026-10-05",
+  "title": "Small Estate Affidavit Limits by State (2026): All 50 States, Verified",
+  "rank_math_title": "Small Estate Affidavit Limits by State (2026): 50 States",
+  "rank_math_description": "Small estate affidavit limits for all 50 states + DC: $15,000 to $400,000, waiting periods, real estate rules and the 13 that changed in 2025-26.",
+  "focus_keyword": "small estate affidavit limits by state",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form", "lawdepot-living-trust"],
+  "internal_links": ["/transfer-on-death-deed-template-2026/", "/small-estate-affidavit-template-2026/", "/affidavit-of-heirship-template-2026/", "/probate-cost-estimator/"],
+  "sources": ["workspace/data/small-estate.csv (51 official sources)", "https://courts.ca.gov/system/files/file/probate-code-890-adjusted-amounts.pdf", "https://www.flsenate.gov/Laws/Statutes/2026/735.201", "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-601/", "https://code.dccouncil.gov/us/dc/council/code/sections/20-351"],
+  "widget": "workspace/widgets/small-estate-eligibility-checker.html",
+  "pdf_filename": "small-estate-limits-by-state-2026.pdf",
+  "pdf_outline": ["One-page 50-state table (state, limit, real estate, wait, court step, statute)", "Second PDF small-estate-affidavit-checklist.pdf: the 9 steps from 'How to Use a Small Estate Affidavit' as tick boxes", "CSV: export workspace/data/small-estate.csv as small-estate-affidavit-limits-by-state-2026.csv (drop the notes column if you prefer)"],
+  "featured_image_prompt": "Clean editorial illustration: a sealed envelope labeled Affidavit beside a small house key and a bank card on a cream desk, navy and crimson accents, soft daylight, no text",
+  "inline_images": [
+    {"alt": "Small estate affidavit limits by state, 2026 map", "prompt": "flat infographic US map shaded navy to cream by dollar limit, legend $15k-$400k"},
+    {"alt": "Timeline of small estate limit changes in 2025 and 2026", "prompt": "horizontal timeline, navy and crimson markers Mar 2025 to Aug 2026"},
+    {"alt": "How the small estate data was verified against state statutes", "prompt": "desk with statute book, laptop with legislature site, checklist, navy/cream"}
+  ],
+  "editor_notes": "Live post 3131 (small-estate-affidavit-template-2026): same day, replace its 'State Dollar Limits and Waiting Periods (2026)' section with the short summary + link in hub-link-updates/W01.md. Trust & Will CTA replaces lawdepot-living-trust once /go/trust-and-will exists."
+}

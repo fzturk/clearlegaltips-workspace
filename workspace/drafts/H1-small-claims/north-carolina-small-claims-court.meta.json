@@ -1,0 +1,20 @@
+{
+  "slug": "north-carolina-small-claims-court",
+  "publish_date": "2026-11-16",
+  "title": "North Carolina Small Claims Court (2026): Limit, Fees & Filing",
+  "rank_math_title": "NC Small Claims Court (2026): $10,000 Limit, $96 Fee",
+  "rank_math_description": "North Carolina small claims in 2026: $10,000 limit, flat $96 fee, trial within 30 days before a magistrate, 10-day appeal for a new trial and 8% interest.",
+  "focus_keyword": "north carolina small claims court",
+  "category_id": 8,
+  "tags": ["Small Claims", "Debt Collection", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-payment-demand-letter"],
+  "internal_links": ["/small-claims-court-filing-limits-and-fees/", "/georgia-small-claims-court/", "/demand-letter-for-payment/", "/how-to-collect-money-owed/", "/statute-of-limitations-on-debt-by-state/", "/security-deposit-demand-letter-template-get-deposit-back-2026/", "/promissory-note-template-secured-and-unsecured/"],
+  "sources": ["https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_7A/GS_7A-210.html", "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_7A/GS_7A-228.html", "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-362.html", "https://www.nccourts.gov/help-topics/lawsuits-and-small-claims/small-claims"],
+  "pdf_filename": "nc-small-claims-filing-checklist.pdf",
+  "pdf_outline": ["Checklist: demand letter -> defendant's county -> complaint marked 'Small Claim' -> magistrate summons -> $96 + service -> service (G.S. 7A-217) -> trial within 30 days (bring witnesses; rules of evidence apply) -> 10-day notice of appeal + 20-day appeal costs -> execution / lien", "Shared small-claims-evidence-organizer.pdf"],
+  "featured_image_prompt": "North Carolina county courthouse with brick facade and oak trees, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {"alt": "North Carolina small claims timeline", "prompt": "horizontal timeline: complaint, service, trial within 30 days, judgment, 10-day appeal, navy/crimson on cream"}
+  ],
+  "editor_notes": "Fee $96 and sheriff $30 come from nccourts.gov (the page blocks automated access from the cloud; it was read via search results). Glance at the page before publishing."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "pennsylvania-small-claims-court",
+  "publish_date": "2026-11-11",
+  "title": "Pennsylvania Small Claims Court (2026): Limit, Fees & Filing",
+  "rank_math_title": "Pennsylvania Small Claims Court (2026): $12,000 Limit",
+  "rank_math_description": "Pennsylvania small claims in 2026: $12,000 limit before a magisterial district judge, $68.50-$171 costs, 30-day appeal and strict wage garnishment limits.",
+  "focus_keyword": "pennsylvania small claims court",
+  "category_id": 8,
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/ohio-small-claims-court/",
+    "/new-york-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F204%2Fchapter29%2Fs29.402.html&d=reduce",
+    "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/246/chapter1000/s1002.html&d=reduce",
+    "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/42/00.081.027.000..HTM"
+  ],
+  "pdf_filename": "pa-small-claims-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: demand letter -> find magisterial district -> civil complaint -> 2026 costs ($68.50/$91/$114/$171) + service -> hearing 12-60 days -> service 10 days before -> hearing -> 30-day appeal (plaintiff: complaint in 20 days) -> order of execution / transfer to Common Pleas",
+    "Box: wage garnishment exceptions (42 Pa.C.S. 8127)",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
+  "featured_image_prompt": "Small-town Pennsylvania magisterial district court office exterior with brick facade, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {
+      "alt": "Pennsylvania magisterial district court timeline",
+      "prompt": "horizontal timeline: complaint, hearing 12-60 days, service 10 days before, hearing, 30-day appeal, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "2026 costs come from 42 Pa.C.S. 1725.1 as published in 204 Pa. Code 29.402; they change every January, so update in the January 2027 refresh."
+}

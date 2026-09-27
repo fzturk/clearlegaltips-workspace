@@ -1,0 +1,18 @@
+{
+  "slug": "missouri-small-estate-affidavit",
+  "publish_date": "2026-10-28",
+  "title": "Missouri Small Estate Affidavit (2026): $40,000 Net Limit, Real Estate Included",
+  "rank_math_title": "Missouri Small Estate Affidavit (2026): $40,000 Limit",
+  "rank_math_description": "Missouri small estate affidavit: $40,000 after liens and debts, real estate included, 30-day wait, bond unless waived, and creditor notice above $15,000.",
+  "focus_keyword": "missouri small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/probate-cost-estimator/", "/transfer-on-death-deed-template-2026/", "/illinois-small-estate-affidavit/", "/tennessee-small-estate-affidavit/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://revisor.mo.gov/main/OneSection.aspx?section=473.097", "https://revisor.mo.gov/main/OneSection.aspx?section=473.444", "https://revisor.mo.gov/main/OneSection.aspx?section=483.580"],
+  "pdf_filename": "mo-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: real + personal property, minus liens, minus debts = test vs $40,000", "Bond amount = personal property value; publication needed if listed property > $15,000", "Second PDF mo-small-estate-checklist.pdf: 9 steps incl. recording with recorder of deeds"],
+  "featured_image_prompt": "Missouri brick bungalow with a recorder of deeds stamped document and a newspaper legal notice on a table, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Missouri small estate affidavit: affidavit, bond, fee and notice", "prompt": "four icons affidavit/bond/fee/newspaper with Missouri outline, navy/cream"}],
+  "editor_notes": "All rules from RSMo 473.097 text read 26 Sept 2026. Filing fee amount not stated; confirm with the county probate clerk."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "how-to-file-for-divorce-in-florida",
+  "type": "spoke",
+  "publish_date": "2026-12-03",
+  "title": "How to File for Divorce in Florida (2027): Fees & Steps",
+  "rank_math_title": "How to File for Divorce in Florida (2027): 20 Days, ~$400",
+  "rank_math_description": "Florida divorce 2027: 6-month residency, 20-day wait, about $400 to file ($408 Collier), simplified dissolution, disclosure and alimony after 2023.",
+  "focus_keyword": "how to file for divorce in florida",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Online Divorce"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/how-to-file-for-divorce-in-california/",
+    "/how-to-file-for-divorce-in-texas/",
+    "/online-divorce-in-texas-california-florida-state-specific-guides/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/"
+  ],
+  "sources": [
+    "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.021.html",
+    "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.19.html",
+    "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.08.html",
+    "https://www.collierclerk.com/court-divisions/family-law/divorce/divorce-fees/",
+    "https://www.flcourts.gov/Services/Family-Courts/domestic-relations-court-resources/dissolution-of-marriage-divorce"
+  ],
+  "pdf_filename": "florida-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: residency proof (DL/ID/voter card or Form 12.902(i)) -> simplified vs regular -> petition + financial affidavit -> file (~$400) or indigent application -> service/answer (20 days) -> mandatory disclosure within 45 days + 12.932 -> MSA / parenting plan / worksheet -> parenting course -> 20-day minimum -> final hearing",
+    "Box: simplified vs regular comparison table"
+  ],
+  "featured_image_prompt": "Florida county courthouse with palm trees and bright sky, a folder of dissolution of marriage forms on a bench in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "Florida uncontested divorce timeline",
+      "prompt": "horizontal timeline: petition, service, disclosure 45 days, parenting course, final hearing; navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "Fee: Collier County Clerk ($408 petition, $10 summons). Statutory base up to $295 under §28.241(1)(a)1.b for ch. 61 cases plus surcharges; if you prefer Miami-Dade/Broward/Hillsborough figures, confirm on the clerk site. Florida Supreme Court form PDFs were not fetched from the cloud; form numbers follow the approved family law forms list, so spot-check before publishing."
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "colorado-small-claims-court",
+  "publish_date": "2026-11-19",
+  "title": "Colorado Small Claims Court (2026): Limit, Fees & How to File",
+  "rank_math_title": "Colorado Small Claims Court (2026): $7,500 Limit & Fees",
+  "rank_math_description": "Colorado small claims in 2026: $7,500 limit, $31/$55 fees, 2 claims a month, 15-day service, lawyer limits, 14-day appeals and 20% garnishment cap.",
+  "focus_keyword": "colorado small claims court",
+  "category_id": 8,
+  "tags": [
+    "Small Claims",
+    "Debt Collection",
+    "Free Legal Forms"
+  ],
+  "go_slugs": [
+    "lawdepot-payment-demand-letter"
+  ],
+  "internal_links": [
+    "/small-claims-court-filing-limits-and-fees/",
+    "/arizona-small-claims-court/",
+    "/demand-letter-for-payment/",
+    "/how-to-collect-money-owed/",
+    "/statute-of-limitations-on-debt-by-state/",
+    "/security-deposit-demand-letter-template-get-deposit-back-2026/",
+    "/promissory-note-template-secured-and-unsecured/"
+  ],
+  "sources": [
+    "https://www.coloradojudicial.gov/sites/default/files/2024-05/JDF248.pdf",
+    "https://colorado.public.law/statutes/crs_13-6-407",
+    "https://colorado.public.law/statutes/crs_13-54-104"
+  ],
+  "pdf_filename": "co-small-claims-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: demand letter -> county -> JDF 250 -> $31/$55 fee -> service 15+ days before trial (sheriff/process server) -> optional ODR mediation (JDF 75) -> trial (no jury) -> 14-day appeal -> JDF 252 interrogatories / garnishment (20% cap) / transcript of judgment",
+    "Shared small-claims-evidence-organizer.pdf"
+  ],
+  "featured_image_prompt": "Colorado county courthouse with mountains in the background under clear blue sky, a folder of receipts on a bench in the foreground, navy and crimson accents, editorial photo style, no text",
+  "inline_images": [
+    {
+      "alt": "Colorado small claims timeline",
+      "prompt": "horizontal timeline: JDF 250, service 15 days before trial, mediation, trial, 14-day appeal, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "Fees and procedure from JDF 248 (R: December 14, 2023, current on coloradojudicial.gov in Sept 2026)."
+}

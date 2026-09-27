@@ -1,0 +1,18 @@
+{
+  "slug": "washington-small-estate-affidavit",
+  "publish_date": "2026-10-23",
+  "title": "Washington Small Estate Affidavit (2026): $100,000 Limit, 40-Day Wait & Required Notice",
+  "rank_math_title": "Washington Small Estate Affidavit (2026): $100,000 Limit",
+  "rank_math_description": "Washington small estate affidavit: $100,000 limit (spouse's community half excluded), 40-day wait, 10-day notice to heirs, debts paid, copy to DSHS.",
+  "focus_keyword": "washington small estate affidavit",
+  "category_id": 7,
+  "tags": ["Estate Planning", "Probate", "Free Legal Forms"],
+  "go_slugs": ["lawdepot-affidavit-form"],
+  "internal_links": ["/transfer-on-death-deed-template-2026/", "/probate-cost-estimator/", "/california-small-estate-affidavit/", "/small-estate-affidavit-limits-by-state/"],
+  "sources": ["https://app.leg.wa.gov/RCW/default.aspx?cite=11.62.010", "https://app.leg.wa.gov/RCW/default.aspx?cite=11.62.005", "https://app.leg.wa.gov/RCW/default.aspx?cite=64.80"],
+  "pdf_filename": "wa-small-estate-worksheet.pdf",
+  "pdf_outline": ["Worksheet: probate estate less liens; remove survivor's community half; add real estate equity", "Notice log (successor, method, date sent, day 10)", "Second PDF wa-small-estate-checklist.pdf: 10 steps incl. DSHS Office of Financial Recovery copy"],
+  "featured_image_prompt": "Pacific Northwest craftsman house on a rainy day, an envelope addressed to a state office and a notarized affidavit on a table by the window, navy and crimson accents, no text",
+  "inline_images": [{"alt": "Washington small estate affidavit timeline", "prompt": "timeline: death, 40 days, 10-day notice, affidavit, DSHS copy; WA outline, navy/cream"}],
+  "editor_notes": "RCW 11.62.010 text read 26 Sept 2026. Add the DSHS Office of Financial Recovery mailing address from dshs.wa.gov before publishing if you want it in the checklist."
+}

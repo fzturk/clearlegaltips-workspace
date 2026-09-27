@@ -1,0 +1,44 @@
+{
+  "slug": "how-to-file-for-divorce-in-illinois",
+  "type": "spoke",
+  "publish_date": "2026-12-08",
+  "title": "How to File for Divorce in Illinois (2027): Fees & Steps",
+  "rank_math_title": "How to File for Divorce in Illinois (2027): 90 Days, No Wait",
+  "rank_math_description": "Illinois divorce 2027: 90-day residency, no waiting period, no-fault only, $388 Cook County fee, joint simplified dissolution and the maintenance formula.",
+  "focus_keyword": "how to file for divorce in illinois",
+  "category_id": 8,
+  "tags": [
+    "Divorce",
+    "Family Law",
+    "Legal Separation"
+  ],
+  "go_slugs": [
+    "lawdepot-family"
+  ],
+  "internal_links": [
+    "/divorce-requirements-by-state/",
+    "/how-to-file-for-divorce-in-pennsylvania/",
+    "/how-to-file-for-divorce-in-texas/",
+    "/alimony-calculator-by-state-spousal-support-2026/",
+    "/free-parenting-plan-template/"
+  ],
+  "sources": [
+    "https://codes.findlaw.com/il/chapter-750-families/il-st-sect-750-5-401/",
+    "https://codes.findlaw.com/il/chapter-750-families/il-st-sect-750-5-452/",
+    "https://codes.findlaw.com/il/chapter-750-families/il-st-sect-750-5-504/",
+    "http://services.cookcountyclerkofcourt.org/Forms/Forms/pdf_files/CCDR0703.pdf"
+  ],
+  "pdf_filename": "illinois-divorce-filing-checklist.pdf",
+  "pdf_outline": [
+    "Checklist: 90-day residency -> joint simplified (8 conditions) or regular petition -> financial affidavits -> e-file ($388 Cook) / fee waiver -> service or appearance ($250) -> MSA (+ parenting plan within 120 days, UOS) -> parenting class -> prove-up -> judgment",
+    "Box: maintenance formula worked example (payor net $80,000, payee net $30,000 -> 33.3% x 80k - 25% x 30k = $19,167; cap 40% of $110k minus $30k = $14,000 -> $14,000/yr)"
+  ],
+  "featured_image_prompt": "Chicago-style county courthouse facade with a stack of Illinois dissolution forms on a table in the foreground, navy and crimson accents, editorial photo style, no text, no people",
+  "inline_images": [
+    {
+      "alt": "Illinois divorce timeline",
+      "prompt": "horizontal timeline graphic, navy/crimson on cream"
+    }
+  ],
+  "editor_notes": "ilga.gov blocked from cloud; 750 ILCS 5 read via FindLaw. Cook County fee schedule (CCDR0703) has no date on the PDF; confirm at publish. Fee waiver thresholds from 735 ILCS 5/5-105. The worked maintenance example in pdf_outline can also be added to the article as a callout."
+}

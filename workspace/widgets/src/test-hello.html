@@ -1,0 +1,15 @@
+<!-- ClearLegalTips widget test. Paste into a Custom HTML block on a DRAFT post and preview.
+     If the button shows "Scripts work", inline <script> is allowed and the real widgets will run.
+     If it stays "Scripts blocked", the widgets fall back to their static tables. -->
+<div id="clt-w-test" style="background:#F8F6F2;border:1px solid #d8d2c6;border-left:4px solid #1C2B4A;border-radius:10px;padding:18px 22px;margin:22px 0;font-family:inherit;">
+  <p style="margin:0 0 10px;"><strong>Widget test</strong> <span id="clt-w-test-data" data-rows="__DATA__"></span></p>
+  <button type="button" id="clt-w-test-btn" style="background:#C0392B;color:#fff;border:0;border-radius:6px;padding:10px 16px;font-weight:600;cursor:pointer;">Scripts blocked</button>
+</div>
+<script>
+(function () {
+  var b = document.getElementById('clt-w-test-btn');
+  if (!b) return;
+  b.textContent = 'Scripts work - click me';
+  b.addEventListener('click', function () { b.textContent = 'Click handled at ' + new Date().toLocaleTimeString(); });
+})();
+</script>
